@@ -8,6 +8,8 @@ import AddToolCard from "../components/AddToolCard";
 import ToolCard from "../components/Card";
 import SearchBar from "../components/SearchBar";
 
+import mainLogo from "../assets/main_logo.png";
+
 import "./borderstyles.scss";
 
 const style = {
@@ -116,7 +118,7 @@ export default function Grid_Market({
         <div className="box">
           <div className="box-inner">
             <img
-              src="./APE-I-logo.png"
+              src={mainLogo}
               alt="logo"
               width={200}
               height={200}

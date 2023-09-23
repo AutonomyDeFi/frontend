@@ -13,6 +13,8 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 
+import mainLogo from "../assets/main_logo.png";
+
 const pages = ["Products", "Login"];
 const settings = [
   "Profile",
@@ -51,10 +53,10 @@ function ResponsiveAppBar() {
         <Toolbar disableGutters>
           <div className="logo">
             <img
-              src="./APE-I-logo.png"
+              src={mainLogo}
               alt="logo"
-              width={60}
-              height={60}
+              width={50}
+              height={50}
             />
           </div>
           <Typography
