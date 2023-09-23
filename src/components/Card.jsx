@@ -23,6 +23,7 @@ const ToolCard = ({ name, tag, blurb }) => {
           border: "1px solid #e0e0e0", // Add a subtle border for depth
           overflow: "hidden", // Hide any overflowing content
           position: "relative", // Allow absolute positioning of elements inside
+          fontFamily: 'Karla',
         }}
       >
         <CardContent>
@@ -32,6 +33,7 @@ const ToolCard = ({ name, tag, blurb }) => {
             component="div"
             sx={{
               backgroundColor: "#EEF6FC", // Set your desired background color
+              fontFamily: 'Inconsolata',
             }}
           >
             {name}
@@ -46,6 +48,7 @@ const ToolCard = ({ name, tag, blurb }) => {
               color: "#2196F3",
               padding: "4px 12px", // Adjust the padding to make the button smaller
               fontSize: "0.8rem", // Reduce the font size for a smaller button
+              fontFamily: 'Inconsolata',
             }}
           >
             {tag}
@@ -53,6 +56,7 @@ const ToolCard = ({ name, tag, blurb }) => {
           <Typography
             variant="body2"
             color="text.secondary"
+            sx  = {{ fontFamily: 'Inconsolata' }} 
           >
             {blurb}
           </Typography>
@@ -68,6 +72,7 @@ const ToolCard = ({ name, tag, blurb }) => {
             color: "#ffffff", // Set text color for the bottom section
             borderTopLeftRadius: "8px", // Match the card's border radius
             borderTopRightRadius: "8px", // Match the card's border radius
+            fontFamily: 'Inconsolata'
           }}
         >
           {/* Additional information or actions can go here */}

@@ -11,6 +11,7 @@ import CustomToolScreen from "./CustomToolScreen";
 import Grid_Market from "./Grid";
 import Header from "./Header";
 import RunModelScreen from "./RunModelScreen";
+import Footer from "./Footer";
 
 const MainScreen = ({ navigation }) => {
   const [currentPageIndex, setCurrentPageIndex] =
@@ -57,6 +58,7 @@ const MainScreen = ({ navigation }) => {
           )}
         </Box>
       </div>
+      <Footer/>
     </div>
   );
 };

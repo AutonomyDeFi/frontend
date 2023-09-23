@@ -1,0 +1,149 @@
+.div-relative {
+    height: 397px;
+    position: relative;
+    width: 1325px;
+  }
+  
+  .div-relative .div-flex {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 0px;
+    left: 30%;
+    position: absolute;
+    top: 92px;
+  }
+  
+  .div-relative .div-w-full {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 0px 61px;
+    position: relative;
+  }
+  
+  .div-relative .heading {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    flex: auto;
+    flex-direction: column;
+    padding: 0px 0px 0px 0px;
+    position: relative;
+
+  }
+  
+  .div-relative .sign-up-to-get-the {
+    color: #0a0a0a;
+    font-family: "Karla";
+    font-size: 22.3px;
+    font-weight: 800;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .div-relative .form {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    position: relative;
+  }
+  
+  .div-relative .input {
+    align-items: flex-start;
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #dadadb;
+    border-radius: 10px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 24px 22px 25px;
+    position: relative;
+  }
+  
+  .div-relative .div-placeholder {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    padding: 1px 330.97px 0px 0px;
+    position: relative;
+  }
+  
+  .div-relative .your-email-address {
+    background: transparent;
+    border: none;
+    color: #6b7280;
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    padding: 0;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  
+  .div-relative .button {
+    height: 68px;
+    left: 444px;
+    position: absolute;
+    top: 0;
+    width: 66px;
+  }
+  
+  .div-relative .div-margin {
+    flex: 0 0 auto;
+    position: relative;
+  }
+  
+  .div-relative .div-mt {
+    align-items: center;
+    display: flex;
+    gap: 720.95px;
+    justify-content: space-around;
+    left: 309px;
+    position: absolute;
+    top: 369px;
+    width: 492px;
+  }
+  
+  .div-relative .p-opacity {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    opacity: 0.55;
+    padding: 0px 1.05px 0px 0px;
+    position: relative;
+  }
+  
+  .div-relative .text-wrapper {
+    color: #0a0a0a;
+    font-family: "Karla";
+    font-size: 16.7px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 28px;
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+   
+
+  }  

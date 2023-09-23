@@ -28,20 +28,31 @@ const style = {
     flexDirection: "column",
     alignItems: "center",
     padding: "2rem",
+    marginTop: 7,
   },
   header: {
     textAlign: "center",
     marginBottom: "2rem",
+    fontFamily: "Karla",
+    fontWeight: "700",
+
   },
   inputContainer: {
     display: "flex",
     flexDirection: "column",
     gap: "1rem",
     minWidth: "80%",
+    fontFamily: "Inconsolata",
+    
   },
   createToolButton: {
     marginTop: "1rem",
     alignSelf: "center",
+    fontFamily: "Inconsolata",
+    fontWeight: 500,
+    fontSize: 20,
+    borderRadius: 10,
+    marginRight: 2,
   },
 };
 
@@ -106,6 +117,16 @@ const CustomToolScreen = ({ onClickHandler }) => {
                 />
               )}
             />
+            <div> 
+            <Button
+              variant="contained"
+              onClick={() =>
+                onClickHandler(0)
+              }
+              sx={style.createToolButton}
+            >
+              Go Back
+            </Button>
             <Button
               variant="contained"
               onClick={handleOpen}
@@ -113,6 +134,7 @@ const CustomToolScreen = ({ onClickHandler }) => {
             >
               Create Tool
             </Button>
+            </div>
           </div>
 
           <Modal
@@ -124,25 +146,33 @@ const CustomToolScreen = ({ onClickHandler }) => {
               <Typography
                 variant="h6"
                 component="h2"
+                sx={{fontFamily: "Karla", fontWeight: 800, fontSize: 30}}
               >
                 RESPONSE
               </Typography>
               <Typography
                 variant="body1"
-                sx={{ mt: 2 }}
+                sx={{ mt: 2, fontFamily: "Karla", fontWeight: 600, fontSize: 25}}
+                
               >
                 ENS:
               </Typography>
+              <Typography sx={{ mt: 2, fontFamily: "Inconsolata", fontWeight: 500, fontSize: 20}}> 
+                  ENS response here
+              </Typography>
               <Typography
                 variant="body1"
-                sx={{ mt: 2 }}
+                sx={{ mt: 2, fontFamily: "Karla", fontWeight: 600, fontSize: 25}}
               >
                 Transaction Hash:
+              </Typography>
+              <Typography sx={{ mt: 2, fontFamily: "Inconsolata", fontWeight: 500, fontSize: 20, paddingBottom: 5}}> 
+                  Transaction hash response here
               </Typography>
               <div>
                 <Button
                   onClick={handleClose}
-                  sx={{ mt: 1 }}
+                  sx={{ mt: 1, fontFamily: "Inconsolata", fontWeight: 800}}
                   variant="outlined"
                 >
                   Create Another Tool
@@ -152,7 +182,7 @@ const CustomToolScreen = ({ onClickHandler }) => {
                     onClickHandler(0)
                   }
                   // navigate.goBack()
-                  sx={{ mt: 1 }}
+                  sx={{ mt: 1, fontFamily: "Inconsolata", fontWeight: 800, marginLeft: 2}}
                   variant="outlined"
                 >
                   Home

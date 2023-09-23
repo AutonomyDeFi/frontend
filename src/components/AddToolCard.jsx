@@ -70,6 +70,7 @@ const ToolCard = ({ name, tag, blurb }) => {
           overflow: "hidden", // Hide any overflowing content
           position: "relative", // Allow absolute positioning of elements inside
           backgroundColor: "",
+          
         }}
       >
         <CardContent>
@@ -77,8 +78,9 @@ const ToolCard = ({ name, tag, blurb }) => {
             gutterBottom
             variant="h5"
             component="div"
+            sx = {{fontFamily: 'Karla', fontWeight: 800, margin: 2}}
           >
-            Add New Tool
+            Add A New Tool
           </Typography>
         </CardContent>
         <div
@@ -92,6 +94,7 @@ const ToolCard = ({ name, tag, blurb }) => {
             color: "#ffffff", // Set text color for the bottom section
             borderTopLeftRadius: "8px", // Match the card's border radius
             borderTopRightRadius: "8px", // Match the card's border radius
+            fontFamily: 'Karla'
           }}
         >
           {/* Additional information or actions can go here */}
