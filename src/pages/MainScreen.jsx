@@ -1,10 +1,11 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 
+import Card from "../components/Card";
+import SearchBar from "../components/SearchBar";
+
 import AddToolScreen from "./AddToolScreen";
 import CustomToolScreen from "./CustomToolScreen";
-import Card from "./Card";
-import SearchBar from "./SearchBar";
 //import Marketplace from './Marketplace';
 //import MarketGrid from './MarketGrid';
 import Grid_Market from "./Grid";

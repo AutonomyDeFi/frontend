@@ -8,28 +8,6 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import Button from "@mui/material/Button";
 
-const width_proportion = "80%";
-const height_proportion = "40%";
-
-const styles = StyleSheet.create({
-  screen: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: "white",
-  },
-  box: {
-    width: width_proportion,
-    height: height_proportion,
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: "#B8D2EC",
-  },
-  text: {
-    fontSize: 18,
-  },
-});
-
 function ccyFormat(num) {
   return `${num.toFixed(2)}`;
 }
@@ -67,66 +45,57 @@ const total = subtotal(rows);
 const RunModelScreen = ({ onClickHandler }) => {
   return (
     <div>
-      <View style={styles.screen}>
-        <View style={styles.box}>
-          <TableContainer component={Paper}>
-            <Table
-              sx={{ minWidth: 700 }}
-              aria-label="spanning table"
-            >
-              <TableHead>
-                <TableRow>
-                  <TableCell
-                    align="center"
-                    colSpan={3}
-                  >
-                    Model Tools
-                  </TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>Name</TableCell>
-                  <TableCell align="right">
-                    Description.
-                  </TableCell>
-                  <TableCell align="right">
-                    Price
-                  </TableCell>
-                </TableRow>
-              </TableHead>
-              <TableBody>
-                {rows.map((row) => (
-                  <TableRow key={row.name}>
-                    <TableCell>
-                      {row.name}
-                    </TableCell>
-                    <TableCell align="right">
-                      {row.desc}
-                    </TableCell>
-                    <TableCell align="right">
-                      {ccyFormat(row.price)}
-                    </TableCell>
-                  </TableRow>
-                ))}
-                <TableRow>
-                  <TableCell rowSpan={2} />
-                  <TableCell align="right">
-                    Total
-                  </TableCell>
-                  <TableCell>
-                    {ccyFormat(total)}
-                  </TableCell>
-                </TableRow>
-              </TableBody>
-            </Table>
-          </TableContainer>
-          <Button
-            onClick={() => onClickHandler(0)}
-          >
-            {" "}
-            Confirm Transaction
-          </Button>
-        </View>
-      </View>
+      <TableContainer component={Paper}>
+        <Table
+          sx={{ minWidth: 700 }}
+          aria-label="spanning table"
+        >
+          <TableHead>
+            <TableRow>
+              <TableCell
+                align="center"
+                colSpan={3}
+              >
+                Model Tools
+              </TableCell>
+            </TableRow>
+            <TableRow>
+              <TableCell>Name</TableCell>
+              <TableCell align="right">
+                Description.
+              </TableCell>
+              <TableCell align="right">
+                Price
+              </TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {rows.map((row) => (
+              <TableRow key={row.name}>
+                <TableCell>{row.name}</TableCell>
+                <TableCell align="right">
+                  {row.desc}
+                </TableCell>
+                <TableCell align="right">
+                  {ccyFormat(row.price)}
+                </TableCell>
+              </TableRow>
+            ))}
+            <TableRow>
+              <TableCell rowSpan={2} />
+              <TableCell align="right">
+                Total
+              </TableCell>
+              <TableCell>
+                {ccyFormat(total)}
+              </TableCell>
+            </TableRow>
+          </TableBody>
+        </Table>
+      </TableContainer>
+      <Button onClick={() => onClickHandler(0)}>
+        Confirm Transaction
+      </Button>
     </div>
   );
 };

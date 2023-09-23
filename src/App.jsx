@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import MainScreen from "./MainScreen";
+import MainScreen from "./pages/MainScreen";
 import "./App.css";
 
 const App = () => {

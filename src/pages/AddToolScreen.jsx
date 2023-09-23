@@ -1,11 +1,11 @@
 import React from "react";
-import { Button } from "./components/Button";
-import { Chip } from "./components/Chip";
-import { Icon } from "./components/Icon";
-import { TextField } from "./components/TextField";
-import { Arrowdropupfilled } from "./icons/Arrowdropupfilled";
-import { Closefilled } from "./icons/Closefilled";
-import { Icon44 } from "./icons/Icon44";
+import { Button } from "../components/Button";
+import { Chip } from "../components/Chip";
+import { Icon } from "../components/Icon";
+import { TextField } from "../components/TextField";
+import { Arrowdropupfilled } from "../icons/Arrowdropupfilled";
+import { Closefilled } from "../icons/Closefilled";
+import { Icon44 } from "../icons/Icon44";
 import "./style.css";
 
 export const MacbookAir = () => {
