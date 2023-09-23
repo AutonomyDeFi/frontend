@@ -1,1758 +1,1874 @@
 .macbook-air {
-    background-color: rgba(255, 255, 255, 1);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .macbook-air .div-3 {
-    background: radial-gradient(50% 50% at 50% 50%, rgb(251, 222, 252) 0%, rgba(208, 247, 255, 0.25) 100%);
-    background-color: rgba(255, 255, 255, 1);
-    height: 832px;
-    overflow: hidden;
-    position: relative;
-    width: 1280px;
-  }
-  
-  .macbook-air .group {
-    height: 98px;
-    left: -8px;
-    position: absolute;
-    top: 11px;
-    width: 1266px;
-  }
-  
-  .macbook-air .overlap {
-    height: 98px;
-    position: relative;
-  }
-  
-  .macbook-air .icon-menu {
-    height: 98px;
-    left: 24px;
-    position: absolute;
-    top: 0;
-    width: 103px;
-  }
-  
-  .macbook-air .group-2 {
-    height: 48px;
-    left: 0;
-    position: absolute;
-    top: 15px;
-    width: 1266px;
-  }
-  
-  .macbook-air .overlap-group-wrapper {
-    height: 47px;
-    left: 0;
-    position: absolute;
-    top: 1px;
-    width: 456px;
-  }
-  
-  .macbook-air .overlap-group {
-    height: 47px;
-    position: relative;
-    width: 454px;
-  }
-  
-  .macbook-air .autonomy-fire-logo {
-    height: 35px;
-    left: 71px;
-    object-fit: cover;
-    position: absolute;
-    top: 4px;
-    width: 70px;
-  }
-  
-  .macbook-air .text-wrapper-3 {
-    color: #000000;
-    font-family: "Michroma-Regular", Helvetica;
-    font-size: 20px;
-    font-weight: 400;
-    height: 47px;
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    text-align: center;
-    top: 0;
-    width: 454px;
-  }
-  
-  .macbook-air .button-instance {
-    left: 1182px !important;
-    position: absolute !important;
-    top: 0 !important;
-  }
-  
-  .macbook-air .design-component-instance-node {
-    left: 1058px !important;
-    position: absolute !important;
-    top: 0 !important;
-  }
-  
-  .macbook-air .text-field-instance {
-    left: 454px !important;
-    position: absolute !important;
-    top: 360px !important;
-  }
-  
-  .macbook-air .text-field-2 {
-    background-color: #f5f5f5 !important;
-  }
-  
-  .macbook-air .cancel-24px-instance {
-    height: 24px !important;
-    position: relative !important;
-    width: 24px !important;
-  }
-  
-  .macbook-air .text-field-3 {
-    left: 454px !important;
-    position: absolute !important;
-    top: 290px !important;
-  }
-  
-  .macbook-air .overlap-wrapper {
-    height: 120px;
-    left: 455px;
-    position: absolute;
-    top: 430px;
-    width: 372px;
-  }
-  
-  .macbook-air .overlap-2 {
-    border-radius: 4px 4px 0px 0px;
-    height: 120px;
-    position: relative;
-    width: 370px;
-  }
-  
-  .macbook-air .text-field-4 {
-    height: 120px !important;
-    left: 0 !important;
-    position: absolute !important;
-    top: 0 !important;
-    width: 370px !important;
-  }
-  
-  .macbook-air .text-field-5 {
-    background-color: #f5f5f5 !important;
-    flex: 1 !important;
-    flex-grow: 1 !important;
-  }
-  
-  .macbook-air .text-wrapper-4 {
-    color: #000000;
-    font-family: var(--m3-body-large-font-family);
-    font-size: var(--m3-body-large-font-size);
-    font-style: var(--m3-body-large-font-style);
-    font-weight: var(--m3-body-large-font-weight);
-    left: 16px;
-    letter-spacing: var(--m3-body-large-letter-spacing);
-    line-height: var(--m3-body-large-line-height);
-    position: absolute;
-    top: 36px;
-    width: 320px;
-  }
-  
-  .macbook-air .autocomplete {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    height: 56px;
-    left: 454px;
-    position: absolute;
-    top: 564px;
-    width: 371px;
-  }
-  
-  .macbook-air .select {
-    align-items: flex-start;
-    align-self: stretch;
-    background-color: #f5f5f5;
-    display: flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-  }
-  
-  .macbook-air .input {
-    align-items: flex-start;
-    align-self: stretch;
-    border: 2px solid;
-    border-color: var(--palette-primary-main);
-    border-radius: var(--shape-borderradius);
-    display: flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    padding: 0px 12px;
-    position: relative;
-    width: 100%;
-  }
-  
-  .macbook-air .container-2 {
-    align-items: center;
-    align-self: stretch;
-    display: flex;
-    flex: 0 0 auto;
-    padding: 16px 0px;
-    position: relative;
-    width: 100%;
-  }
-  
-  .macbook-air .autocomplete-tag {
-    align-items: flex-start;
-    display: inline-flex;
-    flex: 0 0 auto;
-    gap: 8px;
-    padding: 0px 8px 0px 0px;
-    position: relative;
-  }
-  
-  .macbook-air .chip-instance {
-    flex: 0 0 auto !important;
-  }
-  
-  .macbook-air .min-height {
-    height: 24px;
-    position: relative;
-    width: 1px;
-  }
-  
-  .macbook-air .text-wrapper-5 {
-    color: var(--palette-text-primary);
-    flex: 1;
-    font-family: var(--input-value-font-family);
-    font-size: var(--input-value-font-size);
-    font-style: var(--input-value-font-style);
-    font-weight: var(--input-value-font-weight);
-    letter-spacing: var(--input-value-letter-spacing);
-    line-height: var(--input-value-line-height);
-    margin-top: -1px;
-    position: relative;
-  }
-  
-  .macbook-air .min-width {
-    height: 1px;
-    position: relative;
-    width: 24px;
-  }
-  
-  .macbook-air .arrow-drop-up-filled {
-    height: 24px !important;
-    left: 323px !important;
-    position: absolute !important;
-    top: 16px !important;
-    width: 24px !important;
-  }
-  
-  .macbook-air .autocomplete-close {
-    left: 303px !important;
-    position: absolute !important;
-    top: 18px !important;
-  }
-  
-  .macbook-air .close-filled {
-    height: 20px !important;
-    position: relative !important;
-    width: 20px !important;
-  }
-  
-  .macbook-air .label-container {
-    align-items: center;
-    background-color: var(--palette-background-paper-elevation-0);
-    display: inline-flex;
-    gap: 10px;
-    height: 2px;
-    left: 12px;
-    padding: 0px 4px;
-    position: absolute;
-    top: 0;
-  }
-  
-  .macbook-air .text-wrapper-6 {
-    color: var(--palette-primary-main);
-    font-family: var(--input-label-font-family);
-    font-size: var(--input-label-font-size);
-    font-style: var(--input-label-font-style);
-    font-weight: var(--input-label-font-weight);
-    letter-spacing: var(--input-label-letter-spacing);
-    line-height: var(--input-label-line-height);
-    margin-bottom: -4px;
-    margin-top: -6px;
-    position: relative;
-    white-space: nowrap;
-    width: fit-content;
-  }
-  
-  .macbook-air .button-2 {
-    left: 460px !important;
-    position: absolute !important;
-    top: 651px !important;
-  }
-  
-  .macbook-air .content-container {
-    border: 1px solid;
-    border-color: var(--m3syslightoutline-variant);
-    border-radius: 12px;
-    height: 80px;
-    left: 460px;
-    overflow: hidden;
-    position: absolute;
-    top: 179px;
-    width: 360px;
-  }
-  
-  .macbook-air .header {
-    align-items: center;
-    background-color: transparent;
-    display: flex;
-    height: 80px;
-    position: relative;
-    width: 360px;
-  }
-  
-  .macbook-air .div-wrapper {
-    align-items: center;
-    display: flex;
-    flex: 1;
-    flex-grow: 1;
-    gap: 16px;
-    padding: 16px;
-    position: relative;
-  }
-  
-  .macbook-air .text {
-    align-items: flex-start;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    flex-grow: 1;
-    gap: 4px;
-    position: relative;
-  }
-  
-  .macbook-air .header-2 {
-    align-self: stretch;
-    color: var(--m3syslighton-surface);
-    font-family: "Roboto-Medium", Helvetica;
-    font-size: 24px;
-    font-weight: 500;
-    letter-spacing: 0.15px;
-    line-height: 24px;
-    margin-top: -1px;
-    position: relative;
-    text-align: center;
-  }
-  
-  .macbook-air .subhead {
-    color: var(--m3syslighton-surface);
-    font-family: "Roboto-Regular", Helvetica;
-    font-size: 19px;
-    font-weight: 400;
-    letter-spacing: 0.25px;
-    line-height: 20px;
-    position: relative;
-    text-align: center;
-    width: 312px;
-  }
-  
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
 
+.macbook-air .div-3 {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(251, 222, 252) 0%,
+    rgba(208, 247, 255, 0.25) 100%
+  );
+  background-color: rgba(255, 255, 255, 1);
+  height: 832px;
+  overflow: hidden;
+  position: relative;
+  width: 1280px;
+}
 
+.macbook-air .group {
+  height: 98px;
+  left: -8px;
+  position: absolute;
+  top: 11px;
+  width: 1266px;
+}
 
+.macbook-air .overlap {
+  height: 98px;
+  position: relative;
+}
 
+.macbook-air .icon-menu {
+  height: 98px;
+  left: 24px;
+  position: absolute;
+  top: 0;
+  width: 103px;
+}
 
+.macbook-air .group-2 {
+  height: 48px;
+  left: 0;
+  position: absolute;
+  top: 15px;
+  width: 1266px;
+}
 
-  /* NEW */
+.macbook-air .overlap-group-wrapper {
+  height: 47px;
+  left: 0;
+  position: absolute;
+  top: 1px;
+  width: 456px;
+}
 
-  .frame {
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .frame .overlap-wrapper-2 {
-    height: 832px;
-    width: 1280px;
-  }
-  
-  .frame .overlap-3 {
-    height: 832px;
-    position: relative;
-  }
-  
-  .frame .group-3 {
-    height: 832px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 1280px;
-  }
-  
-  .frame .macbook-air-2 {
-    background-color: #ffffff;
-    height: 832px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 1280px;
-  }
-  
-  .frame .macbook-air-3 {
-    background: radial-gradient(50% 50% at 50% 50%, rgb(251.22, 222.43, 251.81) 0%, rgba(208.25, 246.59, 255, 0.33) 100%);
-    height: 832px;
-    left: 0;
-    opacity: 0.5;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    width: 1280px;
-  }
-  
-  .frame .overlap-4 {
-    height: 376px;
-    left: 165px;
-    position: absolute;
-    top: 329px;
-    width: 951px;
-  }
-  
-  .frame .group-4 {
-    background-color: #bfddef7d;
-    height: 341px;
-    left: 0;
-    position: absolute;
-    top: 35px;
-    width: 951px;
-  }
-  
-  .frame .group-5 {
-    height: 145px;
-    left: 21px;
-    position: absolute;
-    top: 14px;
-    width: 167px;
-  }
-  
-  .frame .overlap-group-2 {
-    background-color: #edf5fd;
-    border-radius: 16px;
-    box-shadow: var(--m3-elevation-light-2);
-    height: 145px;
-    position: relative;
-    width: 165px;
-  }
-  
-  .frame .input-chip {
-    align-items: center;
-    background-color: var(--m3syslightsecondary-container);
-    border-radius: 8px;
-    display: flex;
-    height: 22px;
-    justify-content: center;
-    left: 11px;
-    overflow: hidden;
-    position: absolute;
-    top: 36px;
-    width: 64px;
-  }
-  
-  .frame .state-layer-4 {
-    align-items: center;
-    align-self: stretch;
-    background-color: var(--m3state-layerslighton-secondary-containeropacity-012);
-    display: flex;
-    flex: 1;
-    flex-grow: 1;
-    gap: 8px;
-    justify-content: center;
-    padding: 6px 12px 6px 8px;
-    position: relative;
-  }
-  
-  .frame .img-wrapper {
-    height: 18px;
-    margin-bottom: -4px;
-    margin-left: -3.5px;
-    margin-top: -4px;
-    position: relative;
-    width: 18px;
-  }
-  
-  .frame .icon-3 {
-    height: 14px;
-    left: 2px;
-    position: absolute;
-    top: 2px;
-    width: 14px;
-  }
-  
-  .frame .label-text-8 {
-    color: var(--m3syslighton-secondary-container);
-    font-family: "Roboto", Helvetica;
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0.1px;
-    line-height: 20px;
-    margin-bottom: -4px;
-    margin-right: -3.5px;
-    margin-top: -6px;
-    position: relative;
-    text-align: center;
-    white-space: nowrap;
-    width: fit-content;
-  }
-  
-  .frame .input-chip-2 {
-    align-items: center;
-    background-color: var(--m3syslightsecondary-container);
-    border-radius: 8px;
-    display: flex;
-    height: 22px;
-    justify-content: center;
-    left: 82px;
-    overflow: hidden;
-    position: absolute;
-    top: 36px;
-    width: 71px;
-  }
-  
-  .frame .state-layer-5 {
-    align-items: center;
-    align-self: stretch;
-    background-color: var(--m3state-layerslighton-secondary-containeropacity-012);
-    display: inline-flex;
-    flex: 0 0 auto;
-    gap: 8px;
-    justify-content: center;
-    margin-left: -3.5px;
-    padding: 6px 12px 6px 8px;
-    position: relative;
-  }
-  
-  .frame .icon-4 {
-    height: 18px;
-    margin-bottom: -4px;
-    margin-top: -4px;
-    position: relative;
-    width: 18px;
-  }
-  
-  .frame .label-text-9 {
-    color: var(--m3syslighton-secondary-container);
-    font-family: "Roboto", Helvetica;
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 0.1px;
-    line-height: 20px;
-    margin-bottom: -4px;
-    margin-top: -6px;
-    position: relative;
-    text-align: center;
-    white-space: nowrap;
-    width: fit-content;
-  }
-  
-  .frame .headline {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    left: 11px;
-    position: absolute;
-    top: 9px;
-    width: 146px;
-  }
-  
-  .frame .title {
-    color: var(--m3syslighton-surface);
-    font-family: var(--m3-body-large-font-family);
-    font-size: var(--m3-body-large-font-size);
-    font-style: var(--m3-body-large-font-style);
-    font-weight: var(--m3-body-large-font-weight);
-    letter-spacing: var(--m3-body-large-letter-spacing);
-    line-height: var(--m3-body-large-line-height);
-    margin-right: -182px;
-    margin-top: -1px;
-    position: relative;
-    width: 328px;
-  }
-  
-  .frame .subhead-2 {
-    color: var(--m3syslighton-surface-variant);
-    font-family: var(--m3-body-medium-font-family);
-    font-size: var(--m3-body-medium-font-size);
-    font-style: var(--m3-body-medium-font-style);
-    font-weight: var(--m3-body-medium-font-weight);
-    left: 11px;
-    letter-spacing: var(--m3-body-medium-letter-spacing);
-    line-height: var(--m3-body-medium-line-height);
-    position: absolute;
-    top: 63px;
-    width: 146px;
-  }
-  
-  .frame .group-6 {
-    height: 145px;
-    left: 205px;
-    position: absolute;
-    top: 14px;
-    width: 167px;
-  }
-  
-  .frame .input-chip-3 {
-    align-items: center;
-    background-color: var(--m3syslightsecondary-container);
-    border-radius: 8px;
-    display: flex;
-    height: 22px;
-    justify-content: center;
-    left: 11px;
-    overflow: hidden;
-    position: absolute;
-    top: 37px;
-    width: 64px;
-  }
-  
-  .frame .input-chip-4 {
-    align-items: center;
-    background-color: var(--m3syslightsecondary-container);
-    border-radius: 8px;
-    display: flex;
-    height: 22px;
-    justify-content: center;
-    left: 82px;
-    overflow: hidden;
-    position: absolute;
-    top: 37px;
-    width: 71px;
-  }
-  
-  .frame .group-7 {
-    height: 310px;
-    left: 761px;
-    position: absolute;
-    top: 14px;
-    width: 167px;
-  }
-  
-  .frame .overlap-5 {
-    background-color: var(--m3syslightsurface-container);
-    border-radius: 16px;
-    box-shadow: var(--m3-elevation-light-2);
-    height: 145px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 165px;
-  }
-  
-  .frame .input-chip-5 {
-    align-items: center;
-    background-color: var(--m3syslightsecondary-container);
-    border-radius: 8px;
-    display: flex;
-    height: 22px;
-    justify-content: center;
-    left: 11px;
-    overflow: hidden;
-    position: absolute;
-    top: 60px;
-    width: 64px;
-  }
-  
-  .frame .title-2 {
-    color: var(--m3syslighton-surface);
-    font-family: var(--m3-body-large-font-family);
-    font-size: var(--m3-body-large-font-size);
-    font-style: var(--m3-body-large-font-style);
-    font-weight: var(--m3-body-large-font-weight);
-    letter-spacing: var(--m3-body-large-letter-spacing);
-    line-height: var(--m3-body-large-line-height);
-    margin-top: -1px;
-    position: relative;
-    width: 146px;
-  }
-  
-  .frame .subhead-3 {
-    color: var(--m3syslighton-surface-variant);
-    font-family: var(--m3-body-medium-font-family);
-    font-size: var(--m3-body-medium-font-size);
-    font-style: var(--m3-body-medium-font-style);
-    font-weight: var(--m3-body-medium-font-weight);
-    left: 11px;
-    letter-spacing: var(--m3-body-medium-letter-spacing);
-    line-height: var(--m3-body-medium-line-height);
-    position: absolute;
-    top: 89px;
-    width: 146px;
-  }
-  
-  .frame .group-8 {
-    height: 145px;
-    left: 0;
-    position: absolute;
-    top: 165px;
-    width: 167px;
-  }
-  
-  .frame .overlap-group-3 {
-    background-color: var(--m3syslightsurface-container);
-    border-radius: 16px;
-    box-shadow: var(--m3-elevation-light-2);
-    height: 145px;
-    position: relative;
-    width: 165px;
-  }
-  
-  .frame .group-9 {
-    height: 145px;
-    left: 389px;
-    position: absolute;
-    top: 14px;
-    width: 351px;
-  }
-  
-  .frame .input-chip-6 {
-    align-items: center;
-    background-color: var(--m3syslightsecondary-container);
-    border-radius: 8px;
-    display: flex;
-    height: 22px;
-    justify-content: center;
-    left: 9px;
-    overflow: hidden;
-    position: absolute;
-    top: 37px;
-    width: 64px;
-  }
-  
-  .frame .group-10 {
-    height: 145px;
-    left: 184px;
-    position: absolute;
-    top: 0;
-    width: 167px;
-  }
-  
-  .frame .input-chip-7 {
-    align-items: center;
-    background-color: var(--m3syslightsecondary-container);
-    border-radius: 8px;
-    display: flex;
-    height: 22px;
-    justify-content: center;
-    left: 12px;
-    overflow: hidden;
-    position: absolute;
-    top: 37px;
-    width: 65px;
-  }
-  
-  .frame .state-layer-6 {
-    align-items: center;
-    align-self: stretch;
-    background-color: var(--m3state-layerslighton-secondary-containeropacity-012);
-    display: inline-flex;
-    flex: 0 0 auto;
-    gap: 8px;
-    justify-content: center;
-    margin-left: -7px;
-    padding: 6px 12px 6px 8px;
-    position: relative;
-  }
-  
-  .frame .title-wrapper {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    left: 15px;
-    position: absolute;
-    top: 9px;
-    width: 146px;
-  }
-  
-  .frame .subhead-4 {
-    color: var(--m3syslighton-surface-variant);
-    font-family: var(--m3-body-medium-font-family);
-    font-size: var(--m3-body-medium-font-size);
-    font-style: var(--m3-body-medium-font-style);
-    font-weight: var(--m3-body-medium-font-weight);
-    left: 15px;
-    letter-spacing: var(--m3-body-medium-letter-spacing);
-    line-height: var(--m3-body-medium-line-height);
-    position: absolute;
-    top: 63px;
-    width: 146px;
-  }
-  
-  .frame .group-11 {
-    height: 145px;
-    left: 21px;
-    position: absolute;
-    top: 179px;
-    width: 351px;
-  }
-  
-  .frame .overlap-6 {
-    background-color: #edf5fd;
-    border-radius: 16px;
-    box-shadow: var(--m3-elevation-light-2);
-    height: 145px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 165px;
-  }
-  
-  .frame .input-chip-8 {
-    align-items: center;
-    background-color: var(--m3syslightsecondary-container);
-    border-radius: 8px;
-    display: flex;
-    height: 22px;
-    justify-content: center;
-    left: 11px;
-    overflow: hidden;
-    position: absolute;
-    top: 37px;
-    width: 66px;
-  }
-  
-  .frame .state-layer-7 {
-    align-items: center;
-    align-self: stretch;
-    background-color: var(--m3state-layerslighton-secondary-containeropacity-012);
-    display: inline-flex;
-    flex: 0 0 auto;
-    gap: 8px;
-    justify-content: center;
-    margin-left: -6.5px;
-    padding: 6px 12px 6px 8px;
-    position: relative;
-  }
-  
-  .frame .input-chip-9 {
-    align-items: center;
-    background-color: var(--m3syslightsecondary-container);
-    border-radius: 8px;
-    display: flex;
-    height: 22px;
-    justify-content: center;
-    left: 89px;
-    overflow: hidden;
-    position: absolute;
-    top: 37px;
-    width: 66px;
-  }
-  
-  .frame .state-layer-8 {
-    align-items: center;
-    align-self: stretch;
-    background-color: var(--m3state-layerslighton-secondary-containeropacity-012);
-    display: inline-flex;
-    flex: 0 0 auto;
-    gap: 8px;
-    justify-content: center;
-    margin-left: -6px;
-    padding: 6px 12px 6px 8px;
-    position: relative;
-  }
-  
-  .frame .input-chip-10 {
-    align-items: center;
-    background-color: var(--m3syslightsecondary-container);
-    border-radius: 8px;
-    display: flex;
-    height: 22px;
-    justify-content: center;
-    left: 15px;
-    overflow: hidden;
-    position: absolute;
-    top: 37px;
-    width: 64px;
-  }
-  
-  .frame .input-chip-11 {
-    align-items: center;
-    background-color: var(--m3syslightsecondary-container);
-    border-radius: 8px;
-    display: flex;
-    height: 22px;
-    justify-content: center;
-    left: 86px;
-    overflow: hidden;
-    position: absolute;
-    top: 37px;
-    width: 64px;
-  }
-  
-  .frame .state-layer-9 {
-    align-items: center;
-    align-self: stretch;
-    background-color: var(--m3state-layerslighton-secondary-containeropacity-012);
-    display: inline-flex;
-    flex: 0 0 auto;
-    gap: 8px;
-    justify-content: center;
-    margin-left: -3px;
-    padding: 6px 12px 6px 8px;
-    position: relative;
-  }
-  
-  .frame .group-12 {
-    height: 145px;
-    left: 389px;
-    position: absolute;
-    top: 179px;
-    width: 351px;
-  }
-  
-  .frame .input-chip-12 {
-    align-items: center;
-    background-color: var(--m3syslightsecondary-container);
-    border-radius: 8px;
-    display: flex;
-    height: 22px;
-    justify-content: center;
-    left: 84px;
-    overflow: hidden;
-    position: absolute;
-    top: 60px;
-    width: 68px;
-  }
-  
-  .frame .state-layer-10 {
-    align-items: center;
-    align-self: stretch;
-    background-color: var(--m3state-layerslighton-secondary-containeropacity-012);
-    display: inline-flex;
-    flex: 0 0 auto;
-    gap: 8px;
-    justify-content: center;
-    margin-left: -5px;
-    padding: 6px 12px 6px 8px;
-    position: relative;
-  }
-  
-  .frame .headline-2 {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    left: 13px;
-    position: absolute;
-    top: 8px;
-    width: 146px;
-  }
-  
-  .frame .title-3 {
-    color: var(--m3syslighton-surface);
-    font-family: var(--m3-body-large-font-family);
-    font-size: var(--m3-body-large-font-size);
-    font-style: var(--m3-body-large-font-style);
-    font-weight: var(--m3-body-large-font-weight);
-    letter-spacing: var(--m3-body-large-letter-spacing);
-    line-height: var(--m3-body-large-line-height);
-    margin-right: -23px;
-    margin-top: -1px;
-    position: relative;
-    width: 169px;
-  }
-  
-  .frame .subhead-5 {
-    color: var(--m3syslighton-surface-variant);
-    font-family: var(--m3-body-medium-font-family);
-    font-size: var(--m3-body-medium-font-size);
-    font-style: var(--m3-body-medium-font-style);
-    font-weight: var(--m3-body-medium-font-weight);
-    left: 9px;
-    letter-spacing: var(--m3-body-medium-letter-spacing);
-    line-height: var(--m3-body-medium-line-height);
-    position: absolute;
-    top: 83px;
-    width: 146px;
-  }
-  
-  .frame .input-chip-13 {
-    align-items: center;
-    background-color: var(--m3syslightsecondary-container);
-    border-radius: 8px;
-    display: flex;
-    height: 22px;
-    justify-content: center;
-    left: 87px;
-    overflow: hidden;
-    position: absolute;
-    top: 37px;
-    width: 64px;
-  }
-  
-  .frame .input-chip-14 {
-    align-items: center;
-    background-color: var(--m3syslightsecondary-container);
-    border-radius: 8px;
-    display: flex;
-    height: 22px;
-    justify-content: center;
-    left: 473px;
-    overflow: hidden;
-    position: absolute;
-    top: 86px;
-    width: 71px;
-  }
-  
-  .frame .title-4 {
-    color: #1d1b20;
-    font-family: "Roboto", Helvetica;
-    font-size: 25px;
-    font-weight: 400;
-    left: 8px;
-    letter-spacing: 0.5px;
-    line-height: 24px;
-    position: absolute;
-    top: 0;
-    width: 319px;
-  }
-  
-  .frame .input-chip-15 {
-    align-items: center;
-    background-color: var(--m3syslightsecondary-container);
-    border-radius: 8px;
-    display: flex;
-    height: 22px;
-    justify-content: center;
-    left: 656px;
-    overflow: hidden;
-    position: absolute;
-    top: 86px;
-    width: 71px;
-  }
-  
-  .frame .input-chip-16 {
-    align-items: center;
-    background-color: var(--m3syslightsecondary-container);
-    border-radius: 8px;
-    display: flex;
-    height: 22px;
-    justify-content: center;
-    left: 847px;
-    overflow: hidden;
-    position: absolute;
-    top: 110px;
-    width: 65px;
-  }
-  
-  .frame .state-layer-11 {
-    align-items: center;
-    align-self: stretch;
-    background-color: var(--m3state-layerslighton-secondary-containeropacity-012);
-    display: inline-flex;
-    flex: 0 0 auto;
-    gap: 8px;
-    justify-content: center;
-    margin-left: -2.5px;
-    padding: 6px 12px 6px 8px;
-    position: relative;
-  }
-  
-  .frame .input-chip-17 {
-    align-items: center;
-    background-color: var(--m3syslightsecondary-container);
-    border-radius: 8px;
-    display: flex;
-    height: 22px;
-    justify-content: center;
-    left: 847px;
-    overflow: hidden;
-    position: absolute;
-    top: 251px;
-    width: 65px;
-  }
-  
-  .frame .overlap-7 {
-    height: 211px;
-    left: -8px;
-    position: absolute;
-    top: 11px;
-    width: 921px;
-  }
-  
-  .frame .overlap-8 {
-    height: 98px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 449px;
-  }
-  
-  .frame .icon-menu-2 {
-    height: 98px;
-    left: 24px;
-    position: absolute;
-    top: 0;
-    width: 101px;
-  }
-  
-  .frame .group-13 {
-    height: 47px;
-    left: 0;
-    position: absolute;
-    top: 16px;
-    width: 449px;
-  }
-  
-  .frame .overlap-9 {
-    height: 47px;
-    position: relative;
-    width: 447px;
-  }
-  
-  .frame .autonomy-fire-logo-2 {
-    height: 35px;
-    left: 70px;
-    object-fit: cover;
-    position: absolute;
-    top: 4px;
-    width: 69px;
-  }
-  
-  .frame .text-wrapper-7 {
-    color: #000000;
-    font-family: "Michroma", Helvetica;
-    font-size: 20px;
-    font-weight: 400;
-    height: 47px;
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    text-align: center;
-    top: 0;
-    width: 447px;
-  }
-  
-  .frame .overlap-10 {
-    height: 148px;
-    left: 376px;
-    position: absolute;
-    top: 63px;
-    width: 545px;
-  }
-  
-  .frame .autonomy-fire-logo-3 {
-    height: 96px;
-    left: 198px;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    width: 148px;
-  }
-  
-  .frame .text-wrapper-8 {
-    color: #000000;
-    font-family: "Michroma", Helvetica;
-    font-size: 40px;
-    font-weight: 400;
-    height: 65px;
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    text-align: center;
-    top: 83px;
-    width: 545px;
-  }
-  
-  .frame .button-3 {
-    left: 1155px !important;
-    position: absolute !important;
-    top: 26px !important;
-  }
-  
-  .frame .button-4 {
-    left: 1033px !important;
-    position: absolute !important;
-    top: 26px !important;
-  }
-  
-  .frame .search-bar {
-    align-items: center;
-    background-color: var(--m3syslightsurface-container-high);
-    border-radius: 28px;
-    display: flex;
-    gap: 4px;
-    height: 48px;
-    left: 280px;
-    max-width: 720px;
-    overflow: hidden;
-    position: absolute;
-    top: 243px;
-    width: 720px;
-  }
-  
-  .frame .state-layer-12 {
-    align-items: center;
-    align-self: stretch;
-    display: flex;
-    flex: 1;
-    flex-grow: 1;
-    gap: 4px;
-    padding: 4px;
-    position: relative;
-  }
-  
-  .frame .leading-icon {
-    margin-bottom: -4px !important;
-    margin-top: -4px !important;
-  }
-  
-  .frame .content-3 {
-    align-items: center;
-    align-self: stretch;
-    display: flex;
-    flex: 1;
-    flex-grow: 1;
-    gap: 10px;
-    position: relative;
-  }
-  
-  .frame .p {
-    color: var(--m3syslighton-surface-variant);
-    font-family: var(--m3-body-large-font-family);
-    font-size: var(--m3-body-large-font-size);
-    font-style: var(--m3-body-large-font-style);
-    font-weight: var(--m3-body-large-font-weight);
-    letter-spacing: var(--m3-body-large-letter-spacing);
-    line-height: var(--m3-body-large-line-height);
-    position: relative;
-    white-space: nowrap;
-    width: fit-content;
-  }
-  
-  .frame .trailing-elements {
-    align-items: center;
-    display: inline-flex;
-    flex: 0 0 auto;
-    justify-content: flex-end;
-    margin-bottom: -4px;
-    margin-top: -4px;
-    position: relative;
-  }
-  
-  .frame .icon-29 {
-    height: 24px !important;
-    position: relative !important;
-    width: 24px !important;
-  }
-  
-  .frame .pagination-item {
-    height: 26px;
-    left: 198px;
-    position: absolute;
-    top: 720px;
-    width: 26px;
-  }
-  
-  .frame .button-base {
-    background-color: var(--palette-background-paper-elevation-0);
-    border: 1px solid;
-    border-color: var(--palette-components-rating-enabledborder);
-    border-radius: 100px;
-    height: 26px;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .frame .chevron-right-filled {
-    height: 18px;
-    left: 4px;
-    position: absolute;
-    top: 4px;
-    width: 18px;
-  }
-  
-  .frame .button-base-wrapper {
-    height: 26px;
-    left: 168px;
-    overflow: hidden;
-    position: absolute;
-    top: 720px;
-    transform: rotate(180deg);
-    width: 22px;
-  }
-  
-  .frame .chevron-right-filled-wrapper {
-    background-color: var(--palette-background-paper-elevation-0);
-    border: 1px solid;
-    border-color: var(--palette-components-rating-enabledborder);
-    border-radius: 100px;
-    height: 26px;
-    overflow: hidden;
-    position: relative;
-    width: 26px;
-  }
-  
-  .frame .chevron-right-filled-2 {
-    height: 18px;
-    left: 4px;
-    position: absolute;
-    top: 4px;
-    transform: rotate(-180deg);
-    width: 18px;
-  }
-  
-  .frame .overlap-11 {
-    background: linear-gradient(180deg, rgb(190.19, 204.45, 255) 0%, rgba(189.16, 198.5, 231.63, 0.52) 100%);
-    border-radius: 30px;
-    height: 59px;
-    left: 282px;
-    position: absolute;
-    top: 744px;
-    width: 696px;
-  }
-  
-  .frame .text-wrapper-9 {
-    color: #000000;
-    font-family: "Roboto Mono-Regular", Helvetica;
-    font-size: 20px;
-    font-weight: 400;
-    height: 21px;
-    left: 14px;
-    letter-spacing: 0.1px;
-    line-height: 20px;
-    position: absolute;
-    text-align: center;
-    top: 19px;
-    white-space: nowrap;
-    width: 661px;
-  }
-  
-  .frame .actions {
-    align-items: flex-start;
-    display: flex;
-    gap: 8px;
-    justify-content: flex-end;
-    left: 351px;
-    position: absolute;
-    top: 636px;
-    width: 564px;
-  }
-  
-  .frame .button-5 {
-    flex: 0 0 auto !important;
-  }
-  
-  .frame .input-chip-18 {
-    align-items: center;
-    background-color: var(--m3syslightsecondary-container);
-    border-radius: 8px;
-    display: flex;
-    height: 22px;
-    justify-content: center;
-    left: 413px;
-    overflow: hidden;
-    position: absolute;
-    top: 292px;
-    width: 64px;
-  }
-  
-  .frame .input-chip-19 {
-    align-items: center;
-    background-color: var(--m3syslightsecondary-container);
-    border-radius: 8px;
-    display: flex;
-    height: 22px;
-    justify-content: center;
-    left: 484px;
-    overflow: hidden;
-    position: absolute;
-    top: 292px;
-    width: 71px;
-  }
-  
-  .frame .group-14 {
-    height: 435px;
-    left: 340px;
-    position: absolute;
-    top: 253px;
-    width: 596px;
-  }
-  
-  .frame .overlap-12 {
-    border-radius: 12px;
-    height: 435px;
-    position: relative;
-  }
-  
-  .frame .stacked-card {
-    align-items: flex-start;
-    border-radius: 12px;
-    display: flex;
-    height: 435px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 596px;
-  }
-  
-  .frame .card-state-layer {
-    background-color: var(--m3syslightsurface-container-low);
-    border-radius: 12px;
-    box-shadow: var(--m3-elevation-light-1);
-    height: 435px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 596px;
-  }
-  
-  .frame .media-text-content-wrapper {
-    align-self: stretch;
-    border-radius: 12px;
-    flex: 1;
-    flex-grow: 1;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .frame .media-text-content {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 435px;
-    position: relative;
-    width: 596px;
-  }
-  
-  .frame .header-3 {
-    align-items: center;
-    align-self: stretch;
-    background-color: transparent;
-    display: flex;
-    height: 72px;
-    padding: 12px 4px 12px 16px;
-    position: relative;
-    width: 100%;
-  }
-  
-  .frame .content-4 {
-    align-items: center;
-    display: flex;
-    flex: 1;
-    flex-grow: 1;
-    gap: 16px;
-    position: relative;
-  }
-  
-  .frame .monogram {
-    background-color: var(--m-3syslightprimary);
-    border-radius: 20px;
-    height: 40px;
-    overflow: hidden;
-    position: relative;
-    width: 40px;
-  }
-  
-  .frame .initial {
-    color: var(--m-3syslightsurface);
-    font-family: var(--m3-title-medium-font-family);
-    font-size: var(--m3-title-medium-font-size);
-    font-style: var(--m3-title-medium-font-style);
-    font-weight: var(--m3-title-medium-font-weight);
-    height: 40px;
-    left: 0;
-    letter-spacing: var(--m3-title-medium-letter-spacing);
-    line-height: var(--m3-title-medium-line-height);
-    position: absolute;
-    text-align: center;
-    top: -1px;
-    width: 40px;
-  }
-  
-  .frame .text-2 {
-    align-items: flex-start;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    flex-grow: 1;
-    gap: 4px;
-    position: relative;
-  }
-  
-  .frame .header-4 {
-    align-self: stretch;
-    color: var(--m3syslighton-surface);
-    font-family: var(--m3-title-medium-font-family);
-    font-size: var(--m3-title-medium-font-size);
-    font-style: var(--m3-title-medium-font-style);
-    font-weight: var(--m3-title-medium-font-weight);
-    letter-spacing: var(--m3-title-medium-letter-spacing);
-    line-height: var(--m3-title-medium-line-height);
-    margin-top: -1px;
-    position: relative;
-  }
-  
-  .frame .icon-button-instance {
-    overflow: unset !important;
-  }
-  
-  .frame .text-content {
-    align-items: flex-start;
-    align-self: stretch;
-    display: flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    gap: 32px;
-    padding: 16px;
-    position: relative;
-    width: 100%;
-  }
-  
-  .frame .headline-3 {
-    align-items: flex-start;
-    align-self: stretch;
-    display: flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-  }
-  
-  .frame .title-5 {
-    color: var(--m3syslighton-surface);
-    font-family: var(--m3-body-large-font-family);
-    font-size: var(--m3-body-large-font-size);
-    font-style: var(--m3-body-large-font-style);
-    font-weight: var(--m3-body-large-font-weight);
-    letter-spacing: var(--m3-body-large-letter-spacing);
-    line-height: var(--m3-body-large-line-height);
-    margin-top: -1px;
-    position: relative;
-    width: 328px;
-  }
-  
-  .frame .subhead-6 {
-    color: var(--m3syslighton-surface-variant);
-    font-family: var(--m3-body-medium-font-family);
-    font-size: var(--m3-body-medium-font-size);
-    font-style: var(--m3-body-medium-font-style);
-    font-weight: var(--m3-body-medium-font-weight);
-    letter-spacing: var(--m3-body-medium-letter-spacing);
-    line-height: var(--m3-body-medium-line-height);
-    position: relative;
-    width: 328px;
-  }
-  
-  .frame .supporting-text-4 {
-    align-self: stretch;
-    color: var(--m3syslighton-surface-variant);
-    font-family: var(--m3-body-medium-font-family);
-    font-size: var(--m3-body-medium-font-size);
-    font-style: var(--m3-body-medium-font-style);
-    font-weight: var(--m3-body-medium-font-weight);
-    letter-spacing: var(--m3-body-medium-letter-spacing);
-    line-height: var(--m3-body-medium-line-height);
-    position: relative;
-  }
-  
-  .frame .list {
-    align-items: flex-start;
-    background-color: var(--m-3syslightsurface);
-    display: flex;
-    flex-direction: column;
-    height: 169px;
-    left: 37px;
-    position: absolute;
-    top: 181px;
-    width: 525px;
-  }
-  
-  .frame .list-item {
-    align-items: center;
-    align-self: stretch;
-    display: flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 56px;
-    position: relative;
-    width: 100%;
-  }
-  
-  .frame .state-layer-overlay {
-    height: 56px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 525px;
-  }
-  
-  .frame .state-layer-13 {
-    align-items: center;
-    align-self: stretch;
-    display: flex;
-    gap: 16px;
-    height: 56px;
-    padding: 8px 24px 8px 16px;
-    position: relative;
-    width: 100%;
-  }
-  
-  .frame .leading-element {
-    align-items: flex-start;
-    display: inline-flex;
-    flex: 0 0 auto;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-  }
-  
-  .frame .building-blocks {
-    background-color: var(--m3syslightprimary-container);
-    border-radius: 100px;
-    height: 40px;
-    overflow: hidden;
-    position: relative;
-    width: 40px;
-  }
-  
-  .frame .initial-2 {
-    color: var(--m3syslighton-primary-container);
-    font-family: var(--m3-title-medium-font-family);
-    font-size: var(--m3-title-medium-font-size);
-    font-style: var(--m3-title-medium-font-style);
-    font-weight: var(--m3-title-medium-font-weight);
-    height: 40px;
-    left: 0;
-    letter-spacing: var(--m3-title-medium-letter-spacing);
-    line-height: var(--m3-title-medium-line-height);
-    position: absolute;
-    text-align: center;
-    top: -1px;
-    width: 40px;
-  }
-  
-  .frame .content-5 {
-    align-items: flex-start;
-    align-self: stretch;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    flex-grow: 1;
-    justify-content: center;
-    position: relative;
-  }
-  
-  .frame .headline-4 {
-    align-self: stretch;
-    color: var(--m3syslighton-surface);
-    font-family: var(--m3-body-large-font-family);
-    font-size: var(--m3-body-large-font-size);
-    font-style: var(--m3-body-large-font-style);
-    font-weight: var(--m3-body-large-font-weight);
-    letter-spacing: var(--m3-body-large-letter-spacing);
-    line-height: var(--m3-body-large-line-height);
-    position: relative;
-  }
-  
-  .frame .trailing-element {
-    align-items: center;
-    display: inline-flex;
-    flex: 0 0 auto;
-    gap: 10px;
-    position: relative;
-  }
-  
-  .frame .checkboxes {
-    align-items: center;
-    display: flex;
-    height: 24px;
-    justify-content: center;
-    position: relative;
-    width: 24px;
-  }
-  
-  .frame .state-layer-14 {
-    align-items: center;
-    border-radius: 100px;
-    display: inline-flex;
-    flex: 0 0 auto;
-    justify-content: center;
-    margin-bottom: -8px;
-    margin-left: -8px;
-    margin-right: -8px;
-    margin-top: -8px;
-    padding: 11px;
-    position: relative;
-  }
-  
-  .frame .container-3 {
-    background-color: var(--m-3syslightprimary);
-    border-radius: 2px;
-    height: 18px;
-    position: relative;
-    width: 18px;
-  }
-  
-  .frame .group-15 {
-    height: 48px;
-    left: 878px;
-    position: absolute;
-    top: 261px;
-    width: 48px;
-  }
-  
-  .frame .overlap-13 {
-    height: 48px;
-    position: relative;
-  }
-  
-  .frame .icons-close {
-    height: 24px;
-    left: 12px;
-    position: absolute;
-    top: 12px;
-    width: 24px;
-  }
-  
-  .frame .container-wrapper {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    height: 48px;
-    justify-content: center;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 48px;
-  }
-  
-  .frame .container-4 {
-    align-items: center;
-    border-radius: 100px;
-    display: inline-flex;
-    flex: 0 0 auto;
-    gap: 10px;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .frame .state-layer-15 {
-    align-items: center;
-    background-color: var(--m3state-layerslightprimaryopacity-012);
-    display: inline-flex;
-    flex: 0 0 auto;
-    justify-content: center;
-    padding: 8px;
-    position: relative;
-  }
-  
-  
+.macbook-air .overlap-group {
+  height: 47px;
+  position: relative;
+  width: 454px;
+}
+
+.macbook-air .autonomy-fire-logo {
+  height: 35px;
+  left: 71px;
+  object-fit: cover;
+  position: absolute;
+  top: 4px;
+  width: 70px;
+}
+
+.macbook-air .text-wrapper-3 {
+  color: #000000;
+  font-family: "Michroma-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  height: 47px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 454px;
+}
+
+.macbook-air .button-instance {
+  left: 1182px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.macbook-air .design-component-instance-node {
+  left: 1058px !important;
+  position: absolute !important;
+  top: 0 !important;
+}
+
+.macbook-air .text-field-instance {
+  left: 454px !important;
+  position: absolute !important;
+  top: 360px !important;
+}
+
+.macbook-air .text-field-2 {
+  background-color: #f5f5f5 !important;
+}
+
+.macbook-air .cancel-24px-instance {
+  height: 24px !important;
+  position: relative !important;
+  width: 24px !important;
+}
+
+.macbook-air .text-field-3 {
+  left: 454px !important;
+  position: absolute !important;
+  top: 290px !important;
+}
+
+.macbook-air .overlap-wrapper {
+  height: 120px;
+  left: 455px;
+  position: absolute;
+  top: 430px;
+  width: 372px;
+}
+
+.macbook-air .overlap-2 {
+  border-radius: 4px 4px 0px 0px;
+  height: 120px;
+  position: relative;
+  width: 370px;
+}
+
+.macbook-air .text-field-4 {
+  height: 120px !important;
+  left: 0 !important;
+  position: absolute !important;
+  top: 0 !important;
+  width: 370px !important;
+}
+
+.macbook-air .text-field-5 {
+  background-color: #f5f5f5 !important;
+  flex: 1 !important;
+  flex-grow: 1 !important;
+}
+
+.macbook-air .text-wrapper-4 {
+  color: #000000;
+  font-family: var(--m3-body-large-font-family);
+  font-size: var(--m3-body-large-font-size);
+  font-style: var(--m3-body-large-font-style);
+  font-weight: var(--m3-body-large-font-weight);
+  left: 16px;
+  letter-spacing: var(
+    --m3-body-large-letter-spacing
+  );
+  line-height: var(--m3-body-large-line-height);
+  position: absolute;
+  top: 36px;
+  width: 320px;
+}
+
+.macbook-air .autocomplete {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 56px;
+  left: 454px;
+  position: absolute;
+  top: 564px;
+  width: 371px;
+}
+
+.macbook-air .select {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: #f5f5f5;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.macbook-air .input {
+  align-items: flex-start;
+  align-self: stretch;
+  border: 2px solid;
+  border-color: var(--palette-primary-main);
+  border-radius: var(--shape-borderradius);
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  padding: 0px 12px;
+  position: relative;
+  width: 100%;
+}
+
+.macbook-air .container-2 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  padding: 16px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.macbook-air .autocomplete-tag {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  padding: 0px 8px 0px 0px;
+  position: relative;
+}
+
+.macbook-air .chip-instance {
+  flex: 0 0 auto !important;
+}
+
+.macbook-air .min-height {
+  height: 24px;
+  position: relative;
+  width: 1px;
+}
+
+.macbook-air .text-wrapper-5 {
+  color: var(--palette-text-primary);
+  flex: 1;
+  font-family: var(--input-value-font-family);
+  font-size: var(--input-value-font-size);
+  font-style: var(--input-value-font-style);
+  font-weight: var(--input-value-font-weight);
+  letter-spacing: var(
+    --input-value-letter-spacing
+  );
+  line-height: var(--input-value-line-height);
+  margin-top: -1px;
+  position: relative;
+}
+
+.macbook-air .min-width {
+  height: 1px;
+  position: relative;
+  width: 24px;
+}
+
+.macbook-air .arrow-drop-up-filled {
+  height: 24px !important;
+  left: 323px !important;
+  position: absolute !important;
+  top: 16px !important;
+  width: 24px !important;
+}
+
+.macbook-air .autocomplete-close {
+  left: 303px !important;
+  position: absolute !important;
+  top: 18px !important;
+}
+
+.macbook-air .close-filled {
+  height: 20px !important;
+  position: relative !important;
+  width: 20px !important;
+}
+
+.macbook-air .label-container {
+  align-items: center;
+  background-color: var(
+    --palette-background-paper-elevation-0
+  );
+  display: inline-flex;
+  gap: 10px;
+  height: 2px;
+  left: 12px;
+  padding: 0px 4px;
+  position: absolute;
+  top: 0;
+}
+
+.macbook-air .text-wrapper-6 {
+  color: var(--palette-primary-main);
+  font-family: var(--input-label-font-family);
+  font-size: var(--input-label-font-size);
+  font-style: var(--input-label-font-style);
+  font-weight: var(--input-label-font-weight);
+  letter-spacing: var(
+    --input-label-letter-spacing
+  );
+  line-height: var(--input-label-line-height);
+  margin-bottom: -4px;
+  margin-top: -6px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.macbook-air .button-2 {
+  left: 460px !important;
+  position: absolute !important;
+  top: 651px !important;
+}
+
+.macbook-air .content-container {
+  border: 1px solid;
+  border-color: var(--m3syslightoutline-variant);
+  border-radius: 12px;
+  height: 80px;
+  left: 460px;
+  overflow: hidden;
+  position: absolute;
+  top: 179px;
+  width: 360px;
+}
+
+.macbook-air .header {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  height: 80px;
+  position: relative;
+  width: 360px;
+}
+
+.macbook-air .div-wrapper {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  gap: 16px;
+  padding: 16px;
+  position: relative;
+}
+
+.macbook-air .text {
+  align-items: flex-start;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 4px;
+  position: relative;
+}
+
+.macbook-air .header-2 {
+  align-self: stretch;
+  color: var(--m3syslighton-surface);
+  font-family: "Roboto-Medium", Helvetica;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.15px;
+  line-height: 24px;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+}
+
+.macbook-air .subhead {
+  color: var(--m3syslighton-surface);
+  font-family: "Roboto-Regular", Helvetica;
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+  line-height: 20px;
+  position: relative;
+  text-align: center;
+  width: 312px;
+}
+
+/* NEW */
+
+.frame {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.frame .overlap-wrapper-2 {
+  height: 832px;
+  width: 1280px;
+}
+
+.frame .overlap-3 {
+  height: 832px;
+  position: relative;
+}
+
+.frame .group-3 {
+  height: 832px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1280px;
+}
+
+.frame .macbook-air-2 {
+  background-color: #ffffff;
+  height: 832px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1280px;
+}
+
+.frame .macbook-air-3 {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgb(251.22, 222.43, 251.81) 0%,
+    rgba(208.25, 246.59, 255, 0.33) 100%
+  );
+  height: 832px;
+  left: 0;
+  opacity: 0.5;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 1280px;
+}
+
+.frame .overlap-4 {
+  height: 376px;
+  left: 165px;
+  position: absolute;
+  top: 329px;
+  width: 951px;
+}
+
+.frame .group-4 {
+  background-color: #bfddef7d;
+  height: 341px;
+  left: 0;
+  position: absolute;
+  top: 35px;
+  width: 951px;
+}
+
+.frame .group-5 {
+  height: 145px;
+  left: 21px;
+  position: absolute;
+  top: 14px;
+  width: 167px;
+}
+
+.frame .overlap-group-2 {
+  background-color: #edf5fd;
+  border-radius: 16px;
+  box-shadow: var(--m3-elevation-light-2);
+  height: 145px;
+  position: relative;
+  width: 165px;
+}
+
+.frame .input-chip {
+  align-items: center;
+  background-color: var(
+    --m3syslightsecondary-container
+  );
+  border-radius: 8px;
+  display: flex;
+  height: 22px;
+  justify-content: center;
+  left: 11px;
+  overflow: hidden;
+  position: absolute;
+  top: 36px;
+  width: 64px;
+}
+
+.frame .state-layer-4 {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(
+    --m3state-layerslighton-secondary-containeropacity-012
+  );
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  gap: 8px;
+  justify-content: center;
+  padding: 6px 12px 6px 8px;
+  position: relative;
+}
+
+.frame .img-wrapper {
+  height: 18px;
+  margin-bottom: -4px;
+  margin-left: -3.5px;
+  margin-top: -4px;
+  position: relative;
+  width: 18px;
+}
+
+.frame .icon-3 {
+  height: 14px;
+  left: 2px;
+  position: absolute;
+  top: 2px;
+  width: 14px;
+}
+
+.frame .label-text-8 {
+  color: var(--m3syslighton-secondary-container);
+  font-family: "Roboto", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  line-height: 20px;
+  margin-bottom: -4px;
+  margin-right: -3.5px;
+  margin-top: -6px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame .input-chip-2 {
+  align-items: center;
+  background-color: var(
+    --m3syslightsecondary-container
+  );
+  border-radius: 8px;
+  display: flex;
+  height: 22px;
+  justify-content: center;
+  left: 82px;
+  overflow: hidden;
+  position: absolute;
+  top: 36px;
+  width: 71px;
+}
+
+.frame .state-layer-5 {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(
+    --m3state-layerslighton-secondary-containeropacity-012
+  );
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  justify-content: center;
+  margin-left: -3.5px;
+  padding: 6px 12px 6px 8px;
+  position: relative;
+}
+
+.frame .icon-4 {
+  height: 18px;
+  margin-bottom: -4px;
+  margin-top: -4px;
+  position: relative;
+  width: 18px;
+}
+
+.frame .label-text-9 {
+  color: var(--m3syslighton-secondary-container);
+  font-family: "Roboto", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  line-height: 20px;
+  margin-bottom: -4px;
+  margin-top: -6px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame .headline {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 11px;
+  position: absolute;
+  top: 9px;
+  width: 146px;
+}
+
+.frame .title {
+  color: var(--m3syslighton-surface);
+  font-family: var(--m3-body-large-font-family);
+  font-size: var(--m3-body-large-font-size);
+  font-style: var(--m3-body-large-font-style);
+  font-weight: var(--m3-body-large-font-weight);
+  letter-spacing: var(
+    --m3-body-large-letter-spacing
+  );
+  line-height: var(--m3-body-large-line-height);
+  margin-right: -182px;
+  margin-top: -1px;
+  position: relative;
+  width: 328px;
+}
+
+.frame .subhead-2 {
+  color: var(--m3syslighton-surface-variant);
+  font-family: var(--m3-body-medium-font-family);
+  font-size: var(--m3-body-medium-font-size);
+  font-style: var(--m3-body-medium-font-style);
+  font-weight: var(--m3-body-medium-font-weight);
+  left: 11px;
+  letter-spacing: var(
+    --m3-body-medium-letter-spacing
+  );
+  line-height: var(--m3-body-medium-line-height);
+  position: absolute;
+  top: 63px;
+  width: 146px;
+}
+
+.frame .group-6 {
+  height: 145px;
+  left: 205px;
+  position: absolute;
+  top: 14px;
+  width: 167px;
+}
+
+.frame .input-chip-3 {
+  align-items: center;
+  background-color: var(
+    --m3syslightsecondary-container
+  );
+  border-radius: 8px;
+  display: flex;
+  height: 22px;
+  justify-content: center;
+  left: 11px;
+  overflow: hidden;
+  position: absolute;
+  top: 37px;
+  width: 64px;
+}
+
+.frame .input-chip-4 {
+  align-items: center;
+  background-color: var(
+    --m3syslightsecondary-container
+  );
+  border-radius: 8px;
+  display: flex;
+  height: 22px;
+  justify-content: center;
+  left: 82px;
+  overflow: hidden;
+  position: absolute;
+  top: 37px;
+  width: 71px;
+}
+
+.frame .group-7 {
+  height: 310px;
+  left: 761px;
+  position: absolute;
+  top: 14px;
+  width: 167px;
+}
+
+.frame .overlap-5 {
+  background-color: var(
+    --m3syslightsurface-container
+  );
+  border-radius: 16px;
+  box-shadow: var(--m3-elevation-light-2);
+  height: 145px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 165px;
+}
+
+.frame .input-chip-5 {
+  align-items: center;
+  background-color: var(
+    --m3syslightsecondary-container
+  );
+  border-radius: 8px;
+  display: flex;
+  height: 22px;
+  justify-content: center;
+  left: 11px;
+  overflow: hidden;
+  position: absolute;
+  top: 60px;
+  width: 64px;
+}
+
+.frame .title-2 {
+  color: var(--m3syslighton-surface);
+  font-family: var(--m3-body-large-font-family);
+  font-size: var(--m3-body-large-font-size);
+  font-style: var(--m3-body-large-font-style);
+  font-weight: var(--m3-body-large-font-weight);
+  letter-spacing: var(
+    --m3-body-large-letter-spacing
+  );
+  line-height: var(--m3-body-large-line-height);
+  margin-top: -1px;
+  position: relative;
+  width: 146px;
+}
+
+.frame .subhead-3 {
+  color: var(--m3syslighton-surface-variant);
+  font-family: var(--m3-body-medium-font-family);
+  font-size: var(--m3-body-medium-font-size);
+  font-style: var(--m3-body-medium-font-style);
+  font-weight: var(--m3-body-medium-font-weight);
+  left: 11px;
+  letter-spacing: var(
+    --m3-body-medium-letter-spacing
+  );
+  line-height: var(--m3-body-medium-line-height);
+  position: absolute;
+  top: 89px;
+  width: 146px;
+}
+
+.frame .group-8 {
+  height: 145px;
+  left: 0;
+  position: absolute;
+  top: 165px;
+  width: 167px;
+}
+
+.frame .overlap-group-3 {
+  background-color: var(
+    --m3syslightsurface-container
+  );
+  border-radius: 16px;
+  box-shadow: var(--m3-elevation-light-2);
+  height: 145px;
+  position: relative;
+  width: 165px;
+}
+
+.frame .group-9 {
+  height: 145px;
+  left: 389px;
+  position: absolute;
+  top: 14px;
+  width: 351px;
+}
+
+.frame .input-chip-6 {
+  align-items: center;
+  background-color: var(
+    --m3syslightsecondary-container
+  );
+  border-radius: 8px;
+  display: flex;
+  height: 22px;
+  justify-content: center;
+  left: 9px;
+  overflow: hidden;
+  position: absolute;
+  top: 37px;
+  width: 64px;
+}
+
+.frame .group-10 {
+  height: 145px;
+  left: 184px;
+  position: absolute;
+  top: 0;
+  width: 167px;
+}
+
+.frame .input-chip-7 {
+  align-items: center;
+  background-color: var(
+    --m3syslightsecondary-container
+  );
+  border-radius: 8px;
+  display: flex;
+  height: 22px;
+  justify-content: center;
+  left: 12px;
+  overflow: hidden;
+  position: absolute;
+  top: 37px;
+  width: 65px;
+}
+
+.frame .state-layer-6 {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(
+    --m3state-layerslighton-secondary-containeropacity-012
+  );
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  justify-content: center;
+  margin-left: -7px;
+  padding: 6px 12px 6px 8px;
+  position: relative;
+}
+
+.frame .title-wrapper {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 15px;
+  position: absolute;
+  top: 9px;
+  width: 146px;
+}
+
+.frame .subhead-4 {
+  color: var(--m3syslighton-surface-variant);
+  font-family: var(--m3-body-medium-font-family);
+  font-size: var(--m3-body-medium-font-size);
+  font-style: var(--m3-body-medium-font-style);
+  font-weight: var(--m3-body-medium-font-weight);
+  left: 15px;
+  letter-spacing: var(
+    --m3-body-medium-letter-spacing
+  );
+  line-height: var(--m3-body-medium-line-height);
+  position: absolute;
+  top: 63px;
+  width: 146px;
+}
+
+.frame .group-11 {
+  height: 145px;
+  left: 21px;
+  position: absolute;
+  top: 179px;
+  width: 351px;
+}
+
+.frame .overlap-6 {
+  background-color: #edf5fd;
+  border-radius: 16px;
+  box-shadow: var(--m3-elevation-light-2);
+  height: 145px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 165px;
+}
+
+.frame .input-chip-8 {
+  align-items: center;
+  background-color: var(
+    --m3syslightsecondary-container
+  );
+  border-radius: 8px;
+  display: flex;
+  height: 22px;
+  justify-content: center;
+  left: 11px;
+  overflow: hidden;
+  position: absolute;
+  top: 37px;
+  width: 66px;
+}
+
+.frame .state-layer-7 {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(
+    --m3state-layerslighton-secondary-containeropacity-012
+  );
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  justify-content: center;
+  margin-left: -6.5px;
+  padding: 6px 12px 6px 8px;
+  position: relative;
+}
+
+.frame .input-chip-9 {
+  align-items: center;
+  background-color: var(
+    --m3syslightsecondary-container
+  );
+  border-radius: 8px;
+  display: flex;
+  height: 22px;
+  justify-content: center;
+  left: 89px;
+  overflow: hidden;
+  position: absolute;
+  top: 37px;
+  width: 66px;
+}
+
+.frame .state-layer-8 {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(
+    --m3state-layerslighton-secondary-containeropacity-012
+  );
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  justify-content: center;
+  margin-left: -6px;
+  padding: 6px 12px 6px 8px;
+  position: relative;
+}
+
+.frame .input-chip-10 {
+  align-items: center;
+  background-color: var(
+    --m3syslightsecondary-container
+  );
+  border-radius: 8px;
+  display: flex;
+  height: 22px;
+  justify-content: center;
+  left: 15px;
+  overflow: hidden;
+  position: absolute;
+  top: 37px;
+  width: 64px;
+}
+
+.frame .input-chip-11 {
+  align-items: center;
+  background-color: var(
+    --m3syslightsecondary-container
+  );
+  border-radius: 8px;
+  display: flex;
+  height: 22px;
+  justify-content: center;
+  left: 86px;
+  overflow: hidden;
+  position: absolute;
+  top: 37px;
+  width: 64px;
+}
+
+.frame .state-layer-9 {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(
+    --m3state-layerslighton-secondary-containeropacity-012
+  );
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  justify-content: center;
+  margin-left: -3px;
+  padding: 6px 12px 6px 8px;
+  position: relative;
+}
+
+.frame .group-12 {
+  height: 145px;
+  left: 389px;
+  position: absolute;
+  top: 179px;
+  width: 351px;
+}
+
+.frame .input-chip-12 {
+  align-items: center;
+  background-color: var(
+    --m3syslightsecondary-container
+  );
+  border-radius: 8px;
+  display: flex;
+  height: 22px;
+  justify-content: center;
+  left: 84px;
+  overflow: hidden;
+  position: absolute;
+  top: 60px;
+  width: 68px;
+}
+
+.frame .state-layer-10 {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(
+    --m3state-layerslighton-secondary-containeropacity-012
+  );
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  justify-content: center;
+  margin-left: -5px;
+  padding: 6px 12px 6px 8px;
+  position: relative;
+}
+
+.frame .headline-2 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 13px;
+  position: absolute;
+  top: 8px;
+  width: 146px;
+}
+
+.frame .title-3 {
+  color: var(--m3syslighton-surface);
+  font-family: var(--m3-body-large-font-family);
+  font-size: var(--m3-body-large-font-size);
+  font-style: var(--m3-body-large-font-style);
+  font-weight: var(--m3-body-large-font-weight);
+  letter-spacing: var(
+    --m3-body-large-letter-spacing
+  );
+  line-height: var(--m3-body-large-line-height);
+  margin-right: -23px;
+  margin-top: -1px;
+  position: relative;
+  width: 169px;
+}
+
+.frame .subhead-5 {
+  color: var(--m3syslighton-surface-variant);
+  font-family: var(--m3-body-medium-font-family);
+  font-size: var(--m3-body-medium-font-size);
+  font-style: var(--m3-body-medium-font-style);
+  font-weight: var(--m3-body-medium-font-weight);
+  left: 9px;
+  letter-spacing: var(
+    --m3-body-medium-letter-spacing
+  );
+  line-height: var(--m3-body-medium-line-height);
+  position: absolute;
+  top: 83px;
+  width: 146px;
+}
+
+.frame .input-chip-13 {
+  align-items: center;
+  background-color: var(
+    --m3syslightsecondary-container
+  );
+  border-radius: 8px;
+  display: flex;
+  height: 22px;
+  justify-content: center;
+  left: 87px;
+  overflow: hidden;
+  position: absolute;
+  top: 37px;
+  width: 64px;
+}
+
+.frame .input-chip-14 {
+  align-items: center;
+  background-color: var(
+    --m3syslightsecondary-container
+  );
+  border-radius: 8px;
+  display: flex;
+  height: 22px;
+  justify-content: center;
+  left: 473px;
+  overflow: hidden;
+  position: absolute;
+  top: 86px;
+  width: 71px;
+}
+
+.frame .title-4 {
+  color: #1d1b20;
+  font-family: "Roboto", Helvetica;
+  font-size: 25px;
+  font-weight: 400;
+  left: 8px;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+  position: absolute;
+  top: 0;
+  width: 319px;
+}
+
+.frame .input-chip-15 {
+  align-items: center;
+  background-color: var(
+    --m3syslightsecondary-container
+  );
+  border-radius: 8px;
+  display: flex;
+  height: 22px;
+  justify-content: center;
+  left: 656px;
+  overflow: hidden;
+  position: absolute;
+  top: 86px;
+  width: 71px;
+}
+
+.frame .input-chip-16 {
+  align-items: center;
+  background-color: var(
+    --m3syslightsecondary-container
+  );
+  border-radius: 8px;
+  display: flex;
+  height: 22px;
+  justify-content: center;
+  left: 847px;
+  overflow: hidden;
+  position: absolute;
+  top: 110px;
+  width: 65px;
+}
+
+.frame .state-layer-11 {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(
+    --m3state-layerslighton-secondary-containeropacity-012
+  );
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  justify-content: center;
+  margin-left: -2.5px;
+  padding: 6px 12px 6px 8px;
+  position: relative;
+}
+
+.frame .input-chip-17 {
+  align-items: center;
+  background-color: var(
+    --m3syslightsecondary-container
+  );
+  border-radius: 8px;
+  display: flex;
+  height: 22px;
+  justify-content: center;
+  left: 847px;
+  overflow: hidden;
+  position: absolute;
+  top: 251px;
+  width: 65px;
+}
+
+.frame .overlap-7 {
+  height: 211px;
+  left: -8px;
+  position: absolute;
+  top: 11px;
+  width: 921px;
+}
+
+.frame .overlap-8 {
+  height: 98px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 449px;
+}
+
+.frame .icon-menu-2 {
+  height: 98px;
+  left: 24px;
+  position: absolute;
+  top: 0;
+  width: 101px;
+}
+
+.frame .group-13 {
+  height: 47px;
+  left: 0;
+  position: absolute;
+  top: 16px;
+  width: 449px;
+}
+
+.frame .overlap-9 {
+  height: 47px;
+  position: relative;
+  width: 447px;
+}
+
+.frame .autonomy-fire-logo-2 {
+  height: 35px;
+  left: 70px;
+  object-fit: cover;
+  position: absolute;
+  top: 4px;
+  width: 69px;
+}
+
+.frame .text-wrapper-7 {
+  color: #000000;
+  font-family: "Michroma", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  height: 47px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 447px;
+}
+
+.frame .overlap-10 {
+  height: 148px;
+  left: 376px;
+  position: absolute;
+  top: 63px;
+  width: 545px;
+}
+
+.frame .autonomy-fire-logo-3 {
+  height: 96px;
+  left: 198px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 148px;
+}
+
+.frame .text-wrapper-8 {
+  color: #000000;
+  font-family: "Michroma", Helvetica;
+  font-size: 40px;
+  font-weight: 400;
+  height: 65px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 83px;
+  width: 545px;
+}
+
+.frame .button-3 {
+  left: 1155px !important;
+  position: absolute !important;
+  top: 26px !important;
+}
+
+.frame .button-4 {
+  left: 1033px !important;
+  position: absolute !important;
+  top: 26px !important;
+}
+
+.frame .search-bar {
+  align-items: center;
+  background-color: var(
+    --m3syslightsurface-container-high
+  );
+  border-radius: 28px;
+  display: flex;
+  gap: 4px;
+  height: 48px;
+  left: 280px;
+  max-width: 720px;
+  overflow: hidden;
+  position: absolute;
+  top: 243px;
+  width: 720px;
+}
+
+.frame .state-layer-12 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  gap: 4px;
+  padding: 4px;
+  position: relative;
+}
+
+.frame .leading-icon {
+  margin-bottom: -4px !important;
+  margin-top: -4px !important;
+}
+
+.frame .content-3 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  gap: 10px;
+  position: relative;
+}
+
+.frame .p {
+  color: var(--m3syslighton-surface-variant);
+  font-family: var(--m3-body-large-font-family);
+  font-size: var(--m3-body-large-font-size);
+  font-style: var(--m3-body-large-font-style);
+  font-weight: var(--m3-body-large-font-weight);
+  letter-spacing: var(
+    --m3-body-large-letter-spacing
+  );
+  line-height: var(--m3-body-large-line-height);
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame .trailing-elements {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: flex-end;
+  margin-bottom: -4px;
+  margin-top: -4px;
+  position: relative;
+}
+
+.frame .icon-29 {
+  height: 24px !important;
+  position: relative !important;
+  width: 24px !important;
+}
+
+.frame .pagination-item {
+  height: 26px;
+  left: 198px;
+  position: absolute;
+  top: 720px;
+  width: 26px;
+}
+
+.frame .button-base {
+  background-color: var(
+    --palette-background-paper-elevation-0
+  );
+  border: 1px solid;
+  border-color: var(
+    --palette-components-rating-enabledborder
+  );
+  border-radius: 100px;
+  height: 26px;
+  overflow: hidden;
+  position: relative;
+}
+
+.frame .chevron-right-filled {
+  height: 18px;
+  left: 4px;
+  position: absolute;
+  top: 4px;
+  width: 18px;
+}
+
+.frame .button-base-wrapper {
+  height: 26px;
+  left: 168px;
+  overflow: hidden;
+  position: absolute;
+  top: 720px;
+  transform: rotate(180deg);
+  width: 22px;
+}
+
+.frame .chevron-right-filled-wrapper {
+  background-color: var(
+    --palette-background-paper-elevation-0
+  );
+  border: 1px solid;
+  border-color: var(
+    --palette-components-rating-enabledborder
+  );
+  border-radius: 100px;
+  height: 26px;
+  overflow: hidden;
+  position: relative;
+  width: 26px;
+}
+
+.frame .chevron-right-filled-2 {
+  height: 18px;
+  left: 4px;
+  position: absolute;
+  top: 4px;
+  transform: rotate(-180deg);
+  width: 18px;
+}
+
+.frame .overlap-11 {
+  background: linear-gradient(
+    180deg,
+    rgb(190.19, 204.45, 255) 0%,
+    rgba(189.16, 198.5, 231.63, 0.52) 100%
+  );
+  border-radius: 30px;
+  height: 59px;
+  left: 282px;
+  position: absolute;
+  top: 744px;
+  width: 696px;
+}
+
+.frame .text-wrapper-9 {
+  color: #000000;
+  font-family: "Roboto Mono-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  height: 21px;
+  left: 14px;
+  letter-spacing: 0.1px;
+  line-height: 20px;
+  position: absolute;
+  text-align: center;
+  top: 19px;
+  white-space: nowrap;
+  width: 661px;
+}
+
+.frame .actions {
+  align-items: flex-start;
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  left: 351px;
+  position: absolute;
+  top: 636px;
+  width: 564px;
+}
+
+.frame .button-5 {
+  flex: 0 0 auto !important;
+}
+
+.frame .input-chip-18 {
+  align-items: center;
+  background-color: var(
+    --m3syslightsecondary-container
+  );
+  border-radius: 8px;
+  display: flex;
+  height: 22px;
+  justify-content: center;
+  left: 413px;
+  overflow: hidden;
+  position: absolute;
+  top: 292px;
+  width: 64px;
+}
+
+.frame .input-chip-19 {
+  align-items: center;
+  background-color: var(
+    --m3syslightsecondary-container
+  );
+  border-radius: 8px;
+  display: flex;
+  height: 22px;
+  justify-content: center;
+  left: 484px;
+  overflow: hidden;
+  position: absolute;
+  top: 292px;
+  width: 71px;
+}
+
+.frame .group-14 {
+  height: 435px;
+  left: 340px;
+  position: absolute;
+  top: 253px;
+  width: 596px;
+}
+
+.frame .overlap-12 {
+  border-radius: 12px;
+  height: 435px;
+  position: relative;
+}
+
+.frame .stacked-card {
+  align-items: flex-start;
+  border-radius: 12px;
+  display: flex;
+  height: 435px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 596px;
+}
+
+.frame .card-state-layer {
+  background-color: var(
+    --m3syslightsurface-container-low
+  );
+  border-radius: 12px;
+  box-shadow: var(--m3-elevation-light-1);
+  height: 435px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 596px;
+}
+
+.frame .media-text-content-wrapper {
+  align-self: stretch;
+  border-radius: 12px;
+  flex: 1;
+  flex-grow: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.frame .media-text-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 435px;
+  position: relative;
+  width: 596px;
+}
+
+.frame .header-3 {
+  align-items: center;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  height: 72px;
+  padding: 12px 4px 12px 16px;
+  position: relative;
+  width: 100%;
+}
+
+.frame .content-4 {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  gap: 16px;
+  position: relative;
+}
+
+.frame .monogram {
+  background-color: var(--m-3syslightprimary);
+  border-radius: 20px;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  width: 40px;
+}
+
+.frame .initial {
+  color: var(--m-3syslightsurface);
+  font-family: var(--m3-title-medium-font-family);
+  font-size: var(--m3-title-medium-font-size);
+  font-style: var(--m3-title-medium-font-style);
+  font-weight: var(--m3-title-medium-font-weight);
+  height: 40px;
+  left: 0;
+  letter-spacing: var(
+    --m3-title-medium-letter-spacing
+  );
+  line-height: var(--m3-title-medium-line-height);
+  position: absolute;
+  text-align: center;
+  top: -1px;
+  width: 40px;
+}
+
+.frame .text-2 {
+  align-items: flex-start;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 4px;
+  position: relative;
+}
+
+.frame .header-4 {
+  align-self: stretch;
+  color: var(--m3syslighton-surface);
+  font-family: var(--m3-title-medium-font-family);
+  font-size: var(--m3-title-medium-font-size);
+  font-style: var(--m3-title-medium-font-style);
+  font-weight: var(--m3-title-medium-font-weight);
+  letter-spacing: var(
+    --m3-title-medium-letter-spacing
+  );
+  line-height: var(--m3-title-medium-line-height);
+  margin-top: -1px;
+  position: relative;
+}
+
+.frame .icon-button-instance {
+  overflow: unset !important;
+}
+
+.frame .text-content {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 32px;
+  padding: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.frame .headline-3 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.frame .title-5 {
+  color: var(--m3syslighton-surface);
+  font-family: var(--m3-body-large-font-family);
+  font-size: var(--m3-body-large-font-size);
+  font-style: var(--m3-body-large-font-style);
+  font-weight: var(--m3-body-large-font-weight);
+  letter-spacing: var(
+    --m3-body-large-letter-spacing
+  );
+  line-height: var(--m3-body-large-line-height);
+  margin-top: -1px;
+  position: relative;
+  width: 328px;
+}
+
+.frame .subhead-6 {
+  color: var(--m3syslighton-surface-variant);
+  font-family: var(--m3-body-medium-font-family);
+  font-size: var(--m3-body-medium-font-size);
+  font-style: var(--m3-body-medium-font-style);
+  font-weight: var(--m3-body-medium-font-weight);
+  letter-spacing: var(
+    --m3-body-medium-letter-spacing
+  );
+  line-height: var(--m3-body-medium-line-height);
+  position: relative;
+  width: 328px;
+}
+
+.frame .supporting-text-4 {
+  align-self: stretch;
+  color: var(--m3syslighton-surface-variant);
+  font-family: var(--m3-body-medium-font-family);
+  font-size: var(--m3-body-medium-font-size);
+  font-style: var(--m3-body-medium-font-style);
+  font-weight: var(--m3-body-medium-font-weight);
+  letter-spacing: var(
+    --m3-body-medium-letter-spacing
+  );
+  line-height: var(--m3-body-medium-line-height);
+  position: relative;
+}
+
+.frame .list {
+  align-items: flex-start;
+  background-color: var(--m-3syslightsurface);
+  display: flex;
+  flex-direction: column;
+  height: 169px;
+  left: 37px;
+  position: absolute;
+  top: 181px;
+  width: 525px;
+}
+
+.frame .list-item {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 56px;
+  position: relative;
+  width: 100%;
+}
+
+.frame .state-layer-overlay {
+  height: 56px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 525px;
+}
+
+.frame .state-layer-13 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 16px;
+  height: 56px;
+  padding: 8px 24px 8px 16px;
+  position: relative;
+  width: 100%;
+}
+
+.frame .leading-element {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.frame .building-blocks {
+  background-color: var(
+    --m3syslightprimary-container
+  );
+  border-radius: 100px;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  width: 40px;
+}
+
+.frame .initial-2 {
+  color: var(--m3syslighton-primary-container);
+  font-family: var(--m3-title-medium-font-family);
+  font-size: var(--m3-title-medium-font-size);
+  font-style: var(--m3-title-medium-font-style);
+  font-weight: var(--m3-title-medium-font-weight);
+  height: 40px;
+  left: 0;
+  letter-spacing: var(
+    --m3-title-medium-letter-spacing
+  );
+  line-height: var(--m3-title-medium-line-height);
+  position: absolute;
+  text-align: center;
+  top: -1px;
+  width: 40px;
+}
+
+.frame .content-5 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  position: relative;
+}
+
+.frame .headline-4 {
+  align-self: stretch;
+  color: var(--m3syslighton-surface);
+  font-family: var(--m3-body-large-font-family);
+  font-size: var(--m3-body-large-font-size);
+  font-style: var(--m3-body-large-font-style);
+  font-weight: var(--m3-body-large-font-weight);
+  letter-spacing: var(
+    --m3-body-large-letter-spacing
+  );
+  line-height: var(--m3-body-large-line-height);
+  position: relative;
+}
+
+.frame .trailing-element {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  position: relative;
+}
+
+.frame .checkboxes {
+  align-items: center;
+  display: flex;
+  height: 24px;
+  justify-content: center;
+  position: relative;
+  width: 24px;
+}
+
+.frame .state-layer-14 {
+  align-items: center;
+  border-radius: 100px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  margin-bottom: -8px;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-top: -8px;
+  padding: 11px;
+  position: relative;
+}
+
+.frame .container-3 {
+  background-color: var(--m-3syslightprimary);
+  border-radius: 2px;
+  height: 18px;
+  position: relative;
+  width: 18px;
+}
+
+.frame .group-15 {
+  height: 48px;
+  left: 878px;
+  position: absolute;
+  top: 261px;
+  width: 48px;
+}
+
+.frame .overlap-13 {
+  height: 48px;
+  position: relative;
+}
+
+.frame .icons-close {
+  height: 24px;
+  left: 12px;
+  position: absolute;
+  top: 12px;
+  width: 24px;
+}
+
+.frame .container-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 48px;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 48px;
+}
+
+.frame .container-4 {
+  align-items: center;
+  border-radius: 100px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.frame .state-layer-15 {
+  align-items: center;
+  background-color: var(
+    --m3state-layerslightprimaryopacity-012
+  );
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  padding: 8px;
+  position: relative;
+}

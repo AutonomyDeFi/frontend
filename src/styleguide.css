@@ -1,98 +1,214 @@
 :root {
-    --chip-label-font-family: "Roboto-Regular", Helvetica;
-    --chip-label-font-size: 13px;
-    --chip-label-font-style: normal;
-    --chip-label-font-weight: 400;
-    --chip-label-letter-spacing: 0.1599999964237213px;
-    --chip-label-line-height: 18px;
-    --elevation-1: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
-      0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-    --elevation-8: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14),
-      0px 3px 14px 2px rgba(0, 0, 0, 0.12);
-    --input-helper-font-family: "Roboto-Regular", Helvetica;
-    --input-helper-font-size: 12px;
-    --input-helper-font-style: normal;
-    --input-helper-font-weight: 400;
-    --input-helper-letter-spacing: 0.4000000059604645px;
-    --input-helper-line-height: 165.9999966621399%;
-    --input-label-font-family: "Roboto-Regular", Helvetica;
-    --input-label-font-size: 12px;
-    --input-label-font-style: normal;
-    --input-label-font-weight: 400;
-    --input-label-letter-spacing: 0.15000000596046448px;
-    --input-label-line-height: 12px;
-    --input-value-font-family: "Roboto-Regular", Helvetica;
-    --input-value-font-size: 16px;
-    --input-value-font-style: normal;
-    --input-value-font-weight: 400;
-    --input-value-letter-spacing: 0.15000000596046448px;
-    --input-value-line-height: 24px;
-    --m-3syslightoutline: rgba(121, 116, 126, 1);
-    --m-3syslightprimary: rgba(103, 80, 164, 1);
-    --m3-body-large-font-family: "Roboto-Regular", Helvetica;
-    --m3-body-large-font-size: 16px;
-    --m3-body-large-font-style: normal;
-    --m3-body-large-font-weight: 400;
-    --m3-body-large-letter-spacing: 0.5px;
-    --m3-body-large-line-height: 24px;
-    --m3-body-small-font-family: "Roboto-Regular", Helvetica;
-    --m3-body-small-font-size: 12px;
-    --m3-body-small-font-style: normal;
-    --m3-body-small-font-weight: 400;
-    --m3-body-small-letter-spacing: 0px;
-    --m3-body-small-line-height: 16px;
-    --m3-elevation-light-1: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
-    --m3-elevation-light-2: 0px 2px 6px 2px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
-    --m3-label-large-font-family: "Roboto-Medium", Helvetica;
-    --m3-label-large-font-size: 14px;
-    --m3-label-large-font-style: normal;
-    --m3-label-large-font-weight: 500;
-    --m3-label-large-letter-spacing: 0.10000000149011612px;
-    --m3-label-large-line-height: 20px;
-    --m3state-layerslighton-surface-variantopacity-008: rgba(73, 69, 79, 0.08);
-    --m3state-layerslighton-surface-variantopacity-012: rgba(73, 69, 79, 0.12);
-    --m3state-layerslighton-surfaceopacity-008: rgba(29, 27, 32, 0.08);
-    --m3state-layerslightprimaryopacity-008: rgba(103, 80, 164, 0.08);
-    --m3state-layerslightprimaryopacity-012: rgba(103, 80, 164, 0.12);
-    --m3syslighton-surface: rgba(29, 27, 32, 1);
-    --m3syslighton-surface-variant: rgba(73, 69, 79, 1);
-    --m3syslightoutline-variant: rgba(202, 196, 208, 1);
-    --m3syslightsurface-container-highest: rgba(230, 224, 233, 1);
-    --m3syslightsurface-container-low: rgba(247, 242, 250, 1);
-    --material-colors-blue-200: rgba(144, 202, 249, 1);
-    --material-colors-blue-500: rgba(33, 150, 243, 1);
-    --material-colors-green-400: rgba(102, 187, 106, 1);
-    --material-colors-green-800: rgba(46, 125, 50, 1);
-    --material-colors-grey-400: rgba(189, 189, 189, 1);
-    --material-colors-grey-600: rgba(117, 117, 117, 1);
-    --menu-itemdefault-font-family: "Roboto-Regular", Helvetica;
-    --menu-itemdefault-font-size: 16px;
-    --menu-itemdefault-font-style: normal;
-    --menu-itemdefault-font-weight: 400;
-    --menu-itemdefault-letter-spacing: 0.15000000596046448px;
-    --menu-itemdefault-line-height: 150%;
-    --palette-action-hover: rgba(0, 0, 0, 0.04);
-    --palette-action-selected: rgba(0, 0, 0, 0.08);
-    --palette-background-paper-elevation-0: rgba(255, 255, 255, 1);
-    --palette-background-paper-elevation-1: rgba(255, 255, 255, 1);
-    --palette-background-paper-elevation-8: rgba(255, 255, 255, 1);
-    --palette-components-avatar-fill: var(--material-colors-grey-400);
-    --palette-components-chip-defaulthoverfill: rgba(0, 0, 0, 0.12);
-    --palette-primary-main: var(--material-colors-blue-500);
-    --palette-success-main: var(--material-colors-green-800);
-    --palette-text-primary: rgba(0, 0, 0, 0.87);
-    --palette-text-secondary: rgba(0, 0, 0, 0.6);
-    --shape-borderradius: 4px;
-    --sizing-1: 8px;
-    --typography-caption-font-family: "Roboto-Regular", Helvetica;
-    --typography-caption-font-size: 12px;
-    --typography-caption-font-style: normal;
-    --typography-caption-font-weight: 400;
-    --typography-caption-letter-spacing: 0.4000000059604645px;
-    --typography-caption-line-height: 165.9999966621399%;
-  }
-  
-  /*
+  --chip-label-font-family: "Roboto-Regular",
+    Helvetica;
+  --chip-label-font-size: 13px;
+  --chip-label-font-style: normal;
+  --chip-label-font-weight: 400;
+  --chip-label-letter-spacing: 0.1599999964237213px;
+  --chip-label-line-height: 18px;
+  --elevation-1: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  --elevation-8: 0px 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0px 8px 10px 1px rgba(0, 0, 0, 0.14),
+    0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+  --input-helper-font-family: "Roboto-Regular",
+    Helvetica;
+  --input-helper-font-size: 12px;
+  --input-helper-font-style: normal;
+  --input-helper-font-weight: 400;
+  --input-helper-letter-spacing: 0.4000000059604645px;
+  --input-helper-line-height: 165.9999966621399%;
+  --input-label-font-family: "Roboto-Regular",
+    Helvetica;
+  --input-label-font-size: 12px;
+  --input-label-font-style: normal;
+  --input-label-font-weight: 400;
+  --input-label-letter-spacing: 0.15000000596046448px;
+  --input-label-line-height: 12px;
+  --input-value-font-family: "Roboto-Regular",
+    Helvetica;
+  --input-value-font-size: 16px;
+  --input-value-font-style: normal;
+  --input-value-font-weight: 400;
+  --input-value-letter-spacing: 0.15000000596046448px;
+  --input-value-line-height: 24px;
+  --m-3syslightoutline: rgba(121, 116, 126, 1);
+  --m-3syslightprimary: rgba(103, 80, 164, 1);
+  --m3-body-large-font-family: "Roboto-Regular",
+    Helvetica;
+  --m3-body-large-font-size: 16px;
+  --m3-body-large-font-style: normal;
+  --m3-body-large-font-weight: 400;
+  --m3-body-large-letter-spacing: 0.5px;
+  --m3-body-large-line-height: 24px;
+  --m3-body-small-font-family: "Roboto-Regular",
+    Helvetica;
+  --m3-body-small-font-size: 12px;
+  --m3-body-small-font-style: normal;
+  --m3-body-small-font-weight: 400;
+  --m3-body-small-letter-spacing: 0px;
+  --m3-body-small-line-height: 16px;
+  --m3-elevation-light-1: 0px 1px 3px 1px
+      rgba(0, 0, 0, 0.15),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  --m3-elevation-light-2: 0px 2px 6px 2px
+      rgba(0, 0, 0, 0.15),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  --m3-label-large-font-family: "Roboto-Medium",
+    Helvetica;
+  --m3-label-large-font-size: 14px;
+  --m3-label-large-font-style: normal;
+  --m3-label-large-font-weight: 500;
+  --m3-label-large-letter-spacing: 0.10000000149011612px;
+  --m3-label-large-line-height: 20px;
+  --m3state-layerslighton-surface-variantopacity-008: rgba(
+    73,
+    69,
+    79,
+    0.08
+  );
+  --m3state-layerslighton-surface-variantopacity-012: rgba(
+    73,
+    69,
+    79,
+    0.12
+  );
+  --m3state-layerslighton-surfaceopacity-008: rgba(
+    29,
+    27,
+    32,
+    0.08
+  );
+  --m3state-layerslightprimaryopacity-008: rgba(
+    103,
+    80,
+    164,
+    0.08
+  );
+  --m3state-layerslightprimaryopacity-012: rgba(
+    103,
+    80,
+    164,
+    0.12
+  );
+  --m3syslighton-surface: rgba(29, 27, 32, 1);
+  --m3syslighton-surface-variant: rgba(
+    73,
+    69,
+    79,
+    1
+  );
+  --m3syslightoutline-variant: rgba(
+    202,
+    196,
+    208,
+    1
+  );
+  --m3syslightsurface-container-highest: rgba(
+    230,
+    224,
+    233,
+    1
+  );
+  --m3syslightsurface-container-low: rgba(
+    247,
+    242,
+    250,
+    1
+  );
+  --material-colors-blue-200: rgba(
+    144,
+    202,
+    249,
+    1
+  );
+  --material-colors-blue-500: rgba(
+    33,
+    150,
+    243,
+    1
+  );
+  --material-colors-green-400: rgba(
+    102,
+    187,
+    106,
+    1
+  );
+  --material-colors-green-800: rgba(
+    46,
+    125,
+    50,
+    1
+  );
+  --material-colors-grey-400: rgba(
+    189,
+    189,
+    189,
+    1
+  );
+  --material-colors-grey-600: rgba(
+    117,
+    117,
+    117,
+    1
+  );
+  --menu-itemdefault-font-family: "Roboto-Regular",
+    Helvetica;
+  --menu-itemdefault-font-size: 16px;
+  --menu-itemdefault-font-style: normal;
+  --menu-itemdefault-font-weight: 400;
+  --menu-itemdefault-letter-spacing: 0.15000000596046448px;
+  --menu-itemdefault-line-height: 150%;
+  --palette-action-hover: rgba(0, 0, 0, 0.04);
+  --palette-action-selected: rgba(0, 0, 0, 0.08);
+  --palette-background-paper-elevation-0: rgba(
+    255,
+    255,
+    255,
+    1
+  );
+  --palette-background-paper-elevation-1: rgba(
+    255,
+    255,
+    255,
+    1
+  );
+  --palette-background-paper-elevation-8: rgba(
+    255,
+    255,
+    255,
+    1
+  );
+  --palette-components-avatar-fill: var(
+    --material-colors-grey-400
+  );
+  --palette-components-chip-defaulthoverfill: rgba(
+    0,
+    0,
+    0,
+    0.12
+  );
+  --palette-primary-main: var(
+    --material-colors-blue-500
+  );
+  --palette-success-main: var(
+    --material-colors-green-800
+  );
+  --palette-text-primary: rgba(0, 0, 0, 0.87);
+  --palette-text-secondary: rgba(0, 0, 0, 0.6);
+  --shape-borderradius: 4px;
+  --sizing-1: 8px;
+  --typography-caption-font-family: "Roboto-Regular",
+    Helvetica;
+  --typography-caption-font-size: 12px;
+  --typography-caption-font-style: normal;
+  --typography-caption-font-weight: 400;
+  --typography-caption-letter-spacing: 0.4000000059604645px;
+  --typography-caption-line-height: 165.9999966621399%;
+}
+
+/*
   
   To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
   
@@ -103,32 +219,98 @@
   You can apply the theme on any DOM node, not just the `body`
   
   */
-  
-  [data-palette-mode="light"] {
-    --palette-action-hover: rgba(0, 0, 0, 0.04);
-    --palette-action-selected: rgba(0, 0, 0, 0.08);
-    --palette-background-paper-elevation-0: rgba(255, 255, 255, 1);
-    --palette-background-paper-elevation-1: rgba(255, 255, 255, 1);
-    --palette-background-paper-elevation-8: rgba(255, 255, 255, 1);
-    --palette-components-avatar-fill: var(--material-colors-grey-400);
-    --palette-components-chip-defaulthoverfill: rgba(0, 0, 0, 0.12);
-    --palette-primary-main: var(--material-colors-blue-500);
-    --palette-success-main: var(--material-colors-green-800);
-    --palette-text-primary: rgba(0, 0, 0, 0.87);
-    --palette-text-secondary: rgba(0, 0, 0, 0.6);
-  }
-  
-  [data-palette-mode="dark"] {
-    --palette-action-hover: rgba(255, 255, 255, 0.08);
-    --palette-action-selected: rgba(255, 255, 255, 0.16);
-    --palette-background-paper-elevation-0: rgba(18, 18, 18, 1);
-    --palette-background-paper-elevation-1: rgba(30, 30, 30, 1);
-    --palette-background-paper-elevation-8: rgba(46, 46, 46, 1);
-    --palette-components-avatar-fill: var(--material-colors-grey-600);
-    --palette-components-chip-defaulthoverfill: rgba(255, 255, 255, 0.12);
-    --palette-primary-main: var(--material-colors-blue-200);
-    --palette-success-main: var(--material-colors-green-400);
-    --palette-text-primary: rgba(255, 255, 255, 1);
-    --palette-text-secondary: rgba(255, 255, 255, 0.7);
-  }
-  
+
+[data-palette-mode="light"] {
+  --palette-action-hover: rgba(0, 0, 0, 0.04);
+  --palette-action-selected: rgba(0, 0, 0, 0.08);
+  --palette-background-paper-elevation-0: rgba(
+    255,
+    255,
+    255,
+    1
+  );
+  --palette-background-paper-elevation-1: rgba(
+    255,
+    255,
+    255,
+    1
+  );
+  --palette-background-paper-elevation-8: rgba(
+    255,
+    255,
+    255,
+    1
+  );
+  --palette-components-avatar-fill: var(
+    --material-colors-grey-400
+  );
+  --palette-components-chip-defaulthoverfill: rgba(
+    0,
+    0,
+    0,
+    0.12
+  );
+  --palette-primary-main: var(
+    --material-colors-blue-500
+  );
+  --palette-success-main: var(
+    --material-colors-green-800
+  );
+  --palette-text-primary: rgba(0, 0, 0, 0.87);
+  --palette-text-secondary: rgba(0, 0, 0, 0.6);
+}
+
+[data-palette-mode="dark"] {
+  --palette-action-hover: rgba(
+    255,
+    255,
+    255,
+    0.08
+  );
+  --palette-action-selected: rgba(
+    255,
+    255,
+    255,
+    0.16
+  );
+  --palette-background-paper-elevation-0: rgba(
+    18,
+    18,
+    18,
+    1
+  );
+  --palette-background-paper-elevation-1: rgba(
+    30,
+    30,
+    30,
+    1
+  );
+  --palette-background-paper-elevation-8: rgba(
+    46,
+    46,
+    46,
+    1
+  );
+  --palette-components-avatar-fill: var(
+    --material-colors-grey-600
+  );
+  --palette-components-chip-defaulthoverfill: rgba(
+    255,
+    255,
+    255,
+    0.12
+  );
+  --palette-primary-main: var(
+    --material-colors-blue-200
+  );
+  --palette-success-main: var(
+    --material-colors-green-400
+  );
+  --palette-text-primary: rgba(255, 255, 255, 1);
+  --palette-text-secondary: rgba(
+    255,
+    255,
+    255,
+    0.7
+  );
+}

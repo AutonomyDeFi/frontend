@@ -1,22 +1,22 @@
-import ToolCard from './Card';
-import * as React from 'react';
-import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
+import ToolCard from "./Card";
+import * as React from "react";
+import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
 
-import Typography from '@mui/material/Typography';
-import Modal from '@mui/material/Modal';
-import AddToolCard from './AddToolCard';
-import SearchBar from './SearchBar';
+import Typography from "@mui/material/Typography";
+import Modal from "@mui/material/Modal";
+import AddToolCard from "./AddToolCard";
+import SearchBar from "./SearchBar";
 import "./borderstyles.scss";
 
 const style = {
-  position: 'absolute',
-  top: '150px',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
+  position: "absolute",
+  top: "150px",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
   width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
+  bgcolor: "background.paper",
+  border: "2px solid #000",
   boxShadow: 24,
   p: 4,
 };
@@ -72,7 +72,9 @@ export const data = [
   },
 ];
 
-export default function Grid_Market({ onClickHandler }) {
+export default function Grid_Market({
+  onClickHandler,
+}) {
   function openTool() {
     onClickHandler(1);
   }
@@ -80,12 +82,20 @@ export default function Grid_Market({ onClickHandler }) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const [toolName, setToolName] = React.useState();
+  const [toolName, setToolName] =
+    React.useState();
   const [toolTag, setToolTag] = React.useState();
-  const [toolBlurb, setToolBlurb] = React.useState();
-  const [toolDesc, setToolDesc] = React.useState();
+  const [toolBlurb, setToolBlurb] =
+    React.useState();
+  const [toolDesc, setToolDesc] =
+    React.useState();
 
-  const openModal = ({ name, tag, blurb, desc }) => {
+  const openModal = ({
+    name,
+    tag,
+    blurb,
+    desc,
+  }) => {
     setToolName(name);
     setToolTag(tag);
     setToolBlurb(blurb);
@@ -95,41 +105,61 @@ export default function Grid_Market({ onClickHandler }) {
 
   return (
     <>
-      <div style={{ textAlign: 'center', justifyContent: 'center', paddingTop: '50px' }}>
-        <div className="box"> 
-        <div className="box-inner"> 
-        <img src="./APE-I-logo.png" alt="logo" width={200} height={200} paddingTop = {'20px'}/>
-        <Typography
-          variant="h6"
-          noWrap
-          component="a"
-          href="/"
-          sx={{
-            margin: 'auto',
-            fontFamily: 'monospace',
-            fontWeight: 700,
-            letterSpacing: '.3rem',
-            fontSize: '2rem',
-            color: 'inherit',
-            textDecoration: 'none',
-            display: 'block', // Center horizontally
-          }}
-        >
-          APE-I
-        </Typography>
-        </div>
+      <div
+        style={{
+          textAlign: "center",
+          justifyContent: "center",
+          paddingTop: "50px",
+        }}
+      >
+        <div className="box">
+          <div className="box-inner">
+            <img
+              src="./APE-I-logo.png"
+              alt="logo"
+              width={200}
+              height={200}
+              paddingTop={"20px"}
+            />
+            <Typography
+              variant="h6"
+              noWrap
+              component="a"
+              href="/"
+              sx={{
+                margin: "auto",
+                fontFamily: "monospace",
+                fontWeight: 700,
+                letterSpacing: ".3rem",
+                fontSize: "2rem",
+                color: "inherit",
+                textDecoration: "none",
+                display: "block", // Center horizontally
+              }}
+            >
+              APE-I
+            </Typography>
+          </div>
         </div>
       </div>
       <SearchBar> </SearchBar>
       <h2> Marketplace</h2>
       <Grid container spacing={{ xs: 2, md: 3 }}>
-        <Grid item xs={3} onClick={() => openTool()}>
+        <Grid
+          item
+          xs={3}
+          onClick={() => openTool()}
+        >
           <AddToolCard> </AddToolCard>
         </Grid>
 
         {data.map((tool, index) => {
           return (
-            <Grid item xs={3} onClick={() => openModal(tool)}>
+            <Grid
+              item
+              xs={3}
+              onClick={() => openModal(tool)}
+            >
               <ToolCard key={index} {...tool} />
             </Grid>
           );
@@ -144,13 +174,23 @@ export default function Grid_Market({ onClickHandler }) {
           aria-describedby="modal-modal-description"
         >
           <Box sx={style}>
-            <Typography id="modal-modal-title" variant="h6" component="h2">
+            <Typography
+              id="modal-modal-title"
+              variant="h6"
+              component="h2"
+            >
               {toolName}
             </Typography>
-            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            <Typography
+              id="modal-modal-description"
+              sx={{ mt: 2 }}
+            >
               {toolTag}
             </Typography>
-            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            <Typography
+              id="modal-modal-description"
+              sx={{ mt: 2 }}
+            >
               {toolDesc}
             </Typography>
           </Box>
