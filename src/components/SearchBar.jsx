@@ -38,7 +38,7 @@ export default function CustomizedInputBase() {
         <MenuIcon />
       </IconButton>
       <InputBase
-        sx={{ ml: 1, flex: 1 }}
+        sx={{ ml: 1, flex: 1, fontFamily: "Inconsolata", fontWeight: 800}}
         placeholder="What do you want your AI agent to do?"
         inputProps={{ "aria-label": "search" }}
         onKeyDown={handleEnterPress} // Attach the event handler here

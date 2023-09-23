@@ -3,7 +3,7 @@ import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
-
+import Button from "@mui/material/Button";
 import AddToolCard from "../components/AddToolCard";
 import ToolCard from "../components/Card";
 import SearchBar from "../components/SearchBar";
@@ -14,7 +14,7 @@ import "./borderstyles.scss";
 
 const style = {
   position: "absolute",
-  top: "150px",
+  top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
   width: 400,
@@ -175,24 +175,27 @@ export default function Grid_Market({
           onClose={handleClose}
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
+
         >
           <Box sx={style}>
             <Typography
               id="modal-modal-title"
               variant="h6"
               component="h2"
+              sx = {{fontFamily: "Karla", fontWeight: 800, fontSize:30}}
             >
               {toolName}
             </Typography>
-            <Typography
+            <Button
               id="modal-modal-description"
-              sx={{ mt: 2 }}
+              variant="outlined"
+              sx={{ mt: 2, fontFamily: "Inconsolata", fontSize:15, fontWeight:500, borderRadius: 10}}
             >
               {toolTag}
-            </Typography>
+            </Button>
             <Typography
               id="modal-modal-description"
-              sx={{ mt: 2 }}
+              sx={{ mt: 2, fontFamily: "Inconsolata", fontSize:20, fontWeight:500,}}
             >
               {toolDesc}
             </Typography>

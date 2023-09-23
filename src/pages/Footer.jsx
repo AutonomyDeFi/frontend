@@ -18,7 +18,7 @@ function Footer() {
             <div className="input">
               <div className="div-placeholder">
                 <input className="your-email-address" placeholder="Your email address" type="email" />
-              </div>
+              </div>g
             </div>
             <img className="button" alt="Button" src="button.svg" />
           </div>
