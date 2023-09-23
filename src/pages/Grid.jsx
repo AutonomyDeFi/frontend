@@ -4,9 +4,9 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 
-import AddToolCard from "./AddToolCard";
-import ToolCard from "./Card";
-import SearchBar from "./SearchBar";
+import AddToolCard from "./components/AddToolCard";
+import ToolCard from "./components/Card";
+import SearchBar from "./components/SearchBar";
 
 import "./borderstyles.scss";
 
