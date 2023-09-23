@@ -1,0 +1,1 @@
+export { Arrowdropupfilled } from "./Arrowdropupfilled";

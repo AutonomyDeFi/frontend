@@ -1,0 +1,361 @@
+.button {
+  all: unset;
+  align-items: center;
+  border-radius: 100px;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 40px;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.button .state-layer {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  gap: 8px;
+  position: relative;
+  width: 100%;
+}
+
+.button .instance-node {
+  height: 18px !important;
+  position: relative !important;
+  width: 18px !important;
+}
+
+.button .text-wrapper {
+  font-family: var(--m3-label-large-font-family);
+  font-size: var(--m3-label-large-font-size);
+  font-style: var(--m3-label-large-font-style);
+  font-weight: var(--m3-label-large-font-weight);
+  letter-spacing: var(--m3-label-large-letter-spacing);
+  line-height: var(--m3-label-large-line-height);
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.button.outlined {
+  border: 1px solid;
+}
+
+.button.tonal.hovered {
+  background-color: var(--m3syslightsecondary-container);
+  box-shadow: var(--m3-elevation-light-1);
+}
+
+.button.hovered.elevated {
+  background-color: var(--m3syslightsurface-container-low);
+  box-shadow: var(--m3-elevation-light-2);
+}
+
+.button.focused.filled {
+  background-color: var(--m-3syslightprimary);
+}
+
+.button.enabled.tonal {
+  background-color: var(--m3syslightsecondary-container);
+}
+
+.button.enabled.filled {
+  background-color: var(--m-3syslightprimary);
+}
+
+.button.pressed.elevated {
+  background-color: var(--m3syslightsurface-container-low);
+  box-shadow: var(--m3-elevation-light-1);
+}
+
+.button.pressed.tonal {
+  background-color: var(--m3syslightsecondary-container);
+}
+
+.button.outlined.pressed {
+  border-color: var(--m-3syslightoutline);
+}
+
+.button.hovered.filled {
+  background-color: var(--m-3syslightprimary);
+  box-shadow: var(--m3-elevation-light-1);
+}
+
+.button.outlined.focused {
+  border-color: var(--m-3syslightprimary);
+}
+
+.button.outlined.enabled {
+  border-color: var(--m-3syslightoutline);
+}
+
+.button.enabled.elevated {
+  background-color: var(--m3syslightsurface-container-low);
+  box-shadow: var(--m3-elevation-light-1);
+}
+
+.button.outlined.disabled {
+  border-color: var(--m3state-layerslighton-surfaceopacity-012);
+}
+
+.button.pressed.filled {
+  background-color: var(--m-3syslightprimary);
+}
+
+.button.outlined.hovered {
+  border-color: var(--m-3syslightoutline);
+}
+
+.button.focused.tonal {
+  background-color: var(--m3syslightsecondary-container);
+}
+
+.button.focused.elevated {
+  background-color: var(--m3syslightsurface-container-low);
+  box-shadow: var(--m3-elevation-light-1);
+}
+
+.button .state-hovered {
+  justify-content: center;
+}
+
+.button .style-text {
+  justify-content: center;
+}
+
+.button .state-pressed {
+  justify-content: center;
+}
+
+.button .style-filled {
+  justify-content: center;
+}
+
+.button .show-icon-false {
+  justify-content: center;
+}
+
+.button .style-tonal {
+  justify-content: center;
+}
+
+.button .state-enabled {
+  justify-content: center;
+}
+
+.button .state-focused {
+  justify-content: center;
+}
+
+.button .style-tonal.state-hovered {
+  background-color: var(--m3state-layerslighton-secondary-containeropacity-008);
+}
+
+.button .state-hovered.style-elevated {
+  background-color: var(--m3state-layerslightprimaryopacity-008);
+}
+
+.button .show-icon-true.style-filled {
+  padding: 10px 24px 10px 16px;
+}
+
+.button .state-focused.style-filled {
+  background-color: var(--m3state-layerslighton-primaryopacity-012);
+}
+
+.button .show-icon-false.style-filled {
+  padding: 10px 24px;
+}
+
+.button .state-pressed.style-elevated {
+  background-color: var(--m3state-layerslightprimaryopacity-012);
+}
+
+.button .state-pressed.style-tonal {
+  background-color: var(--m3state-layerslighton-secondary-containeropacity-012);
+}
+
+.button .style-outlined.state-pressed {
+  background-color: var(--m3state-layerslightprimaryopacity-012);
+}
+
+.button .state-hovered.style-filled {
+  background-color: var(--m3state-layerslighton-primaryopacity-008);
+}
+
+.button .style-outlined.state-focused {
+  background-color: var(--m3state-layerslightprimaryopacity-012);
+}
+
+.button .state-disabled.style-elevated {
+  background-color: var(--m3state-layerslighton-surfaceopacity-012);
+}
+
+.button .style-tonal.state-disabled {
+  background-color: var(--m3state-layerslighton-surfaceopacity-012);
+}
+
+.button .show-icon-false.style-outlined {
+  padding: 10px 24px;
+}
+
+.button .style-outlined.show-icon-true {
+  padding: 10px 24px 10px 16px;
+}
+
+.button .show-icon-false.style-tonal {
+  padding: 10px 24px;
+}
+
+.button .show-icon-false.style-elevated {
+  padding: 10px 24px;
+}
+
+.button .state-focused.style-text {
+  background-color: var(--m3state-layerslightprimaryopacity-012);
+}
+
+.button .state-pressed.style-filled {
+  background-color: var(--m3state-layerslighton-primaryopacity-012);
+}
+
+.button .style-outlined.state-hovered {
+  background-color: var(--m3state-layerslightprimaryopacity-008);
+}
+
+.button .show-icon-true.style-elevated {
+  padding: 10px 24px 10px 16px;
+}
+
+.button .show-icon-true.style-text {
+  padding: 10px 16px 10px 12px;
+}
+
+.button .state-focused.style-tonal {
+  background-color: var(--m3state-layerslighton-secondary-containeropacity-012);
+}
+
+.button .state-focused.style-elevated {
+  background-color: var(--m3state-layerslightprimaryopacity-012);
+}
+
+.button .style-text.state-hovered {
+  background-color: var(--m3state-layerslightprimaryopacity-008);
+}
+
+.button .show-icon-true.style-tonal {
+  padding: 10px 24px 10px 16px;
+}
+
+.button .state-disabled.style-filled {
+  background-color: var(--m3state-layerslighton-surfaceopacity-012);
+}
+
+.button .state-pressed.style-text {
+  background-color: var(--m3state-layerslightprimaryopacity-012);
+}
+
+.button .show-icon-false.style-text {
+  padding: 10px 12px;
+}
+
+.button .state-focused.style-filled.show-icon-true {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.button .show-icon-true.state-hovered.style-filled {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.button .state-layer.state-disabled .text-wrapper {
+  color: var(--m3syslighton-surface);
+  opacity: 0.38;
+}
+
+.button .state-layer.style-tonal.state-hovered .text-wrapper {
+  color: var(--m3syslighton-secondary-container);
+}
+
+.button .state-layer.state-hovered.style-elevated .text-wrapper {
+  color: var(--m-3syslightprimary);
+}
+
+.button .state-layer.state-enabled.style-text .text-wrapper {
+  color: var(--m-3syslightprimary);
+}
+
+.button .state-layer.state-focused.style-filled .text-wrapper {
+  color: var(--m3syslighton-primary);
+}
+
+.button .state-layer.state-enabled.style-tonal .text-wrapper {
+  color: var(--m3syslighton-secondary-container);
+}
+
+.button .state-layer.state-enabled.style-filled .text-wrapper {
+  color: var(--m3syslighton-primary);
+}
+
+.button .state-layer.state-pressed.style-elevated .text-wrapper {
+  color: var(--m-3syslightprimary);
+}
+
+.button .state-layer.state-pressed.style-tonal .text-wrapper {
+  color: var(--m3syslighton-secondary-container);
+}
+
+.button .state-layer.style-outlined.state-pressed .text-wrapper {
+  color: var(--m-3syslightprimary);
+}
+
+.button .state-layer.state-hovered.style-filled .text-wrapper {
+  color: var(--m3syslighton-primary);
+}
+
+.button .state-layer.style-outlined.state-focused .text-wrapper {
+  color: var(--m-3syslightprimary);
+}
+
+.button .state-layer.style-outlined.state-enabled .text-wrapper {
+  color: var(--m-3syslightprimary);
+}
+
+.button .state-layer.state-enabled.style-elevated .text-wrapper {
+  color: var(--m-3syslightprimary);
+}
+
+.button .state-layer.state-focused.style-text .text-wrapper {
+  color: var(--m-3syslightprimary);
+}
+
+.button .state-layer.state-pressed.style-filled .text-wrapper {
+  color: var(--m3syslighton-primary);
+}
+
+.button .state-layer.style-outlined.state-hovered .text-wrapper {
+  color: var(--m-3syslightprimary);
+}
+
+.button .state-layer.state-focused.style-tonal .text-wrapper {
+  color: var(--m3syslighton-secondary-container);
+}
+
+.button .state-layer.state-focused.style-elevated .text-wrapper {
+  color: var(--m-3syslightprimary);
+}
+
+.button .state-layer.style-text.state-hovered .text-wrapper {
+  color: var(--m-3syslightprimary);
+}
+
+.button .state-layer.state-pressed.style-text .text-wrapper {
+  color: var(--m-3syslightprimary);
+}

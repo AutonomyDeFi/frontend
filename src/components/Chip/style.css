@@ -1,0 +1,73 @@
+.chip {
+  align-items: center;
+  border-radius: 100px;
+  display: inline-flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.chip .typography {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+}
+
+.chip .text-wrapper-2 {
+  font-family: var(--chip-label-font-family);
+  font-size: var(--chip-label-font-size);
+  font-style: var(--chip-label-font-style);
+  font-weight: var(--chip-label-font-weight);
+  letter-spacing: var(--chip-label-letter-spacing);
+  line-height: var(--chip-label-line-height);
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.chip.info {
+  background-color: var(--palette-success-main);
+}
+
+.chip.secondary {
+  background-color: var(--palette-success-main);
+}
+
+.chip.variant-outlined {
+  background-color: var(--palette-success-main);
+}
+
+.chip.primary {
+  background-color: var(--palette-success-main);
+}
+
+.chip.state-11-disabled {
+  background-color: var(--palette-success-main);
+  opacity: 0.38;
+}
+
+.chip.warning {
+  background-color: var(--palette-success-main);
+}
+
+.chip.error {
+  background-color: var(--palette-success-main);
+}
+
+.chip.state-11-enabled {
+  background-color: var(--palette-success-main);
+}
+
+.chip.success {
+  background-color: var(--palette-success-main);
+}
+
+.chip.default.state-11-focused.variant-filled {
+  background-color: var(--palette-components-chip-defaultfocusfill);
+}
+
+.chip:hover {
+  background-color: var(--palette-components-chip-defaulthoverfill);
+}
