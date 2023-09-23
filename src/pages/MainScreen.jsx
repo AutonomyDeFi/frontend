@@ -58,7 +58,7 @@ const MainScreen = ({ navigation }) => {
           )}
         </Box>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
