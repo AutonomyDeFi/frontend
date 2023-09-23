@@ -1,12 +1,13 @@
-import ToolCard from "./Card";
 import * as React from "react";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
-
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
+
 import AddToolCard from "./AddToolCard";
+import ToolCard from "./Card";
 import SearchBar from "./SearchBar";
+
 import "./borderstyles.scss";
 
 const style = {

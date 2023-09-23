@@ -51,7 +51,7 @@ const CustomToolScreen = ({ onClickHandler }) => {
   const handleClose = () => setOpen(false);
 
   return (
-    <div class="customToolScreen">
+    <div className="customToolScreen">
       <Container>
         <Paper elevation={3} sx={style.container}>
           <Typography

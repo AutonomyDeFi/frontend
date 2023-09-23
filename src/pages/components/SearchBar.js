@@ -5,9 +5,7 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 
-export default function CustomizedInputBase({
-  navigation,
-}) {
+export default function CustomizedInputBase() {
   const handleEnterPress = (event) => {
     if (event.key === "Enter") {
       // Call your function to pop up another screen or perform an action here
@@ -16,6 +14,7 @@ export default function CustomizedInputBase({
       console.log("Enter key pressed");
     }
   };
+
   return (
     <Paper
       component="form"

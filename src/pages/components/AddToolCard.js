@@ -1,37 +1,9 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
-import Button from "@mui/material/Button";
-import {
-  ThemeProvider,
-  createTheme,
-} from "@mui/material/styles";
-import Box from "@mui/material/Box";
 
-const commonStyles = {
-  bgcolor: "background.paper",
-  borderColor: "text.primary",
-  m: 1,
-  border: 1,
-  maxWidth: 300,
-  minHeight: 120, // Adjusted the minHeight
-  display: "flex",
-  alignItems: "center", // Center content vertically
-  justifyContent: "center", // Center content horizontally
-  borderRadius: "16px",
-};
-
-const theme = createTheme({
-  typography: {
-    addTool: {
-      fontSize: "2rem",
-      color: "white",
-    },
-  },
-});
 // const ToolCard = ({ name, tags, description }) => {
 //   return (
 //     <CardActionArea>

@@ -1,10 +1,7 @@
-import "./App.css";
-import MainScreen from "./MainScreen";
-import CustomToolScreen from "./CustomToolScreen";
 import * as React from "react";
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import RunModelScreen from "./RunModelScreen";
+
+import MainScreen from "./MainScreen";
+import "./App.css";
 
 const App = () => {
   return <MainScreen />;

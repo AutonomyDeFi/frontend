@@ -1,14 +1,13 @@
+import * as React from "react";
+import Box from "@mui/material/Box";
+
+import AddToolScreen from "./AddToolScreen";
+import CustomToolScreen from "./CustomToolScreen";
 import Card from "./Card";
 import SearchBar from "./SearchBar";
 //import Marketplace from './Marketplace';
 //import MarketGrid from './MarketGrid';
 import Grid_Market from "./Grid";
-import * as React from "react";
-import AddToolScreen from "./AddToolScreen";
-import Box from "@mui/material/Box";
-import CustomToolScreen from "./CustomToolScreen";
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Header from "./Header";
 import RunModelScreen from "./RunModelScreen";
 
@@ -24,7 +23,7 @@ const MainScreen = ({ navigation }) => {
       <Header> </Header>
 
       <div
-        class="marketplace"
+        className="marketplace"
         style={{
           justifyContent: "center",
           alignItems: "center",
