@@ -14,10 +14,16 @@ const App = () => {
   const [account, setAccount] =
     React.useState(null);
 
+  const handleLogin = () => {
+    setIsAuthComplete(true);
+
+    // Construct Biconomy smart account
+  };
+
   const handleLoginWithPrivy = (user) => {
     setAccount(user.id);
     setIsMetamaskAuth(false);
-    setIsAuthComplete(true);
+    handleLogin();
   };
 
   return (
@@ -36,6 +42,7 @@ const App = () => {
       >
         <AppInternal
           account={account}
+          handleLogin={handleLogin}
           isAuthComplete={isAuthComplete}
           isMetamaskAuth={isMetamaskAuth}
           setAccount={setAccount}

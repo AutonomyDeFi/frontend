@@ -9,6 +9,7 @@ import "./App.css";
 
 const AppInternal = ({
   account,
+  handleLogin,
   isAuthComplete,
   isMetamaskAuth,
   setAccount,
@@ -45,7 +46,7 @@ const AppInternal = ({
     return (
       <AuthPage
         setAccount={setAccount}
-        setIsAuthComplete={setIsAuthComplete}
+        handleLogin={handleLogin}
         setIsMetamaskAuth={setIsMetamaskAuth}
       />
     );

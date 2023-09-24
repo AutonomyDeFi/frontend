@@ -44,7 +44,7 @@ const defaultTheme = createTheme();
 
 export default function AuthPage({
   setAccount,
-  setIsAuthComplete,
+  handleLogin,
   setIsMetamaskAuth,
 }) {
   const { login, logout, authenticated } =
@@ -72,7 +72,7 @@ export default function AuthPage({
 
       setAccount(accounts?.[0]);
       setIsMetamaskAuth(true);
-      setIsAuthComplete(true);
+      handleLogin();
     } catch (err) {
       console.warn(`failed to connect..`, err);
     }
