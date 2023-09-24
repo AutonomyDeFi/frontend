@@ -9,9 +9,6 @@ import OutlinedInput from '@mui/material/OutlinedInput';
 import InputLabel from '@mui/material/InputLabel';
 import InputAdornment from '@mui/material/InputAdornment';
 
-
-
-
 import {
   Box,
   Container,
@@ -75,6 +72,42 @@ const CustomToolScreen = ({ onClickHandler }) => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+ 
+  const [inputValues, setInputValues] = useState({
+    name: "",
+    subdomainName: "",
+    description: "",
+    apiUrl: "",
+    tag: "",
+    amount: "",
+  });
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setInputValues({
+      ...inputValues,
+      [name]: value,
+    });
+  };
+
+  const createTool = () => {
+    // Package the input values into an object
+    const toolData = {
+      name: inputValues.name,
+      subdomainName: inputValues.subdomainName,
+      description: inputValues.description,
+      apiUrl: inputValues.apiUrl,
+      tag: inputValues.tag,
+      amount: inputValues.amount,
+    };
+
+    // Send the toolData object to the backend or perform any other action
+    console.log(toolData);
+
+    // Close the modal
+    handleClose();
+  };
+
 
   return (
     <div className="customToolScreen">
@@ -92,32 +125,47 @@ const CustomToolScreen = ({ onClickHandler }) => {
           >
             <TextField
               id="outlined-basic"
+              name="name"
               label="Name"
               variant="outlined"
+              value={inputValues.name}
+              onChange={handleInputChange}
             />
             <TextField
               id="outlined-basic"
+              name="subdomainName"
               label="Subdomain Name"
               variant="outlined"
+              value={inputValues.subdomainName}
+              onChange={handleInputChange}
             />
             <TextField
               id="outlined-multiline-flexible"
+              name="description"
               label="Description"
               multiline
               maxRows={4}
               variant="outlined"
+              value={inputValues.description}
+              onChange={handleInputChange}
             />
             <TextField
               id="outlined-basic"
+              name="apiUrl"
               label="API URL"
               variant="outlined"
+              value={inputValues.apiUrl}
+              onChange={handleInputChange}
             />
 
             <Autocomplete
               disablePortal
               id="combo-box-demo"
+              name="tag"
               options={toolList}
               sx={{ width: 300 }}
+              value={inputValues.tag}
+              onChange={handleInputChange}
               renderInput={(params) => (
                 <TextField
                   {...params}
@@ -246,3 +294,5 @@ const CustomToolScreen = ({ onClickHandler }) => {
 };
 
 export default CustomToolScreen;
+
+
