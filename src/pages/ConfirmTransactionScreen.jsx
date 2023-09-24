@@ -45,7 +45,7 @@ const total = subtotal(rows);
 
 const ConfirmTransactionScreen = ({ onClickHandler }) => {
   return (
-    <div style = {{marginTop: 100}}>
+    <div style = {{marginTop: 80, marginRight: 40, marginLeft:40}}>
       <TableContainer component={Paper}>
         <Table
           sx={{ minWidth: 700 }}
@@ -56,7 +56,7 @@ const ConfirmTransactionScreen = ({ onClickHandler }) => {
               <TableCell
                 align="center"
                 colSpan={3}
-                sx={{ fontFamily: "Karla", fontWeight: 800, fontSize: 30}}
+                sx={{ fontFamily: "Karla", fontWeight: 800, fontSize: 40}}
               >
                 Model Tools
               </TableCell>
