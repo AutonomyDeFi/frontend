@@ -109,6 +109,11 @@ const ConfirmTransactionScreen = ({ onClickHandler }) => {
         Confirm Transaction
         {/* When this button is pressed, run transaction */}
       </Button>
+      <Button sx={{ mt: 1, fontFamily: "Inconsolata", fontWeight: 800, fontSize: 20}}
+      variant="outlined" onClick={() => onClickHandler(0)} >
+        Go Back
+        {/* When this button is pressed, run transaction */}
+      </Button>
     </div>
   );
 };

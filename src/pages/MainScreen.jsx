@@ -34,7 +34,7 @@ const MainScreen = ({
           onClickHandler={onClick}
         />
       ) : (
-        <ConfirmTransactionScreen />
+        <ConfirmTransactionScreen onClickHandler={onClick} />
       )}
       <Footer />
     </div>
