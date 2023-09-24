@@ -22,30 +22,7 @@ function Footer() {
       <div className="div-relative">
         <div className="div-flex">
           <div className="div-w-full">
-            <div className="heading">
-              <p className="sign-up-to-get-the">
-                Sign up to get the latest news and updates on
-                <br />
-                APE-I
-              </p>
-            </div>
             <div className="form">
-
-              
-               {/* <TextField
-                id="outlined-basic"
-                label="Email"
-                variant="outlined"
-                value={email}
-                onChange={handleInputChange}
-              />
-              <Button
-                variant="contained"
-                color="primary"
-                onClick={handleSubmit}
-              >
-                Submit
-              </Button>  */}
              <MailChimp/> 
             </div>
           </div>
@@ -62,4 +39,5 @@ function Footer() {
 }
 
 export default Footer;
+
 

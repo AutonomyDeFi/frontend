@@ -1,69 +1,53 @@
-import React, {useState, useEffect} from 'react';
-import MailchimpSubscribe from "react-mailchimp-subscribe"
-import TextField from "@mui/material/TextField";
+import React, { useState } from 'react';
+import MailchimpSubscribe from 'react-mailchimp-subscribe';
+import TextField from '@mui/material/TextField';
+import Box from '@mui/material/Box';
 
-const CustomForm = ({  onValidated }) => {
+const CustomForm = ({ onValidated }) => {
+  const [email, setEmail] = useState('');
 
-    const [email, setEmail] = useState('');
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (email && email.indexOf('@') > -1) {
+      onValidated({ EMAIL: email });
+    }
+  };
 
-  
-    const handleSubmit = (e) => {
-          e.preventDefault();
-          email &&
-          email.indexOf("@") > -1 &&
-          onValidated({
-              EMAIL: email,
-          });
-      }
-  
-      return (
-        <form 
-          className="mc__form"
-          onSubmit={(e) => handleSubmit(e)}
-        >
-          
-        <h3 className="mc__title">Join our email list for future updates.</h3>
-        <div className="mc__field-container">
-          
-
+  return (
+    <form className="mc__form" onSubmit={(e) => handleSubmit(e)}>
+      <h3 className="mc__title" style={{ fontSize: 40 }}>
+        Join our email list for future updates.
+      </h3>
+      <Box x={{ display: 'flex' }}> 
+        
+      <div className="mc__field-container" >
+        
           <TextField
             label="Email"
-            onChangeHandler={setEmail}
+            onChange={(e) => setEmail(e.target.value)}
             type="email"
             value={email}
             placeholder="your@email.com"
-            isRequired
+            required
+            sx = {{width: 400}}
           />
-
+     
+        <TextField label="" type="submit" value="Submit" />
         </div>
+        </Box>
+    
+    </form>
+  );
+};
 
-        <TextField
-          label="subscribe"
-          type="submit"
-          formValues={[email]}
-        />
-      </form>
-      );
-  };
-  
-const MailchimpForm = props => {
-    const url = 'https://gmail.us13.list-manage.com/subscribe/post?u=${ad956b516420b2618586c34b}&id=${532aea6cb8}';
+const MailchimpForm = (props) => {
+  const url = `https://gmail.us13.list-manage.com/subscribe/post?u=cad956b516420b2618586c34b&id=532aea6cb8`;
 
-    return (
-
-        <div className="mc__form-container">
-            <MailchimpSubscribe
-                url={url}
-                render={({ subscribe }) => (
-                    <CustomForm
-                        
-                        onValidated={formData => subscribe(formData)}
-                    />
-                )}
-            />
-        </div>
-
-    )
-}
+  return (
+    <div className="mc__form-container">
+      <MailchimpSubscribe url={url} render={({ subscribe }) => <CustomForm onValidated={(formData) => subscribe(formData)} />} />
+    </div>
+  );
+};
 
 export default MailchimpForm;
