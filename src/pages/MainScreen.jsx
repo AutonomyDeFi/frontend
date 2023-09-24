@@ -1,13 +1,5 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
-
-import Card from "../components/Card";
-import SearchBar from "../components/SearchBar";
-
-import AddToolScreen from "./AddToolScreen";
 import CustomToolScreen from "./CustomToolScreen";
-//import Marketplace from './Marketplace';
-//import MarketGrid from './MarketGrid';
 import GridMarket from "./GridMarket";
 import Header from "./Header";
 import RunModelScreen from "./RunModelScreen";
@@ -23,28 +15,6 @@ const MainScreen = () => {
   return (
     <div>
       <Header> </Header>
-
-      <div
-        className="marketplace"
-        style={{
-          justifyContent: "center",
-          alignItems: "center",
-          flexWrap: "wrap",
-          maxWidth: "75%",
-          marginLeft: "auto",
-          marginRight: "auto",
-        }}
-      >
-        <Box
-          sx={{ flexGrow: 1 }}
-          container
-          spacing={1}
-          style={{
-            maxWidth: "75%",
-            marginLeft: "auto",
-            marginRight: "auto",
-          }}
-        >
           {currentPageIndex == 0 ? (
             <GridMarket
               onClickHandler={onClick}
@@ -56,8 +26,6 @@ const MainScreen = () => {
           ) : (
             <RunModelScreen />
           )}
-        </Box>
-      </div>
       <Footer />
     </div>
   );

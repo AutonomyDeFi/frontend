@@ -7,7 +7,7 @@ import Button from "@mui/material/Button";
 import AddToolCard from "../components/AddToolCard";
 import ToolCard from "../components/Card";
 import SearchBar from "../components/SearchBar";
-
+import apeLogo from "../assets/apebanner.png";
 import mainLogo from "../assets/main_logo.png";
 
 import "./borderstyles.scss";
@@ -107,7 +107,33 @@ export default function GridMarket({
   };
 
   return (
-    <>
+    <div> 
+      <div>
+          <img src = {apeLogo} alt = "ape banner" width="100%" height="500px" />
+          
+        </div>
+   
+    <div
+    className="marketplace"
+    style={{
+      justifyContent: "center",
+      alignItems: "center",
+      flexWrap: "wrap",
+      maxWidth: "75%",
+      marginLeft: "auto",
+      marginRight: "auto",
+    }}
+  >
+    <Box
+      sx={{ flexGrow: 1 }}
+      container
+      spacing={1}
+      style={{
+        maxWidth: "75%",
+        marginLeft: "auto",
+        marginRight: "auto",
+      }}
+    >
       <div
         style={{
           textAlign: "center",
@@ -115,34 +141,7 @@ export default function GridMarket({
           paddingTop: "50px",
         }}
       >
-        <div className="box">
-          <div className="box-inner">
-            <img
-              src={mainLogo}
-              alt="logo"
-              width={200}
-              height={200}
-            />
-            <Typography
-              variant="h6"
-              noWrap
-              component="a"
-              href="/"
-              sx={{
-                margin: "auto",
-                fontFamily: "monospace",
-                fontWeight: 700,
-                letterSpacing: ".3rem",
-                fontSize: "2rem",
-                color: "inherit",
-                textDecoration: "none",
-                display: "block", // Center horizontally
-              }}
-            >
-              APE-I
-            </Typography>
-          </div>
-        </div>
+        
       </div>
       <SearchBar> </SearchBar>
       <h2> Marketplace</h2>
@@ -215,6 +214,9 @@ export default function GridMarket({
           </Box>
         </Modal>
       </div>
-    </>
+      </Box>
+      </div>
+      </div>
+    
   );
 }
