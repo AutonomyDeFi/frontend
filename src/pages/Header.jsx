@@ -13,7 +13,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { usePrivy } from "@privy-io/react-auth";
-
+import './style.css';
 import mainLogo from "../assets/main_logo.png";
 
 const pages = ["Products"];
@@ -55,7 +55,7 @@ function ResponsiveAppBar({
   return (
     <AppBar
       position="static"
-      sx={{ color: "white" }}
+      sx={{ backgroundColor: "#6B96E5"}}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -76,8 +76,9 @@ function ResponsiveAppBar({
               mr: 2,
               ml: 2,
               display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
+              fontFamily: "VT323",
+              fontWeight: 800,
+              fontSize: 40,
               letterSpacing: ".3rem",
               color: "white",
               textDecoration: "none",
@@ -121,6 +122,14 @@ function ResponsiveAppBar({
                   xs: "block",
                   md: "none",
                 },
+           
+                 
+                  fontFamily: "Karla",
+                  fontWeight: 700,
+                  letterSpacing: ".3rem",
+                  color: "#6B96E5",
+                  textDecoration: "none",
+                
               }}
             >
               {pages.map((page) => (
@@ -128,7 +137,7 @@ function ResponsiveAppBar({
                   key={page}
                   onClick={handleCloseNavMenu}
                 >
-                  <Typography textAlign="center">
+                  <Typography textAlign="center" sx={{ fontFamily: "Karla", color: "#6B96E5"}}>
                     {page}
                   </Typography>
                 </MenuItem>
@@ -153,7 +162,7 @@ function ResponsiveAppBar({
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
-              color: "inherit",
+              color: "#6B96E5",
               textDecoration: "none",
             }}
           >

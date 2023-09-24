@@ -49,9 +49,9 @@ const ToolCard = ({ name, tag, blurb, url, price }) => {
             variant="h5"
             component="div"
             sx={{
-              
               fontFamily: 'Inconsolata',
-              fontWeight: 600
+              fontWeight: 600,
+              backgroundColor: '#EEF6FC',
             }}
           >
             {name}
@@ -61,11 +61,11 @@ const ToolCard = ({ name, tag, blurb, url, price }) => {
             variant="outlined"
             startIcon = {LogoComponent} 
             sx={{
-              marginBottom: 2,
+              marginBottom: 1,
               borderColor: "#2196F3",
               borderRadius: "20px",
               color: "#2196F3",
-              padding: "4px 12px", // Adjust the padding to make the button smaller
+              padding: "4px 11px", // Adjust the padding to make the button smaller
               fontSize: "0.8rem", // Reduce the font size for a smaller button
               fontFamily: 'Inconsolata',
             }}
@@ -75,23 +75,16 @@ const ToolCard = ({ name, tag, blurb, url, price }) => {
           <Typography
             variant="body2"
             color="text.secondary"
-            sx  = {{ fontFamily: 'Inconsolata' }} 
+            sx  = {{ fontFamily: 'Inconsolata', fontWeight: 500, fontSize: 15 }} 
           >
             {blurb}
           </Typography>
           <Typography
             variant="body2"
             color="text.secondary"
-            sx  = {{ fontFamily: 'Inconsolata' }} 
+            sx  = {{ fontFamily: 'Karla', fontWeight: 800, marginTop: 1, color: ''}} 
           >
-            {url}
-          </Typography>
-          <Typography
-            variant="body2"
-            color="text.secondary"
-            sx  = {{ fontFamily: 'Inconsolata' }} 
-          >
-            {price}
+             ${price}
           </Typography>
         </CardContent>
         <div

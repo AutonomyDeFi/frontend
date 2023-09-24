@@ -8,6 +8,7 @@ import AddToolCard from "../components/AddToolCard";
 import ToolCard from "../components/Card";
 import SearchBar from "../components/SearchBar";
 import apeLogo from "../assets/apebanner.png";
+import Link from '@mui/material/Link';
 import mainLogo from "../assets/main_logo.png";
 
 import "./borderstyles.scss";
@@ -22,6 +23,16 @@ const style = {
   border: "2px solid #000",
   boxShadow: 24,
   p: 4,
+};
+
+const commonStyles = {
+  bgcolor: '#D4E0F8 ',
+  m: 1,
+  border: 1,
+  paddingRight: 2,
+  paddingLeft: 2,
+  paddingBottom: 2,
+
 };
 
 export const data = [
@@ -168,7 +179,16 @@ export default function GridMarket({
         
       </div>
       <SearchBar> </SearchBar>
-      <h2> Marketplace</h2>
+      <Typography
+            gutterBottom
+            variant="h6"
+            component="div"
+            sx={{ fontFamily: 'Karla', fontWeight: 800, fontSize: 30, marginTop: 2, marginBottom: 1, }}
+          >
+            Market Place
+
+          </Typography>
+ 
       <Grid container spacing={{ xs: 2, md: 3 }}>
         <Grid
           item
@@ -206,24 +226,29 @@ export default function GridMarket({
               sx={{
                 fontFamily: "Karla",
                 fontWeight: 800,
-                fontSize: 30,
+                fontSize: 40,
+                marginTop: -2,
+
               }}
             >
               {toolName}
             </Typography>
             <Button
-              id="modal-modal-description"
-              variant="outlined"
-              sx={{
-                mt: 2,
-                fontFamily: "Inconsolata",
-                fontSize: 15,
-                fontWeight: 500,
-                borderRadius: 10,
-              }}
-            >
-              {toolTag}
-            </Button>
+            variant="outlined"
+            // startIcon = {LogoComponent} 
+            sx={{
+              marginBottom: 1,
+              borderColor: "#2196F3",
+              borderRadius: "20px",
+              color: "#2196F3",
+              padding: "4px 11px", // Adjust the padding to make the button smaller
+              fontSize: "1rem", // Reduce the font size for a smaller button
+              fontFamily: 'Inconsolata',
+            }}
+          >
+            {toolTag}
+          </Button>
+          <Box sx={{ ...commonStyles, borderColor: 'grey.500', borderRadius: '16px' }} >
             <Typography
               id="modal-modal-description"
               sx={{
@@ -235,6 +260,8 @@ export default function GridMarket({
             >
               {toolDesc}
             </Typography>
+            </Box>
+            
             <Typography
               id="modal-modal-description"
               sx={{
@@ -244,7 +271,10 @@ export default function GridMarket({
                 fontWeight: 500,
               }}
             >
-              {toolUrl}
+              <b> API URL: </b>
+              <Link href="#" underline="hover">
+        {toolUrl}
+      </Link>
             </Typography>
             <Typography
               id="modal-modal-description"
@@ -255,7 +285,7 @@ export default function GridMarket({
                 fontWeight: 500,
               }}
             >
-              {toolPrice}
+               <b>$</b>{toolPrice}
             </Typography>
           </Box>
         </Modal>

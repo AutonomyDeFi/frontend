@@ -18,10 +18,6 @@ import {
   Paper,
 } from "@mui/material";
 
-
-
-
-
 const toolList = [
   { label: 'Uniswap'},
   { label: 'AAVE'},
