@@ -88,7 +88,7 @@ export const data = [
     tag: "1Inch",
     blurb: "Gets price of assets",
     desc: "Using 1Inch you can get the latest USD price of an asset",
-    url: "sample url",
+    url: "https://api.apei.dev/spot-ape/v1",
     price: "5.50",
   },
   {
@@ -96,7 +96,7 @@ export const data = [
     tag: "Compound",
     blurb: "Gets gas price",
     desc: "Using 1Inch you can check on the current price of gas on Ethereum",
-    url: "sample url",
+    url: "https://api.apei.dev/gas-ape/v1",
     price: "5.50",
   },
   {
@@ -104,7 +104,7 @@ export const data = [
     tag: "1Inch",
     blurb: "View assets in an address",
     desc: "Using 1Inch you can view what assets an address is holding",
-    url: "sample url",
+    url: "https://api.apei.dev/balance-ape/v1",
     price: "5.50",
   },
   {
@@ -112,7 +112,7 @@ export const data = [
     tag: "Compound",
     blurb: "Lend using Compound V3",
     desc: "Use compound to lend assets with the best yield to generate c-tokens",
-    url: "sample url",
+    url: "https://api.apei.dev/yield-ape/v1",
     price: "5.50",
   },
   {
@@ -120,7 +120,7 @@ export const data = [
     tag: "AAVE",
     blurb: "Take out loans",
     desc: "Use Aave to take out loans denominated in GHO",
-    url: "sample url",
+    url: "https://api.apei.dev/loan-ape/v1",
     price: "5.50",
   },
   {
@@ -128,7 +128,7 @@ export const data = [
     tag: "Uniswap",
     blurb: "Exchange",
     desc: "Use Uniswap to swap tokens for another",
-    url: "sample url",
+    url: "https://api.apei.dev/swap-ape/v1",
     price: "5.50",
   },
   {
@@ -136,7 +136,7 @@ export const data = [
     tag: "DefiLlama",
     blurb: "Get the current APY for RPL",
     desc: "Use DeFi Llama to get the current APY value of the RocketPool staking token",
-    url: "sample url",
+    url: "https://api.apei.dev/rocket-ape/v1",
     price: "5.50",
   },
   {
@@ -144,7 +144,7 @@ export const data = [
     tag: "DefiLlama",
     blurb: "Get the current APY for STETH",
     desc: "Use DeFi Llama to get the current APY value of the Lido staking token STETH",
-    url: "sample url",
+    url: "https://api.apei.dev/lido-ape/v1",
     price: "5.50",
   },
 ];
