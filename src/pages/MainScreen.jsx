@@ -8,7 +8,7 @@ import AddToolScreen from "./AddToolScreen";
 import CustomToolScreen from "./CustomToolScreen";
 //import Marketplace from './Marketplace';
 //import MarketGrid from './MarketGrid';
-import Grid_Market from "./Grid";
+import GridMarket from "./GridMarket";
 import Header from "./Header";
 import RunModelScreen from "./RunModelScreen";
 import Footer from "./Footer";
@@ -46,7 +46,7 @@ const MainScreen = () => {
           }}
         >
           {currentPageIndex == 0 ? (
-            <Grid_Market
+            <GridMarket
               onClickHandler={onClick}
             />
           ) : currentPageIndex == 1 ? (

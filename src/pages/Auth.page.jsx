@@ -15,8 +15,8 @@ import {
   createTheme,
   ThemeProvider,
 } from "@mui/material/styles";
+import { useSDK } from "@metamask/sdk-react";
 import { usePrivy } from "@privy-io/react-auth";
-import { MetaMaskButton } from "@metamask/sdk-react-ui";
 
 import mainLogo from "../assets/main_logo.png";
 import backgroundImage1 from "../assets/apeBackground_1.png";
@@ -42,8 +42,29 @@ function Copyright(props) {
 
 const defaultTheme = createTheme();
 
-export default function AuthPage() {
-  const { login } = usePrivy();
+export default function AuthPage({ setAccount }) {
+  const { login, logout } = usePrivy();
+
+  const {
+    sdk,
+    connected,
+    connecting,
+    provider,
+    chainId,
+  } = useSDK();
+
+  const connectWithMetaMask = async () => {
+    try {
+      const accounts = await sdk?.connect();
+      console.log("-=-=- -=-=- -=-=- accounts");
+      console.log(accounts);
+      setAccount(accounts?.[0]);
+    } catch (err) {
+      console.warn(`failed to connect..`, err);
+    }
+  };
+
+  console.log(`connected: ${connected}`);
 
   return (
     <ThemeProvider theme={defaultTheme}>
@@ -152,7 +173,12 @@ export default function AuthPage() {
               <Button
                 fullWidth
                 variant="contained"
-                sx={{ mt: 3, mb: 2 }}
+                sx={{
+                  mt: 3,
+                  mb: 2,
+                  width: "200px",
+                  height: "50px",
+                }}
                 color="error"
                 onClick={login}
               >
@@ -160,10 +186,36 @@ export default function AuthPage() {
               </Button>
             </Box>
             <Box>
-              <MetaMaskButton
-                // theme={"dark"}
-                color="white"
-              ></MetaMaskButton>
+              <Button
+                fullWidth
+                variant="link"
+                sx={{
+                  mt: 3,
+                  mb: 2,
+                  width: "200px",
+                  height: "50px",
+                }}
+                color="error"
+                onClick={connectWithMetaMask}
+              >
+                Use MetaMask
+              </Button>
+            </Box>
+            <Box>
+              <Button
+                fullWidth
+                variant="outline"
+                sx={{
+                  mt: 3,
+                  mb: 2,
+                  width: "200px",
+                  height: "50px",
+                }}
+                color="error"
+                onClick={logout}
+              >
+                LOGOUT
+              </Button>
             </Box>
             <Copyright sx={{ mt: 5 }} />
           </Box>

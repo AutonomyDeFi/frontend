@@ -75,7 +75,7 @@ export const data = [
   },
 ];
 
-export default function Grid_Market({
+export default function GridMarket({
   onClickHandler,
 }) {
   function openTool() {
