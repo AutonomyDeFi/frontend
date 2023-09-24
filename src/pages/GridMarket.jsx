@@ -30,48 +30,64 @@ export const data = [
     tag: "1Inch",
     blurb: "Gets price of assets",
     desc: "Using 1Inch you can get the latest USD price of an asset",
+    url: "sample url",
+    price: "5.50"
   },
   {
     name: "Gas Ape",
     tag: "Compound",
     blurb: "Gets gas price",
     desc: "Using 1Inch you can check on the current price of gas on Ethereum",
+    url: "sample url",
+    price: "5.50"
   },
   {
     name: "Balance Ape",
     tag: "1Inch",
     blurb: "View assets in an address",
     desc: "Using 1Inch you can view what assets an address is holding",
+    url: "sample url",
+    price: "5.50"
   },
   {
     name: "Yield Ape",
     tag: "Compound",
     blurb: "Lend using Compound V3",
     desc: "Use compound to lend assets with the best yield to generate c-tokens",
+    url: "sample url",
+    price: "5.50"
   },
   {
     name: "Loan Ape",
     tag: "AAVE",
     blurb: "Take out loans",
     desc: "Use Aave to take out loans denominated in GHO",
+    url: "sample url",
+    price: "5.50"
   },
   {
     name: "Swap Ape",
     tag: "Uniswap",
     blurb: "Exchange",
     desc: "Use Uniswap to swap tokens for another",
+    url: "sample url",
+    price: "5.50"
   },
   {
     name: "Rocket Ape",
-    tag: "DeFi Llama",
+    tag: "DefiLlama",
     blurb: "Get the current APY for RPL",
     desc: "Use DeFi Llama to get the current APY value of the RocketPool staking token",
+    url: "sample url",
+    price: "5.50"
   },
   {
     name: "Lido Ape",
-    tag: "DeFi Llama",
+    tag: "DefiLlama",
     blurb: "Get the current APY for STETH",
     desc: "Use DeFi Llama to get the current APY value of the Lido staking token STETH",
+    url: "sample url",
+    price: "5.50"
   },
 ];
 
@@ -92,17 +108,25 @@ export default function GridMarket({
     React.useState();
   const [toolDesc, setToolDesc] =
     React.useState();
+  const [toolPrice, setToolPrice] =
+    React.useState();
+  const [toolUrl, setToolUrl] =
+    React.useState();
 
   const openModal = ({
     name,
     tag,
     blurb,
     desc,
+    price,
+    url,
   }) => {
     setToolName(name);
     setToolTag(tag);
     setToolBlurb(blurb);
     setToolDesc(desc);
+    setToolPrice(price);
+    setToolUrl(url);
     handleOpen();
   };
 
@@ -119,7 +143,7 @@ export default function GridMarket({
       justifyContent: "center",
       alignItems: "center",
       flexWrap: "wrap",
-      maxWidth: "75%",
+      maxWidth: "80%",
       marginLeft: "auto",
       marginRight: "auto",
     }}
@@ -210,6 +234,28 @@ export default function GridMarket({
               }}
             >
               {toolDesc}
+            </Typography>
+            <Typography
+              id="modal-modal-description"
+              sx={{
+                mt: 2,
+                fontFamily: "Inconsolata",
+                fontSize: 20,
+                fontWeight: 500,
+              }}
+            >
+              {toolUrl}
+            </Typography>
+            <Typography
+              id="modal-modal-description"
+              sx={{
+                mt: 2,
+                fontFamily: "Inconsolata",
+                fontSize: 20,
+                fontWeight: 500,
+              }}
+            >
+              {toolPrice}
             </Typography>
           </Box>
         </Modal>

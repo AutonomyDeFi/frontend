@@ -4,14 +4,29 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { CardActionArea } from "@mui/material";
+import Box from "@mui/material/Box";
+import inchLogo from "../assets/logos/1inch.png";
+import aaveLogo from "../assets/logos/aave.png";
+import compoundLogo from "../assets/logos/compound.png";
+import llamaLogo from "../assets/logos/defillama.png";
+import uniswapLogo from "../assets/logos/uniswap.png";
 
-const ToolCard = ({ name, tag, blurb }) => {
+const logoComponents = {
+  "1Inch" : <img src={inchLogo} alt="1inch" height="20" width="20"/>,
+  AAVE: <img src={aaveLogo} alt="Aave" height="20" width="20"/>,
+  Compound: <img src={compoundLogo} alt="Compound" height="20" width="20"/>,
+  DefiLlama: <img src={llamaLogo} alt="DefiLlama" height="20" width="20"/>,
+  Uniswap: <img src={uniswapLogo} alt="Uniswap" height="20" width="20"/>,
+};
+
+const ToolCard = ({ name, tag, blurb, url, price }) => {
+  const LogoComponent = logoComponents[tag];
   return (
     <CardActionArea>
       <Card
         sx={{
           maxWidth: 345,
-          minHeight: 170,
+          height: 200,
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
@@ -26,21 +41,25 @@ const ToolCard = ({ name, tag, blurb }) => {
           fontFamily: 'Karla',
         }}
       >
+        
         <CardContent>
+      
           <Typography
             gutterBottom
             variant="h5"
             component="div"
             sx={{
-              backgroundColor: "#EEF6FC", // Set your desired background color
+              
               fontFamily: 'Inconsolata',
+              fontWeight: 600
             }}
           >
             {name}
           </Typography>
-
+      
           <Button
             variant="outlined"
+            startIcon = {LogoComponent} 
             sx={{
               marginBottom: 2,
               borderColor: "#2196F3",
@@ -59,6 +78,20 @@ const ToolCard = ({ name, tag, blurb }) => {
             sx  = {{ fontFamily: 'Inconsolata' }} 
           >
             {blurb}
+          </Typography>
+          <Typography
+            variant="body2"
+            color="text.secondary"
+            sx  = {{ fontFamily: 'Inconsolata' }} 
+          >
+            {url}
+          </Typography>
+          <Typography
+            variant="body2"
+            color="text.secondary"
+            sx  = {{ fontFamily: 'Inconsolata' }} 
+          >
+            {price}
           </Typography>
         </CardContent>
         <div

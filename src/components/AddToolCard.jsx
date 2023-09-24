@@ -3,85 +3,52 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
-
-// const ToolCard = ({ name, tags, description }) => {
-//   return (
-//     <CardActionArea>
-//       <Card
-//         sx={{
-//           maxWidth: 345,
-//           minHeight: 170,
-//           display: 'flex',
-//           flexDirection: 'column',
-//           justifyContent: 'centern',
-//           boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
-//           transition: 'transform 0.2s',
-//           '&:hover': {
-//             transform: 'scale(1.02)',
-//           },
-//         //   background: rgb(10,5,97),
-//         //   background: linear-gradient('209deg', 'rgba(10,5,97,1) 0%', 'rgba(9,9,121,1) 35%', 'rgba(56,129,173,1) 100%),
-
-//           background: 'linear-gradient(to right bottom, #0a0561, #3881ad)',
-//           border: '3px solid #white', // Add a border for a card-like feel
-//         }}
-//       >
-
-//         <CardContent>
-//         <Box sx={{
-//             ...commonStyles,
-//              borderRadius: '16px',
-//              borderColor: 'white',
-//              backgroundColor: '00',
-//             // opacity: [0.9, 0.8, 0.9],
-//             '&:hover': {
-//             backgroundColor: 'primary.main',
-//             opacity: [0.9, 0.8, 0.7],
-//         },}}>
-//         <ThemeProvider theme={theme}>
-//           <Typography gutterBottom variant="addTool" component="div">
-//             Add Tool
-//           </Typography>
-//           </ThemeProvider>
-//           </Box>
-//         </CardContent>
-//       </Card>
-//     </CardActionArea>
-//   );
-// };
-
-// export default ToolCard;
-
+import AddCircleIcon from '@mui/icons-material/AddCircle';
+import './styleicon.css'
 const ToolCard = ({ name, tag, blurb }) => {
   return (
     <CardActionArea>
       <Card
         sx={{
           maxWidth: 345,
-          minHeight: 170,
+          height: 200,
           display: "flex",
           flexDirection: "column",
-          justifyContent: "space-between",
-          boxShadow:
-            "0 4px 8px rgba(0, 0, 0, 0.2)",
+          justifyContent: "center", // Center content vertically
+          alignItems: "center", // Center content horizontally
+          boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
           transition: "transform 0.2s",
           borderRadius: "8px", // Add rounded corners for a modern look
           border: "1px solid #e0e0e0", // Add a subtle border for depth
           overflow: "hidden", // Hide any overflowing content
           position: "relative", // Allow absolute positioning of elements inside
-          backgroundColor: "",
-          
+          backgroundImage: "linear-gradient(to bottom, #2196F3, #0D47A1)", // Blue gradient background
+          color: "#ffffff", // Text color
         }}
       >
-        <CardContent>
+        <CardContent >
+          <div> 
           <Typography
             gutterBottom
             variant="h5"
             component="div"
-            sx = {{fontFamily: 'Karla', fontWeight: 800, margin: 2}}
+            sx={{ fontFamily: 'Karla', fontWeight: 800, margin:'auto', fontSize: 30 }}
           >
-            Add A New Tool
+            Add Tool
+            
+            <AddCircleIcon className="add-circle-icon" />
+
           </Typography>
+          </div>
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="div"
+            sx={{ fontFamily: 'Inconsolata', fontWeight: 500, fontSize: 13 }}
+          >
+            Interested in earning ETH? Build your own AI Agent and allow others to pay for usage.
+          </Typography>
+          
         </CardContent>
         <div
           style={{
@@ -89,9 +56,9 @@ const ToolCard = ({ name, tag, blurb }) => {
             bottom: "0",
             left: "0",
             right: "0",
-            backgroundColor: "#2196F3", // Add a background color to the bottom section
+            backgroundColor: "rgba(0, 0, 0, 0.3)", // Add a semi-transparent background color to the bottom section
             padding: "3px", // Add some padding to the bottom section
-            color: "#ffffff", // Set text color for the bottom section
+            color: "#ffffff", // Text color for the bottom section
             borderTopLeftRadius: "8px", // Match the card's border radius
             borderTopRightRadius: "8px", // Match the card's border radius
             fontFamily: 'Karla'

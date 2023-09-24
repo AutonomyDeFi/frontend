@@ -1,22 +1,33 @@
 import React, { useState } from "react";
-import TextField from "@mui/material/TextField";
 import Chip from "@mui/material/Chip";
-import Autocomplete from "@mui/material/Autocomplete";
 import Button from "@mui/material/Button";
 import Modal from "@mui/material/Modal";
+import TextField from '@mui/material/TextField';
+import Autocomplete from '@mui/material/Autocomplete';
 import { Typography } from "@mui/material";
+import OutlinedInput from '@mui/material/OutlinedInput';
+import InputLabel from '@mui/material/InputLabel';
+import InputAdornment from '@mui/material/InputAdornment';
+
+
+
+
 import {
   Box,
   Container,
   Paper,
 } from "@mui/material";
 
+
+
+
+
 const toolList = [
-  { name: "Uniswap"},
-  { name: "AAVE"},
-  { name: "Compound" },
-  { name: "DefiLlama"},
-  { name: "1Inch"},
+  { label: 'Uniswap'},
+  { label: 'AAVE'},
+  { label: 'Compound'},
+  { label: 'DefiLlama'},
+  { label: '1Inch'},
 ];
 
 const style = {
@@ -100,6 +111,12 @@ const CustomToolScreen = ({ onClickHandler }) => {
               maxRows={4}
               variant="outlined"
             />
+            <TextField
+              id="outlined-basic"
+              label="API URL"
+              variant="outlined"
+            />
+
             <Autocomplete
               disablePortal
               id="combo-box-demo"
@@ -112,6 +129,12 @@ const CustomToolScreen = ({ onClickHandler }) => {
                 />
               )}
             />
+            <InputLabel htmlFor="outlined-adornment-amount">Amount</InputLabel>
+          <OutlinedInput
+            id="outlined-adornment-amount"
+            startAdornment={<InputAdornment position="start">$</InputAdornment>}
+            label="Amount"
+          />
             <div>
               <Button
                 variant="contained"
