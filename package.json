@@ -5,12 +5,14 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@metamask/sdk-react-ui": "^0.7.0",
     "@mui/icons-material": "^5.14.9",
     "@mui/material": "^5.14.10",
     "@privy-io/react-auth": "^1.40.3",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "browserify": "^17.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "prettier": "^3.0.3",
     "react": "^18.2.0",
@@ -19,9 +21,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -43,6 +45,12 @@
     ]
   },
   "devDependencies": {
-    "sass": "^1.68.0"
+    "assert": "^2.1.0",
+    "buffer": "^6.0.3",
+    "process": "^0.11.10",
+    "react-app-rewired": "^2.2.1",
+    "sass": "^1.68.0",
+    "stream-browserify": "^3.0.0",
+    "url": "^0.11.3"
   }
 }

@@ -16,6 +16,7 @@ import {
   ThemeProvider,
 } from "@mui/material/styles";
 import { usePrivy } from "@privy-io/react-auth";
+import { MetaMaskButton } from "@metamask/sdk-react-ui";
 
 import mainLogo from "../assets/main_logo.png";
 import backgroundImage1 from "../assets/apeBackground_1.png";
@@ -100,7 +101,6 @@ export default function AuthPage() {
               alt="logo"
               width={200}
               height={200}
-              paddingTop={"20px"}
             />
 
             <Typography
@@ -159,16 +159,11 @@ export default function AuthPage() {
                 Login With Email
               </Button>
             </Box>
-            <Box sx={{ mt: 1 }}>
-              <Button
-                fullWidth
-                variant="text"
-                sx={{ mt: 3, mb: 2 }}
-                color="error"
-                onClick={login}
-              >
-                Use MetaMask
-              </Button>
+            <Box>
+              <MetaMaskButton
+                // theme={"dark"}
+                color="white"
+              ></MetaMaskButton>
             </Box>
             <Copyright sx={{ mt: 5 }} />
           </Box>

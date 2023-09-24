@@ -122,7 +122,6 @@ export default function Grid_Market({
               alt="logo"
               width={200}
               height={200}
-              paddingTop={"20px"}
             />
             <Typography
               variant="h6"
@@ -175,27 +174,41 @@ export default function Grid_Market({
           onClose={handleClose}
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
-
         >
           <Box sx={style}>
             <Typography
               id="modal-modal-title"
               variant="h6"
               component="h2"
-              sx = {{fontFamily: "Karla", fontWeight: 800, fontSize:30}}
+              sx={{
+                fontFamily: "Karla",
+                fontWeight: 800,
+                fontSize: 30,
+              }}
             >
               {toolName}
             </Typography>
             <Button
               id="modal-modal-description"
               variant="outlined"
-              sx={{ mt: 2, fontFamily: "Inconsolata", fontSize:15, fontWeight:500, borderRadius: 10}}
+              sx={{
+                mt: 2,
+                fontFamily: "Inconsolata",
+                fontSize: 15,
+                fontWeight: 500,
+                borderRadius: 10,
+              }}
             >
               {toolTag}
             </Button>
             <Typography
               id="modal-modal-description"
-              sx={{ mt: 2, fontFamily: "Inconsolata", fontSize:20, fontWeight:500,}}
+              sx={{
+                mt: 2,
+                fontFamily: "Inconsolata",
+                fontSize: 20,
+                fontWeight: 500,
+              }}
             >
               {toolDesc}
             </Typography>
