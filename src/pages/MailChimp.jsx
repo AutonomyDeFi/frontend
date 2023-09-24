@@ -15,7 +15,7 @@ const CustomForm = ({ onValidated }) => {
 
   return (
     <form className="mc__form" onSubmit={(e) => handleSubmit(e)}>
-      <h3 className="mc__title" style={{ fontSize: 40 }}>
+      <h3 className="mc__title" style={{ fontSize: 40, marginTop: -10 }}>
         Join our email list for future updates.
       </h3>
       <Box x={{ display: 'flex' }}> 

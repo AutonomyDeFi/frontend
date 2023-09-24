@@ -112,10 +112,11 @@
     display: flex;
     gap: 720.95px;
     justify-content: space-around;
-    left: 500px;
+    left: '50%';
     position: absolute;
-    top: 369px;
-    width: 492px;
+    top: 300px;
+    bottom:40px;
+    width: 100%;
   }
   
   .div-relative .p-opacity {
@@ -135,7 +136,7 @@
     font-weight: 400;
     letter-spacing: 0;
     line-height: 28px;
-    margin-top: -1px;
+    margin-top: -30px;
     position: relative;
     white-space: nowrap;
     width: fit-content;
