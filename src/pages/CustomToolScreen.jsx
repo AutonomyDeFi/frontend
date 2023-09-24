@@ -237,7 +237,7 @@ const CustomToolScreen = ({ onClickHandler }) => {
                   fontSize: 20,
                 }}
               >
-                ENS response here
+                apei.eth
               </Typography>
               <Typography
                 variant="body1"
@@ -259,7 +259,7 @@ const CustomToolScreen = ({ onClickHandler }) => {
                   paddingBottom: 5,
                 }}
               >
-                Transaction hash response here
+                0x1111111254EEB25477B68fb85Ed929f73A960582
               </Typography>
               <div>
                 <Button
@@ -277,7 +277,7 @@ const CustomToolScreen = ({ onClickHandler }) => {
                   onClick={() =>
                     onClickHandler(0)
                   }
-                  // navigate.goBack()
+                 
                   sx={{
                     mt: 1,
                     fontFamily: "Inconsolata",
