@@ -13,7 +13,7 @@ import Header from "./Header";
 import RunModelScreen from "./RunModelScreen";
 import Footer from "./Footer";
 
-const MainScreen = ({ navigation }) => {
+const MainScreen = () => {
   const [currentPageIndex, setCurrentPageIndex] =
     React.useState(0);
   const onClick = (newState) => {
