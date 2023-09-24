@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./footerstyling.css";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-
+import MailChimp from './MailChimp';
 function Footer() {
   const [email, setEmail] = useState("");
 
@@ -32,7 +32,7 @@ function Footer() {
             <div className="form">
 
               
-              <TextField
+               {/* <TextField
                 id="outlined-basic"
                 label="Email"
                 variant="outlined"
@@ -45,7 +45,8 @@ function Footer() {
                 onClick={handleSubmit}
               >
                 Submit
-              </Button>
+              </Button>  */}
+             <MailChimp/> 
             </div>
           </div>
           <div className="div-margin" />

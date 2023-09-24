@@ -108,7 +108,6 @@ const CustomToolScreen = ({ onClickHandler }) => {
     handleClose();
   };
 
-
   return (
     <div className="customToolScreen">
       <Container>
@@ -117,7 +116,7 @@ const CustomToolScreen = ({ onClickHandler }) => {
             variant="h4"
             sx={style.header}
           >
-            Create Your Own Model
+            Create Your Own Tool
           </Typography>
           <div
             className="input_addtool"
@@ -189,7 +188,7 @@ const CustomToolScreen = ({ onClickHandler }) => {
               </Button>
               <Button
                 variant="contained"
-                onClick={handleOpen}
+                onClick={createTool}
                 sx={style.createToolButton}
               >
                 Create Tool
