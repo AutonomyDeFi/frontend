@@ -143,6 +143,7 @@ export default function AuthPage({
               component="h1"
               variant="h3"
               style={{ marginTop: 50 }}
+              sx = {{fontFamily: 'Inconsolata', fontSize: 50, fontWeight: 800}}
             >
               Ape In
             </Typography>
@@ -153,6 +154,7 @@ export default function AuthPage({
                 marginTop: 10,
                 marginBottom: 30,
               }}
+              sx = {{fontFamily: 'Inconsolata', fontSize: 25, fontWeight: 500}}
             >
               ...at your own risk
             </Typography>

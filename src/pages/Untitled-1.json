@@ -1,0 +1,37 @@
+{
+  "data": [
+    {
+      "name": "tool.get_best_apy",
+      "description": "\"Get the best apy between 2 dictionaries",
+      "tags": ["defi", "tool"],
+      "schema": {
+        "input": { "data1": "<class 'dict'>", "data2": "<class 'dict'>" },
+        "output": null,
+        "default": { "data1": null, "data2": null }
+      },
+      "price": 99
+    },
+    {
+      "name": "tool.defillama.rocketpool",
+      "description": "\n        Connects to the Defillama API and allows the user to select which chain, project, symbol or pool they want. \n        :param params: A dictionary with optional filters (chain (first letter uppercase), project, symbol, pool).\n        :return: Filtered list of pool data.\n\n        Example input: \n        # Fetch data for a specific chain and project\n        params = {\n            \"chain\": \"Ethereum\",\n            \"project\": \"lido\",\n        }\n\n        here is an input:\n        rocket_pool_instance = RocketPool()\n        result=rocket_pool_instance.call(project=\"rocket-pool\", symbol=\"RETH\")\n        here is an example of the output that corresponds with the above input:\n        [{'apy': 3.21066, 'market': 'rocket-pool', 'asset': 'RETH', 'chain': 'Ethereum', 'timestamp': 1695494506.412746}]\n    ",
+      "tags": ["defi", "tool"],
+      "schema": {
+        "input": {
+          "chain": "<class 'str'>",
+          "project": "<class 'str'>",
+          "symbol": "<class 'str'>"
+        },
+        "output": null,
+        "default": { "chain": null, "project": "rocket-pool", "symbol": null }
+      },
+      "price": 45
+    },
+    {
+      "name": "tool.inch.gasprice",
+      "description": "\n    Gets the token prices from the 1inch API.\n    ",
+      "tags": ["defi", "tool"],
+      "schema": { "input": {}, "output": null, "default": {} },
+      "price": 27
+    }
+  ]
+}

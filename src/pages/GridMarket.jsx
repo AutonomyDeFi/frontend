@@ -151,6 +151,7 @@ export const data = [
 
 export default function GridMarket({
   onClickHandler,
+  sdasd
 }) {
   function openTool() {
     onClickHandler(1);
@@ -230,7 +231,7 @@ export default function GridMarket({
               paddingTop: "50px",
             }}
           ></div>
-          <SearchBar onClickHandler = {onClickHandler}> </SearchBar>
+          <SearchBar onClickHandler = {onClickHandler} sdasd={sdasd}> </SearchBar>
           <Typography
             gutterBottom
             variant="h6"

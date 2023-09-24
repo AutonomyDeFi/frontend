@@ -13,37 +13,35 @@ function ccyFormat(num) {
   return `${num.toFixed(2)}`;
 }
 
-function createRow(name, desc, price) {
-  return { name, desc, price };
+
+
+const calculateTotalPrice = (returnPayload) => {
+  let total = 0;
+  console.log('RETURN PAYLOAD');
+  console.log(returnPayload);
+
+
+  returnPayload.forEach(item => {
+    console.log('INSIDE FOR EACH');
+    
+    if (item.hasOwnProperty('price')) {
+      console.log('--- --- item.price');
+      console.log(item.price);
+      total += item.price;
+    }
+  });
+
+  return total;
 }
 
-function subtotal(items) {
-  return items
-    .map(({ price }) => price)
-    .reduce((sum, i) => sum + i, 0);
-}
 
-const rows = [
-  createRow(
-    "AAVE GHO",
-    "The Aave Pool facilitator will all other Aave reserves. ",
-    13.2,
-  ),
-  createRow(
-    "1Inch",
-    "The 1inch Developer Portal API uses API keys to authenticate requests. ",
-    8.7,
-  ),
-  createRow(
-    "Compound V3",
-    "Compound III is an EVM compatible protocol that enables supplying of crypto assets as collateral in order to borrow the base asset. ",
-    17.99,
-  ),
-];
+const ConfirmTransactionScreen = ({ onClickHandler, returnPayload }) => {
+  console.log('--- --- returnPayload');
+  console.log(returnPayload);
+  console.log('--- --- returnPayload.price');
+  console.log(returnPayload.price);
+  const total = calculateTotalPrice(returnPayload);
 
-const total = subtotal(rows);
-
-const ConfirmTransactionScreen = ({ onClickHandler }) => {
   return (
     <div style = {{marginTop: 80, marginRight: 40, marginLeft:40}}>
       <TableContainer component={Paper}>
@@ -80,24 +78,27 @@ const ConfirmTransactionScreen = ({ onClickHandler }) => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows.map((row) => (
-              <TableRow key={row.name}>
-                <TableCell sx={{ fontFamily: "Inconsolata", fontWeight: 600, fontSize: 16}}>{row.name}</TableCell>
-                <TableCell align="right" sx={{ fontFamily: "Inconsolata", fontWeight: 600, fontSize: 16}}>
-                  {row.desc}
+          {returnPayload.map((entry) => (
+              <TableRow key={entry.name}>
+                <TableCell sx={{ fontFamily: "Inconsolata", fontWeight: 600, fontSize: 16 }}>
+                  {entry.name}
                 </TableCell>
-                <TableCell align="right" sx={{ fontFamily: "Inconsolata", fontWeight: 600, fontSize: 16}}>
-                  {ccyFormat(row.price)}
+                <TableCell align="right" sx={{ fontFamily: "Inconsolata", fontWeight: 600, fontSize: 16 }}>
+                  {entry.description}
+                </TableCell>
+                <TableCell align="right" sx={{ fontFamily: "Inconsolata", fontWeight: 600, fontSize: 16 }}>
+                  {ccyFormat(entry.price)}
                 </TableCell>
               </TableRow>
             ))}
             <TableRow>
               <TableCell rowSpan={2} />
-              <TableCell align="right" sx={{ fontFamily: "Inconsolata", fontWeight: 700, fontSize: 20}}>
+              <TableCell align="right" sx={{ fontFamily: "Inconsolata", fontWeight: 700, fontSize: 20 }}>
                 Total
               </TableCell>
-              <TableCell align="right" sx={{ fontFamily: "Inconsolata", fontWeight: 600, fontSize: 16}}>
-                {ccyFormat(total)}
+              {/* You should replace the 'total' with your actual total value */}
+              <TableCell align="right" sx={{ fontFamily: "Inconsolata", fontWeight: 600, fontSize: 16 }}>
+                {ccyFormat(total)} {/* Replace 'total' with your actual total */}
               </TableCell>
             </TableRow>
           </TableBody>
