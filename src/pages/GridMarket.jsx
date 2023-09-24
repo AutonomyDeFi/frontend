@@ -109,7 +109,7 @@ export default function GridMarket({
   return (
     <div> 
       <div>
-          <img src = {apeLogo} alt = "ape banner" width="100%" height="500px" />
+          <img src = {apeLogo} alt = "ape banner" width="100%" height="400px" />
           
         </div>
    
