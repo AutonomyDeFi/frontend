@@ -47,7 +47,7 @@ const CustomForm = ({  onValidated }) => {
   };
   
 const MailchimpForm = props => {
-    const postUrl = 'https://gmail.us13.list-manage.com/subscribe/post?u=${ad956b516420b2618586c34b}&id=${532aea6cb8}';
+    const url = 'https://gmail.us13.list-manage.com/subscribe/post?u=${ad956b516420b2618586c34b}&id=${532aea6cb8}';
 
     return (
 

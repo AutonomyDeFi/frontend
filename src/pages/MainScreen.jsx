@@ -4,6 +4,7 @@ import GridMarket from "./GridMarket";
 import Header from "./Header";
 import RunModelScreen from "./RunModelScreen";
 import Footer from "./Footer";
+import ConfirmTransactionScreen from "./ConfirmTransactionScreen";
 
 const MainScreen = ({
   account,
@@ -33,7 +34,7 @@ const MainScreen = ({
           onClickHandler={onClick}
         />
       ) : (
-        <RunModelScreen />
+        <ConfirmTransactionScreen />
       )}
       <Footer />
     </div>

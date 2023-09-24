@@ -230,7 +230,7 @@ export default function GridMarket({
               paddingTop: "50px",
             }}
           ></div>
-          <SearchBar> </SearchBar>
+          <SearchBar onClickHandler = {onClickHandler}> </SearchBar>
           <Typography
             gutterBottom
             variant="h6"

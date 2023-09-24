@@ -5,13 +5,14 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 
-export default function CustomizedInputBase() {
+export default function CustomizedInputBase({ onClickHandler }) {
   const handleEnterPress = (event) => {
     if (event.key === "Enter") {
-      // Call your function to pop up another screen or perform an action here
-      // For example: openAnotherScreen();
+      // Trigger the onClickHandler(2) event
+      onClickHandler(2);
 
-      console.log("Enter key pressed");
+      // Prevent the default form submission behavior
+      event.preventDefault();
     }
   };
 
@@ -38,7 +39,7 @@ export default function CustomizedInputBase() {
         <MenuIcon />
       </IconButton>
       <InputBase
-        sx={{ ml: 1, flex: 1, fontFamily: "Inconsolata", fontWeight: 800}}
+        sx={{ ml: 1, flex: 1, fontFamily: "Inconsolata", fontWeight: 800 }}
         placeholder="What do you want your AI agent to do?"
         inputProps={{ "aria-label": "search" }}
         onKeyDown={handleEnterPress} // Attach the event handler here
