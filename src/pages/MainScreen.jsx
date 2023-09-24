@@ -7,6 +7,7 @@ import Footer from "./Footer";
 
 const MainScreen = ({
   account,
+  biconomySmartAccount,
   isMetamaskAuth,
   handleLogout,
 }) => {
@@ -19,6 +20,9 @@ const MainScreen = ({
   return (
     <div>
       <Header
+        biconomySmartAccount={
+          biconomySmartAccount
+        }
         handleLogout={handleLogout}
         isMetamaskAuth={isMetamaskAuth}
       />

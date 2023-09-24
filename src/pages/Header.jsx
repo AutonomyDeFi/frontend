@@ -13,13 +13,14 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { usePrivy } from "@privy-io/react-auth";
-import './style.css';
+import "./style.css";
 import mainLogo from "../assets/main_logo.png";
 
 const pages = ["Products"];
 const settings = ["Profile"];
 
 function ResponsiveAppBar({
+  biconomySmartAccount,
   handleLogout,
   isMetamaskAuth,
 }) {
@@ -45,6 +46,13 @@ function ResponsiveAppBar({
     setAnchorElUser(null);
   };
 
+  const executeFund = async () => {
+    console.log(
+      "+++ +++ +++ +++ biconomySmartAccount",
+    );
+    console.log(biconomySmartAccount);
+  };
+
   const executeLogout = async () => {
     if (!isMetamaskAuth) {
       await logout();
@@ -55,7 +63,7 @@ function ResponsiveAppBar({
   return (
     <AppBar
       position="static"
-      sx={{ backgroundColor: "#6B96E5"}}
+      sx={{ backgroundColor: "#6B96E5" }}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -122,14 +130,12 @@ function ResponsiveAppBar({
                   xs: "block",
                   md: "none",
                 },
-           
-                 
-                  fontFamily: "Karla",
-                  fontWeight: 700,
-                  letterSpacing: ".3rem",
-                  color: "#6B96E5",
-                  textDecoration: "none",
-                
+
+                fontFamily: "Karla",
+                fontWeight: 700,
+                letterSpacing: ".3rem",
+                color: "#6B96E5",
+                textDecoration: "none",
               }}
             >
               {pages.map((page) => (
@@ -137,7 +143,13 @@ function ResponsiveAppBar({
                   key={page}
                   onClick={handleCloseNavMenu}
                 >
-                  <Typography textAlign="center" sx={{ fontFamily: "Karla", color: "#6B96E5"}}>
+                  <Typography
+                    textAlign="center"
+                    sx={{
+                      fontFamily: "Karla",
+                      color: "#6B96E5",
+                    }}
+                  >
                     {page}
                   </Typography>
                 </MenuItem>
@@ -166,7 +178,7 @@ function ResponsiveAppBar({
               textDecoration: "none",
             }}
           >
-            AUTONOMY
+            Ape-I
           </Typography>
           <Box
             sx={{
@@ -195,10 +207,11 @@ function ResponsiveAppBar({
                 onClick={handleOpenUserMenu}
                 sx={{ p: 0 }}
               >
-                <Avatar
-                  alt="Emmy Posner"
+                🦍
+                {/* <Avatar
+                  alt="🦍"
                   src="/static/images/avatar/2.jpg"
-                />
+                /> */}
               </IconButton>
             </Tooltip>
             <Menu
@@ -217,7 +230,7 @@ function ResponsiveAppBar({
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
+              {/* {settings.map((setting) => (
                 <MenuItem
                   key={setting}
                   onClick={handleCloseUserMenu}
@@ -226,7 +239,15 @@ function ResponsiveAppBar({
                     {setting}
                   </Typography>
                 </MenuItem>
-              ))}
+              ))} */}
+
+              <MenuItem
+                onClick={() => executeFund()}
+              >
+                <Typography textAlign="center">
+                  Fund Account
+                </Typography>
+              </MenuItem>
 
               <MenuItem
                 onClick={() => executeLogout()}
