@@ -16,10 +16,10 @@ import { usePrivy } from "@privy-io/react-auth";
 import "./style.css";
 import mainLogo from "../assets/main_logo.png";
 
-
 const settings = ["Profile"];
 
 function ResponsiveAppBar({
+  biconomySmartAccountAddress,
   biconomySmartAccount,
   handleLogout,
   isMetamaskAuth,
@@ -137,9 +137,7 @@ function ResponsiveAppBar({
                 color: "#6B96E5",
                 textDecoration: "none",
               }}
-            >
-              
-            </Menu>
+            ></Menu>
           </Box>
           <AdbIcon
             sx={{
@@ -170,9 +168,7 @@ function ResponsiveAppBar({
               flexGrow: 1,
               display: { xs: "none", md: "flex" },
             }}
-          >
-            
-          </Box>
+          ></Box>
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
@@ -186,6 +182,7 @@ function ResponsiveAppBar({
                   src="/static/images/avatar/2.jpg"
                 /> */}
               </IconButton>
+              {biconomySmartAccountAddress}
             </Tooltip>
             <Menu
               sx={{ mt: "45px" }}
@@ -203,7 +200,6 @@ function ResponsiveAppBar({
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-
               <MenuItem
                 onClick={() => executeFund()}
               >

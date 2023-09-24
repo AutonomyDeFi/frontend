@@ -1,4 +1,5 @@
 import * as React from "react";
+
 import CustomToolScreen from "./CustomToolScreen";
 import GridMarket from "./GridMarket";
 import Header from "./Header";
@@ -10,8 +11,10 @@ import Axios from 'axios';
 const MainScreen = ({
   account,
   biconomySmartAccount,
-  isMetamaskAuth,
+  biconomySmartAccountAddress,
+  loggedInProvider,
   handleLogout,
+  isMetamaskAuth,
 }) => {
   const [currentPageIndex, setCurrentPageIndex] =
     React.useState(0);
@@ -106,6 +109,9 @@ const MainScreen = ({
         biconomySmartAccount={
           biconomySmartAccount
         }
+        biconomySmartAccountAddress={
+          biconomySmartAccountAddress
+        }
         handleLogout={handleLogout}
         isMetamaskAuth={isMetamaskAuth}
       />
@@ -114,9 +120,20 @@ const MainScreen = ({
       ) : currentPageIndex == 1 ? (
         <CustomToolScreen
           onClickHandler={onClick}
+          account={account}
+          biconomySmartAccount={
+            biconomySmartAccount
+          }
+          loggedInProvider={loggedInProvider}
         />
       ) : (
+<<<<<<< HEAD
         <ConfirmTransactionScreen returnPayload={returnPayload} onClickHandler={onClick} />
+=======
+        <ConfirmTransactionScreen
+          onClickHandler={onClick}
+        />
+>>>>>>> f12cfdf (updates for completeness)
       )}
       <Footer />
     </div>

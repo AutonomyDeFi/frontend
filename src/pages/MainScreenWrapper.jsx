@@ -37,6 +37,10 @@ const MainScreenWrapper = ({
   ] = React.useState(false);
   const [isSessionActive, setIsSessionActive] =
     React.useState(false);
+  const [
+    biconomySmartAccountAddress,
+    setBiconomySmartAccountAddress,
+  ] = React.useState(null);
 
   const { wallets } = useWallets();
 
@@ -141,6 +145,14 @@ const MainScreenWrapper = ({
     createSmartAccount();
   }, []);
 
+  const setBiconAddress = async () => {
+    const accountAddress =
+      await biconomySmartAccount.getAccountAddress();
+    setBiconomySmartAccountAddress(
+      accountAddress,
+    );
+  };
+
   React.useEffect(() => {
     if (
       biconomySmartAccount &&
@@ -151,9 +163,7 @@ const MainScreenWrapper = ({
       console.log(
         ">>> >>> >>><<< <<< <<< biconomySmartAccount.getAccountAddress()",
       );
-      console.log(
-        biconomySmartAccount.getAccountAddress(),
-      );
+      setBiconAddress();
     }
   }, [biconomySmartAccount]);
 
@@ -268,8 +278,12 @@ const MainScreenWrapper = ({
     <MainScreen
       account={account}
       biconomySmartAccount={biconomySmartAccount}
-      isMetamaskAuth={isMetamaskAuth}
+      biconomySmartAccountAddress={
+        biconomySmartAccountAddress
+      }
       handleLogout={handleLogout}
+      isMetamaskAuth={isMetamaskAuth}
+      loggedInProvider={loggedInProvider}
     />
   );
 };

@@ -1,13 +1,19 @@
 import React, { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
+
 import Chip from "@mui/material/Chip";
 import Button from "@mui/material/Button";
 import Modal from "@mui/material/Modal";
-import TextField from '@mui/material/TextField';
-import Autocomplete from '@mui/material/Autocomplete';
+import TextField from "@mui/material/TextField";
+import Autocomplete from "@mui/material/Autocomplete";
 import { Typography } from "@mui/material";
-import OutlinedInput from '@mui/material/OutlinedInput';
-import InputLabel from '@mui/material/InputLabel';
-import InputAdornment from '@mui/material/InputAdornment';
+import OutlinedInput from "@mui/material/OutlinedInput";
+// import InputLabel from "@mui/material/InputLabel";
+import InputAdornment from "@mui/material/InputAdornment";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Select from "@mui/material/Select";
 
 import {
   Box,
@@ -15,12 +21,14 @@ import {
   Paper,
 } from "@mui/material";
 
+import { createToolCall } from "../contractcalls/createTool.call";
+
 const toolList = [
-  { label: 'Uniswap'},
-  { label: 'AAVE'},
-  { label: 'Compound'},
-  { label: 'DefiLlama'},
-  { label: '1Inch'},
+  { label: "Uniswap" },
+  { label: "AAVE" },
+  { label: "Compound" },
+  { label: "DefiLlama" },
+  { label: "1Inch" },
 ];
 
 const style = {
@@ -47,7 +55,6 @@ const style = {
     marginBottom: "2rem",
     fontFamily: "Karla",
     fontWeight: "700",
-
   },
   inputContainer: {
     display: "flex",
@@ -55,7 +62,6 @@ const style = {
     gap: "1rem",
     minWidth: "80%",
     fontFamily: "Inconsolata",
-    
   },
   createToolButton: {
     marginTop: "1rem",
@@ -68,13 +74,20 @@ const style = {
   },
 };
 
-const CustomToolScreen = ({ onClickHandler }) => {
+const CustomToolScreen = ({
+  onClickHandler,
+  account,
+  biconomySmartAccount,
+  loggedInProvider,
+}) => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const [openResponse, setOpenResponse] = useState(false);
-  const handleOpenResponse = () => setOpenResponse(true);
- 
+  const [openResponse, setOpenResponse] =
+    useState(false);
+  const handleOpenResponse = () =>
+    setOpenResponse(true);
+
   const [inputValues, setInputValues] = useState({
     name: "",
     subdomainName: "",
@@ -92,24 +105,41 @@ const CustomToolScreen = ({ onClickHandler }) => {
     });
   };
 
-  const createTool = () => {
+  const createTool = async () => {
     // Package the input values into an object
+
+    // Example:
+    // const apeiCost = "10";
+    // const apeiSubdomain = "offchaintest";
+    // const apeiApi = "https://hello.com"
+    // const apeiName = "Off Chain Test"
+    // const apeiDescription = "This is an off chain test"
+    // const apeiSaltString = "1"
+    // const apeiTag = tags[2]} = toolPayload;
+
+    const apeiSaltString = uuidv4();
+
     const toolData = {
-      name: inputValues.name,
-      subdomainName: inputValues.subdomainName,
-      description: inputValues.description,
-      apiUrl: inputValues.apiUrl,
-      tag: inputValues.tag,
-      amount: inputValues.amount,
+      apeiCost: inputValues.amount,
+      apeiSubdomain: inputValues.subdomainName,
+      apeiApi: inputValues.apiUrl,
+      apeiName: inputValues.name,
+      apeiDescription: inputValues.description,
+      apeiTag: inputValues.tag,
+      apeiSaltString,
     };
 
     // Send the toolData object to the backend or perform any other action
     console.log(toolData);
 
+    await createToolCall(
+      loggedInProvider,
+      biconomySmartAccount,
+      toolData,
+    );
+
     // Close the modal
-    handleOpen();
-    
-   
+    // handleOpen();
   };
 
   return (
@@ -133,6 +163,7 @@ const CustomToolScreen = ({ onClickHandler }) => {
               variant="outlined"
               value={inputValues.name}
               onChange={handleInputChange}
+              prefix="🦍"
             />
             <TextField
               id="outlined-basic"
@@ -161,13 +192,34 @@ const CustomToolScreen = ({ onClickHandler }) => {
               onChange={handleInputChange}
             />
 
-            <Autocomplete
+            <FormControl fullWidth>
+              <InputLabel id="demo-simple-select-label">
+                Tag
+              </InputLabel>
+              <Select
+                name="tag"
+                labelId="demo-simple-select-label"
+                id="demo-simple-select"
+                value={inputValues.tag}
+                label="Tag"
+                onChange={handleInputChange}
+              >
+                {toolList.map((tool) => (
+                  <MenuItem value={tool.label}>
+                    {tool.label}
+                  </MenuItem>
+                ))}
+              </Select>
+            </FormControl>
+            {/* <Autocomplete
+              autoSelect
               disablePortal
               id="combo-box-demo"
-              name="tag"
               options={toolList}
               sx={{ width: 300 }}
+              inputValue={inputValues.tag}
               value={inputValues.tag}
+              limitTags={1}
               onChange={handleInputChange}
               renderInput={(params) => (
                 <TextField
@@ -175,13 +227,22 @@ const CustomToolScreen = ({ onClickHandler }) => {
                   label="Tag"
                 />
               )}
+            /> */}
+            <InputLabel htmlFor="outlined-adornment-amount">
+              Amount
+            </InputLabel>
+            <OutlinedInput
+              id="outlined-adornment-amount"
+              name="amount"
+              onChange={handleInputChange}
+              inp
+              startAdornment={
+                <InputAdornment position="start">
+                  🦍
+                </InputAdornment>
+              }
+              label="Amount"
             />
-            <InputLabel htmlFor="outlined-adornment-amount">Amount</InputLabel>
-          <OutlinedInput
-            id="outlined-adornment-amount"
-            startAdornment={<InputAdornment position="start">$</InputAdornment>}
-            label="Amount"
-          />
             <div>
               <Button
                 variant="contained"
@@ -194,7 +255,6 @@ const CustomToolScreen = ({ onClickHandler }) => {
                 variant="contained"
                 onClick={createTool}
                 sx={style.createToolButton}
-                
               >
                 Create Tool
               </Button>
@@ -277,7 +337,6 @@ const CustomToolScreen = ({ onClickHandler }) => {
                   onClick={() =>
                     onClickHandler(0)
                   }
-                 
                   sx={{
                     mt: 1,
                     fontFamily: "Inconsolata",
@@ -298,5 +357,3 @@ const CustomToolScreen = ({ onClickHandler }) => {
 };
 
 export default CustomToolScreen;
-
-
