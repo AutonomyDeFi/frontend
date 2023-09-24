@@ -72,6 +72,8 @@ const CustomToolScreen = ({ onClickHandler }) => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const [openResponse, setOpenResponse] = useState(false);
+  const handleOpenResponse = () => setOpenResponse(true);
  
   const [inputValues, setInputValues] = useState({
     name: "",
@@ -105,7 +107,9 @@ const CustomToolScreen = ({ onClickHandler }) => {
     console.log(toolData);
 
     // Close the modal
-    handleClose();
+    handleOpen();
+    
+   
   };
 
   return (
@@ -190,6 +194,7 @@ const CustomToolScreen = ({ onClickHandler }) => {
                 variant="contained"
                 onClick={createTool}
                 sx={style.createToolButton}
+                
               >
                 Create Tool
               </Button>
