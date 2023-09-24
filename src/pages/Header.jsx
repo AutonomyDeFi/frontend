@@ -16,7 +16,7 @@ import { usePrivy } from "@privy-io/react-auth";
 import "./style.css";
 import mainLogo from "../assets/main_logo.png";
 
-const pages = ["Products"];
+
 const settings = ["Profile"];
 
 function ResponsiveAppBar({
@@ -138,22 +138,7 @@ function ResponsiveAppBar({
                 textDecoration: "none",
               }}
             >
-              {pages.map((page) => (
-                <MenuItem
-                  key={page}
-                  onClick={handleCloseNavMenu}
-                >
-                  <Typography
-                    textAlign="center"
-                    sx={{
-                      fontFamily: "Karla",
-                      color: "#6B96E5",
-                    }}
-                  >
-                    {page}
-                  </Typography>
-                </MenuItem>
-              ))}
+              
             </Menu>
           </Box>
           <AdbIcon
@@ -186,19 +171,7 @@ function ResponsiveAppBar({
               display: { xs: "none", md: "flex" },
             }}
           >
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{
-                  my: 2,
-                  color: "white",
-                  display: "block",
-                }}
-              >
-                {page}
-              </Button>
-            ))}
+            
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
