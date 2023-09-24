@@ -4,7 +4,7 @@ import { useSDK } from "@metamask/sdk-react";
 import { usePrivy } from "@privy-io/react-auth";
 
 import AuthPage from "./pages/Auth.page";
-import MainScreen from "./pages/MainScreen";
+import MainScreenWrapper from "./pages/MainScreenWrapper";
 import "./App.css";
 
 const AppInternal = ({
@@ -20,11 +20,8 @@ const AppInternal = ({
   const { logout } = usePrivy();
 
   const handleLogout = async () => {
-    if (isMetamaskAuth) {
-      await sdk?.disconnect();
-    } else {
-      await logout();
-    }
+    await sdk?.disconnect();
+    await logout();
 
     setAccount(null);
     setIsMetamaskAuth(false);
@@ -36,7 +33,7 @@ const AppInternal = ({
 
   if (isAuthComplete) {
     return (
-      <MainScreen
+      <MainScreenWrapper
         account={account}
         isMetamaskAuth={isMetamaskAuth}
         handleLogout={handleLogout}

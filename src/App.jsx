@@ -1,5 +1,4 @@
 import * as React from "react";
-
 import { PrivyProvider } from "@privy-io/react-auth";
 
 import bannerImage from "./assets/ape_banner_text-white.png";
@@ -16,11 +15,11 @@ const App = () => {
 
   const handleLogin = () => {
     setIsAuthComplete(true);
-
-    // Construct Biconomy smart account
   };
 
-  const handleLoginWithPrivy = (user) => {
+  const handleSuccessfulLoginWithPrivy = (
+    user,
+  ) => {
     setAccount(user.id);
     setIsMetamaskAuth(false);
     handleLogin();
@@ -30,7 +29,7 @@ const App = () => {
     <>
       <PrivyProvider
         appId={process.env.REACT_APP_PRIVY_APP_ID}
-        onSuccess={handleLoginWithPrivy}
+        onSuccess={handleSuccessfulLoginWithPrivy}
         config={{
           loginMethods: ["email"],
           appearance: {
