@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { CardActionArea } from "@mui/material";
 import Box from "@mui/material/Box";
+
 import inchLogo from "../assets/logos/1inch.png";
 import aaveLogo from "../assets/logos/aave.png";
 import compoundLogo from "../assets/logos/compound.png";
@@ -12,14 +13,55 @@ import llamaLogo from "../assets/logos/defillama.png";
 import uniswapLogo from "../assets/logos/uniswap.png";
 
 const logoComponents = {
-  "1Inch" : <img src={inchLogo} alt="1inch" height="20" width="20"/>,
-  AAVE: <img src={aaveLogo} alt="Aave" height="20" width="20"/>,
-  Compound: <img src={compoundLogo} alt="Compound" height="20" width="20"/>,
-  DefiLlama: <img src={llamaLogo} alt="DefiLlama" height="20" width="20"/>,
-  Uniswap: <img src={uniswapLogo} alt="Uniswap" height="20" width="20"/>,
+  "1Inch": (
+    <img
+      src={inchLogo}
+      alt="1inch"
+      height="20"
+      width="20"
+    />
+  ),
+  AAVE: (
+    <img
+      src={aaveLogo}
+      alt="Aave"
+      height="20"
+      width="20"
+    />
+  ),
+  Compound: (
+    <img
+      src={compoundLogo}
+      alt="Compound"
+      height="20"
+      width="20"
+    />
+  ),
+  DefiLlama: (
+    <img
+      src={llamaLogo}
+      alt="DefiLlama"
+      height="20"
+      width="20"
+    />
+  ),
+  Uniswap: (
+    <img
+      src={uniswapLogo}
+      alt="Uniswap"
+      height="20"
+      width="20"
+    />
+  ),
 };
 
-const ToolCard = ({ name, tag, blurb, url, price }) => {
+const ToolCard = ({
+  name,
+  tag,
+  blurb,
+  url,
+  price,
+}) => {
   const LogoComponent = logoComponents[tag];
   return (
     <CardActionArea>
@@ -38,28 +80,26 @@ const ToolCard = ({ name, tag, blurb, url, price }) => {
           border: "1px solid #e0e0e0", // Add a subtle border for depth
           overflow: "hidden", // Hide any overflowing content
           position: "relative", // Allow absolute positioning of elements inside
-          fontFamily: 'Karla',
+          fontFamily: "Karla",
         }}
       >
-        
         <CardContent>
-      
           <Typography
             gutterBottom
             variant="h5"
             component="div"
             sx={{
-              fontFamily: 'Inconsolata',
+              fontFamily: "Inconsolata",
               fontWeight: 600,
-              backgroundColor: '#EEF6FC',
+              backgroundColor: "#EEF6FC",
             }}
           >
             {name}
           </Typography>
-      
+
           <Button
             variant="outlined"
-            startIcon = {LogoComponent} 
+            startIcon={LogoComponent}
             sx={{
               marginBottom: 1,
               borderColor: "#2196F3",
@@ -67,7 +107,7 @@ const ToolCard = ({ name, tag, blurb, url, price }) => {
               color: "#2196F3",
               padding: "4px 11px", // Adjust the padding to make the button smaller
               fontSize: "0.8rem", // Reduce the font size for a smaller button
-              fontFamily: 'Inconsolata',
+              fontFamily: "Inconsolata",
             }}
           >
             {tag}
@@ -75,16 +115,25 @@ const ToolCard = ({ name, tag, blurb, url, price }) => {
           <Typography
             variant="body2"
             color="text.secondary"
-            sx  = {{ fontFamily: 'Inconsolata', fontWeight: 500, fontSize: 15 }} 
+            sx={{
+              fontFamily: "Inconsolata",
+              fontWeight: 500,
+              fontSize: 15,
+            }}
           >
             {blurb}
           </Typography>
           <Typography
             variant="body2"
             color="text.secondary"
-            sx  = {{ fontFamily: 'Karla', fontWeight: 800, marginTop: 1, color: ''}} 
+            sx={{
+              fontFamily: "Karla",
+              fontWeight: 800,
+              marginTop: 1,
+              color: "",
+            }}
           >
-             ${price}
+            🦍{price}
           </Typography>
         </CardContent>
         <div
@@ -98,7 +147,7 @@ const ToolCard = ({ name, tag, blurb, url, price }) => {
             color: "#ffffff", // Set text color for the bottom section
             borderTopLeftRadius: "8px", // Match the card's border radius
             borderTopRightRadius: "8px", // Match the card's border radius
-            fontFamily: 'Inconsolata'
+            fontFamily: "Inconsolata",
           }}
         >
           {/* Additional information or actions can go here */}
