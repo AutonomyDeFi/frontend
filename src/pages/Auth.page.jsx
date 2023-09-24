@@ -42,7 +42,11 @@ function Copyright(props) {
 
 const defaultTheme = createTheme();
 
-export default function AuthPage({ setAccount }) {
+export default function AuthPage({
+  setAccount,
+  setIsAuthComplete,
+  setIsMetamaskAuth,
+}) {
   const { login, logout } = usePrivy();
 
   const {
@@ -53,12 +57,18 @@ export default function AuthPage({ setAccount }) {
     chainId,
   } = useSDK();
 
+  const logoutWithMetamask = () => {
+    sdk?.disconnect();
+  };
+
   const connectWithMetaMask = async () => {
     try {
       const accounts = await sdk?.connect();
-      console.log("-=-=- -=-=- -=-=- accounts");
-      console.log(accounts);
+
       setAccount(accounts?.[0]);
+      setLogoutFunction(logoutWithMetamask);
+      setIsMetamaskAuth(true);
+      setIsAuthComplete(true);
     } catch (err) {
       console.warn(`failed to connect..`, err);
     }

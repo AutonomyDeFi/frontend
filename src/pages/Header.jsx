@@ -15,7 +15,7 @@ import AdbIcon from "@mui/icons-material/Adb";
 
 import mainLogo from "../assets/main_logo.png";
 
-const pages = ["Products", "Login"];
+const pages = ["Products"];
 const settings = [
   "Profile",
   "Account",
@@ -23,7 +23,7 @@ const settings = [
   "Logout",
 ];
 
-function ResponsiveAppBar() {
+function ResponsiveAppBar({ handleLogout }) {
   const [anchorElNav, setAnchorElNav] =
     React.useState(null);
   const [anchorElUser, setAnchorElUser] =
@@ -125,6 +125,14 @@ function ResponsiveAppBar() {
                   </Typography>
                 </MenuItem>
               ))}
+              <MenuItem
+                key={page}
+                onClick={handleLogout}
+              >
+                <Typography textAlign="center">
+                  Logout
+                </Typography>
+              </MenuItem>
             </Menu>
           </Box>
           <AdbIcon
