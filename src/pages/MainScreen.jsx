@@ -5,7 +5,11 @@ import Header from "./Header";
 import RunModelScreen from "./RunModelScreen";
 import Footer from "./Footer";
 
-const MainScreen = () => {
+const MainScreen = ({
+  account,
+  isMetamaskAuth,
+  handleLogout,
+}) => {
   const [currentPageIndex, setCurrentPageIndex] =
     React.useState(0);
   const onClick = (newState) => {
@@ -14,18 +18,19 @@ const MainScreen = () => {
 
   return (
     <div>
-      <Header> </Header>
-          {currentPageIndex == 0 ? (
-            <GridMarket
-              onClickHandler={onClick}
-            />
-          ) : currentPageIndex == 1 ? (
-            <CustomToolScreen
-              onClickHandler={onClick}
-            />
-          ) : (
-            <RunModelScreen />
-          )}
+      <Header
+        handleLogout={handleLogout}
+        isMetamaskAuth={isMetamaskAuth}
+      />
+      {currentPageIndex == 0 ? (
+        <GridMarket onClickHandler={onClick} />
+      ) : currentPageIndex == 1 ? (
+        <CustomToolScreen
+          onClickHandler={onClick}
+        />
+      ) : (
+        <RunModelScreen />
+      )}
       <Footer />
     </div>
   );

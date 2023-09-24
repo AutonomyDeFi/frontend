@@ -14,12 +14,14 @@ root.render(
     <MetaMaskProvider
       debug={false}
       sdkOptions={{
+        forceDeleteProvider: true,
         logging: {
           developerMode: false,
         },
         communicationServerUrl:
           process.env.REACT_APP_COMM_SERVER_URL,
         checkInstallationImmediately: false, // This will automatically connect to MetaMask on page load
+
         dappMetadata: {
           name: "Ape-I",
           url: window.location.host,

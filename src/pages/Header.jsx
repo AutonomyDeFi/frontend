@@ -12,18 +12,19 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import { usePrivy } from "@privy-io/react-auth";
 
 import mainLogo from "../assets/main_logo.png";
 
 const pages = ["Products"];
-const settings = [
-  "Profile",
-  "Account",
-  "Dashboard",
-  "Logout",
-];
+const settings = ["Profile"];
 
-function ResponsiveAppBar({ handleLogout }) {
+function ResponsiveAppBar({
+  handleLogout,
+  isMetamaskAuth,
+}) {
+  const { logout } = usePrivy();
+
   const [anchorElNav, setAnchorElNav] =
     React.useState(null);
   const [anchorElUser, setAnchorElUser] =
@@ -42,6 +43,13 @@ function ResponsiveAppBar({ handleLogout }) {
 
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
+  };
+
+  const executeLogout = async () => {
+    if (!isMetamaskAuth) {
+      await logout();
+    }
+    handleLogout();
   };
 
   return (
@@ -125,14 +133,6 @@ function ResponsiveAppBar({ handleLogout }) {
                   </Typography>
                 </MenuItem>
               ))}
-              <MenuItem
-                key={page}
-                onClick={handleLogout}
-              >
-                <Typography textAlign="center">
-                  Logout
-                </Typography>
-              </MenuItem>
             </Menu>
           </Box>
           <AdbIcon
@@ -218,6 +218,14 @@ function ResponsiveAppBar({ handleLogout }) {
                   </Typography>
                 </MenuItem>
               ))}
+
+              <MenuItem
+                onClick={() => executeLogout()}
+              >
+                <Typography textAlign="center">
+                  Logout
+                </Typography>
+              </MenuItem>
             </Menu>
           </Box>
         </Toolbar>

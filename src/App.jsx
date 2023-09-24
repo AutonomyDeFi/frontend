@@ -1,13 +1,9 @@
 import * as React from "react";
 
-import {
-  PrivyProvider,
-  usePrivy,
-} from "@privy-io/react-auth";
+import { PrivyProvider } from "@privy-io/react-auth";
 
 import bannerImage from "./assets/ape_banner_text-white.png";
-import AuthPage from "./pages/Auth.page";
-import MainScreen from "./pages/MainScreen";
+import AppInternal from "./AppInternal";
 import "./App.css";
 
 const App = () => {
@@ -17,36 +13,12 @@ const App = () => {
     React.useState(false);
   const [account, setAccount] =
     React.useState(null);
-  const [logoutFunction, setLogoutFunction] =
-    React.useState(null);
 
-  const { logout } = usePrivy();
-
-  // This method will be passed to the PrivyProvider as a callback
-  // that runs after successful login.
   const handleLoginWithPrivy = (user) => {
     setAccount(user.id);
-    setLogoutFunction(logout);
     setIsMetamaskAuth(false);
     setIsAuthComplete(true);
   };
-
-  const handleLogout = () => {
-    setAccount(null);
-    logoutFunction();
-    setIsMetamaskAuth(false);
-    setIsAuthComplete(false);
-  };
-
-  if (isAuthComplete) {
-    return (
-      <MainScreen
-        isMetamaskAuth={isMetamaskAuth}
-        account={account}
-        handleLogout={handleLogout}
-      />
-    );
-  }
 
   return (
     <>
@@ -62,7 +34,10 @@ const App = () => {
           },
         }}
       >
-        <AuthPage
+        <AppInternal
+          account={account}
+          isAuthComplete={isAuthComplete}
+          isMetamaskAuth={isMetamaskAuth}
           setAccount={setAccount}
           setIsAuthComplete={setIsAuthComplete}
           setIsMetamaskAuth={setIsMetamaskAuth}

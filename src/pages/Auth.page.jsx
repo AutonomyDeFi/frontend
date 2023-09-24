@@ -47,7 +47,8 @@ export default function AuthPage({
   setIsAuthComplete,
   setIsMetamaskAuth,
 }) {
-  const { login, logout } = usePrivy();
+  const { login, logout, authenticated } =
+    usePrivy();
 
   const {
     sdk,
@@ -55,10 +56,14 @@ export default function AuthPage({
     connecting,
     provider,
     chainId,
+    ready,
   } = useSDK();
 
-  const logoutWithMetamask = () => {
-    sdk?.disconnect();
+  const handleLoginWithPrivy = async () => {
+    if (authenticated) {
+      await logout();
+    }
+    await login();
   };
 
   const connectWithMetaMask = async () => {
@@ -66,7 +71,6 @@ export default function AuthPage({
       const accounts = await sdk?.connect();
 
       setAccount(accounts?.[0]);
-      setLogoutFunction(logoutWithMetamask);
       setIsMetamaskAuth(true);
       setIsAuthComplete(true);
     } catch (err) {
@@ -74,6 +78,7 @@ export default function AuthPage({
     }
   };
 
+  console.log(`ready: ${ready}`);
   console.log(`connected: ${connected}`);
 
   return (
@@ -151,33 +156,6 @@ export default function AuthPage({
             >
               ...at your own risk
             </Typography>
-            {/* <Box
-              component="form"
-              noValidate
-              onSubmit={handleSubmit}
-              sx={{ mt: 1 }}
-            >
-              <TextField
-                margin="normal"
-                required
-                fullWidth
-                id="email"
-                label="Email Address"
-                name="email"
-                autoComplete="email"
-                autoFocus
-              />
-              <Button
-                type="submit"
-                fullWidth
-                variant="contained"
-                sx={{ mt: 3, mb: 2 }}
-                color="error"
-                onClick={login}
-              >
-                Sign In
-              </Button>
-            </Box> */}
 
             <Box sx={{ mt: 1 }}>
               <Button
@@ -190,7 +168,7 @@ export default function AuthPage({
                   height: "50px",
                 }}
                 color="error"
-                onClick={login}
+                onClick={handleLoginWithPrivy}
               >
                 Login With Email
               </Button>
@@ -211,7 +189,7 @@ export default function AuthPage({
                 Use MetaMask
               </Button>
             </Box>
-            <Box>
+            {/* <Box>
               <Button
                 fullWidth
                 variant="outline"
@@ -226,7 +204,7 @@ export default function AuthPage({
               >
                 LOGOUT
               </Button>
-            </Box>
+            </Box> */}
             <Copyright sx={{ mt: 5 }} />
           </Box>
         </Box>
